@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>轻狼</title>
   
-  
+  <subtitle>生命是一场修行</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2020-03-03T10:17:10.732Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://cyfreeman.github.io/"/>
+  <updated>2020-03-04T05:40:41.658Z</updated>
+  <id>https://cyfreeman.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>陈杨</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>九寨沟</title>
+    <link href="https://cyfreeman.github.io/2020/03/04/c/jiu-zhai-gou/"/>
+    <id>https://cyfreeman.github.io/2020/03/04/c/jiu-zhai-gou/</id>
+    <published>2020-03-04T05:39:49.000Z</published>
+    <updated>2020-03-04T05:40:41.658Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>article title</title>
-    <link href="http://yoursite.com/2020/03/03/article-title/"/>
-    <id>http://yoursite.com/2020/03/03/article-title/</id>
+    <link href="https://cyfreeman.github.io/2020/03/03/article-title/"/>
+    <id>https://cyfreeman.github.io/2020/03/03/article-title/</id>
     <published>2020-03-03T10:17:10.000Z</published>
     <updated>2020-03-03T10:17:10.732Z</updated>
     
@@ -33,8 +48,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/03/03/hello-world/"/>
-    <id>http://yoursite.com/2020/03/03/hello-world/</id>
+    <link href="https://cyfreeman.github.io/2020/03/03/hello-world/"/>
+    <id>https://cyfreeman.github.io/2020/03/03/hello-world/</id>
     <published>2020-03-03T10:12:27.607Z</published>
     <updated>2020-03-03T10:12:27.607Z</updated>
     
