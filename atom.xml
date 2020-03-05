@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>轻狼</title>
+  <title>cyfreeman</title>
   
   <subtitle>生命是一场修行</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-04T05:40:41.658Z</updated>
+  <updated>2020-03-05T15:07:05.155Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>九寨沟</title>
-    <link href="https://cyfreeman.github.io/2020/03/04/c/jiu-zhai-gou/"/>
-    <id>https://cyfreeman.github.io/2020/03/04/c/jiu-zhai-gou/</id>
-    <published>2020-03-04T05:39:49.000Z</published>
-    <updated>2020-03-04T05:40:41.658Z</updated>
+    <title>跑步</title>
+    <link href="https://cyfreeman.github.io/2020/03/05/ya-ling/"/>
+    <id>https://cyfreeman.github.io/2020/03/05/ya-ling/</id>
+    <published>2020-03-05T15:03:00.000Z</published>
+    <updated>2020-03-05T15:07:05.155Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="运动" scheme="https://cyfreeman.github.io/categories/%E8%BF%90%E5%8A%A8/"/>
+    
+    
+      <category term="生活" scheme="https://cyfreeman.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>D:/software/Git/domestic/test</title>
+    <link href="https://cyfreeman.github.io/2020/03/05/d-software-git-domestic-test/"/>
+    <id>https://cyfreeman.github.io/2020/03/05/d-software-git-domestic-test/</id>
+    <published>2020-03-05T12:23:00.000Z</published>
+    <updated>2020-03-05T15:02:42.605Z</updated>
     
     <summary type="html">
     
@@ -32,16 +51,52 @@
   </entry>
   
   <entry>
-    <title>article title</title>
-    <link href="https://cyfreeman.github.io/2020/03/03/article-title/"/>
-    <id>https://cyfreeman.github.io/2020/03/03/article-title/</id>
-    <published>2020-03-03T10:17:10.000Z</published>
-    <updated>2020-03-03T10:17:10.732Z</updated>
+    <title>稻城亚丁</title>
+    <link href="https://cyfreeman.github.io/2020/03/05/dao-cheng-ya-ding/"/>
+    <id>https://cyfreeman.github.io/2020/03/05/dao-cheng-ya-ding/</id>
+    <published>2020-03-05T10:48:00.000Z</published>
+    <updated>2020-03-05T15:03:15.161Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;h3 id=&quot;时间：2017-10-01-2017-10-07&quot;&gt;&lt;a href=&quot;#时间：2017-10-01-2017-10-07&quot; class=&quot;headerlink&quot;
+        
+      
+    
     </summary>
     
+    
+      <category term="游记" scheme="https://cyfreeman.github.io/categories/%E6%B8%B8%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sip信令</title>
+    <link href="https://cyfreeman.github.io/2020/03/03/article-title/"/>
+    <id>https://cyfreeman.github.io/2020/03/03/article-title/</id>
+    <published>2020-03-03T10:17:00.000Z</published>
+    <updated>2020-03-05T15:02:15.694Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;打桩测试&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="通信" scheme="https://cyfreeman.github.io/categories/%E9%80%9A%E4%BF%A1/"/>
     
     
   </entry>

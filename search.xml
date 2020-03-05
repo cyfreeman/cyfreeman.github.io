@@ -4,9 +4,34 @@
   
     
     <entry>
-      <title>九寨沟</title>
-      <link href="/2020/03/04/c/jiu-zhai-gou/"/>
-      <url>/2020/03/04/c/jiu-zhai-gou/</url>
+      <title>跑步</title>
+      <link href="/2020/03/05/ya-ling/"/>
+      <url>/2020/03/05/ya-ling/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 运动 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>D:/software/Git/domestic/test</title>
+      <link href="/2020/03/05/d-software-git-domestic-test/"/>
+      <url>/2020/03/05/d-software-git-domestic-test/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -17,12 +42,37 @@
     
     
     <entry>
-      <title>article title</title>
+      <title>稻城亚丁</title>
+      <link href="/2020/03/05/dao-cheng-ya-ding/"/>
+      <url>/2020/03/05/dao-cheng-ya-ding/</url>
+      
+        <content type="html"><![CDATA[<h3 id="时间：2017-10-01-2017-10-07"><a href="#时间：2017-10-01-2017-10-07" class="headerlink" title="时间：2017.10.01~2017.10.07"></a>时间：2017.10.01~2017.10.07</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sip信令</title>
       <link href="/2020/03/03/article-title/"/>
       <url>/2020/03/03/article-title/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>打桩测试</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 通信 </category>
+          
+      </categories>
       
       
     </entry>
