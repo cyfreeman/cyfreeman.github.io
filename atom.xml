@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>轻狼‘s blog</title>
   
-  <subtitle>不积跬步无以至千里</subtitle>
+  <subtitle>跬步</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-06T07:31:03.181Z</updated>
+  <updated>2020-03-06T09:42:45.604Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
-    <name>轻狼</name>
+    <name>陈杨</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="https://cyfreeman.github.io/2020/03/06/pi-pan-xing-si-wei-de-yang-cheng/"/>
     <id>https://cyfreeman.github.io/2020/03/06/pi-pan-xing-si-wei-de-yang-cheng/</id>
     <published>2020-03-06T07:08:00.000Z</published>
-    <updated>2020-03-06T07:31:03.181Z</updated>
+    <updated>2020-03-06T09:42:45.604Z</updated>
     
     <summary type="html">
     
@@ -37,6 +37,8 @@
     
     
       <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
     
     
       <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
@@ -421,31 +423,6 @@
   </entry>
   
   <entry>
-    <title>新天鹅堡</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/de-guo/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/de-guo/</id>
-    <published>2020-03-05T16:36:00.000Z</published>
-    <updated>2020-03-06T03:44:21.885Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Neuschwanstein Castle" scheme="https://cyfreeman.github.io/tags/Neuschwanstein-Castle/"/>
-    
-  </entry>
-  
-  <entry>
     <title>罗马假日</title>
     <link href="https://cyfreeman.github.io/2020/03/06/yi-da-li/"/>
     <id>https://cyfreeman.github.io/2020/03/06/yi-da-li/</id>
@@ -469,6 +446,31 @@
       <category term="Italy" scheme="https://cyfreeman.github.io/tags/Italy/"/>
     
       <category term="Rome" scheme="https://cyfreeman.github.io/tags/Rome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新天鹅堡</title>
+    <link href="https://cyfreeman.github.io/2020/03/06/de-guo/"/>
+    <id>https://cyfreeman.github.io/2020/03/06/de-guo/</id>
+    <published>2020-03-05T16:36:00.000Z</published>
+    <updated>2020-03-06T03:44:21.885Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
+    
+      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
+    
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
+    
+      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
+    
+      <category term="Neuschwanstein Castle" scheme="https://cyfreeman.github.io/tags/Neuschwanstein-Castle/"/>
     
   </entry>
   
