@@ -796,6 +796,10 @@
                                 read
                             </a>
                         
+                            <a href="/categories/read/summary/" class="post-category">
+                                summary
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -1523,3 +1527,8 @@ $(function () {
 </body>
 
 </html>
+<script type="text/javascript"> 
+var OriginTitile = document.title, st; 
+document.addEventListener("visibilitychange", function () { 
+document.hidden ? (document.title = "轻狼‘s blog，默默努力中。。。", clearTimeout(st)) : (document.title = "轻狼‘s blog welcome u !", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) 
+</script>
