@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>陈杨‘s blog</title>
+  <title>轻狼‘s blog</title>
   
   <subtitle>不积跬步无以至千里</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-06T05:12:09.059Z</updated>
+  <updated>2020-03-06T07:31:03.181Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
-    <name>陈杨</name>
+    <name>轻狼</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>批判性思维的形成与实践</title>
+    <link href="https://cyfreeman.github.io/2020/03/06/pi-pan-xing-si-wei-de-yang-cheng/"/>
+    <id>https://cyfreeman.github.io/2020/03/06/pi-pan-xing-si-wei-de-yang-cheng/</id>
+    <published>2020-03-06T07:08:00.000Z</published>
+    <updated>2020-03-06T07:31:03.181Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、来源&quot;&gt;&lt;a href=&quot;#一、来源&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
+    
+      <category term="成长" scheme="https://cyfreeman.github.io/tags/%E6%88%90%E9%95%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>《程序员的自我修养》</title>
@@ -258,9 +287,9 @@
     
       <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
       <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
+    
+      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
     
   </entry>
   
@@ -492,33 +521,6 @@
       <category term="Southeast_Asia" scheme="https://cyfreeman.github.io/tags/Southeast-Asia/"/>
     
       <category term="Bali" scheme="https://cyfreeman.github.io/tags/Bali/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>潜水胜地——美娜多</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</id>
-    <published>2020-03-05T16:35:00.000Z</published>
-    <updated>2020-03-06T03:57:50.034Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="SoutheastAsia" scheme="https://cyfreeman.github.io/categories/Traval/SoutheastAsia/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Indonesia" scheme="https://cyfreeman.github.io/tags/Indonesia/"/>
-    
-      <category term="Southeast Asia" scheme="https://cyfreeman.github.io/tags/Southeast-Asia/"/>
-    
-      <category term="Manado" scheme="https://cyfreeman.github.io/tags/Manado/"/>
     
   </entry>
   
