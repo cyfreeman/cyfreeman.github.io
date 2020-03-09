@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-06T09:42:45.604Z</updated>
+  <updated>2020-03-09T04:59:06.351Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决freeswitch黄金30S，nat穿透问题</title>
+    <link href="https://cyfreeman.github.io/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/"/>
+    <id>https://cyfreeman.github.io/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/</id>
+    <published>2020-03-09T04:34:00.000Z</published>
+    <updated>2020-03-09T04:59:06.351Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、问题背景&quot;&gt;&lt;a href=&quot;#一、问题背景&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+      <category term="media" scheme="https://cyfreeman.github.io/tags/media/"/>
+    
+  </entry>
   
   <entry>
     <title>批判性思维的形成与实践</title>
@@ -193,9 +222,17 @@
     <link href="https://cyfreeman.github.io/2020/03/06/fan-er-sai-gong/"/>
     <id>https://cyfreeman.github.io/2020/03/06/fan-er-sai-gong/</id>
     <published>2020-03-06T03:42:00.000Z</published>
-    <updated>2020-03-06T03:42:42.976Z</updated>
+    <updated>2020-03-09T03:48:50.950Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;凡尔赛宫（法語：Château de
+        
+      
     
     </summary>
     
@@ -307,9 +344,9 @@
     
       <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
-      <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
-    
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
+    
+      <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
     
   </entry>
   
@@ -468,31 +505,6 @@
   </entry>
   
   <entry>
-    <title>新天鹅堡</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/de-guo/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/de-guo/</id>
-    <published>2020-03-05T16:36:00.000Z</published>
-    <updated>2020-03-06T03:44:21.885Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Neuschwanstein Castle" scheme="https://cyfreeman.github.io/tags/Neuschwanstein-Castle/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Paris</title>
     <link href="https://cyfreeman.github.io/2020/03/06/fa-guo/"/>
     <id>https://cyfreeman.github.io/2020/03/06/fa-guo/</id>
@@ -518,11 +530,11 @@
   </entry>
   
   <entry>
-    <title>巴厘岛</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/ba-li-dao/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/ba-li-dao/</id>
-    <published>2020-03-05T16:35:00.000Z</published>
-    <updated>2020-03-06T03:57:17.850Z</updated>
+    <title>新天鹅堡</title>
+    <link href="https://cyfreeman.github.io/2020/03/06/de-guo/"/>
+    <id>https://cyfreeman.github.io/2020/03/06/de-guo/</id>
+    <published>2020-03-05T16:36:00.000Z</published>
+    <updated>2020-03-06T03:44:21.885Z</updated>
     
     <summary type="html">
     
@@ -531,16 +543,14 @@
     
       <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
     
-      <category term="SoutheastAsia" scheme="https://cyfreeman.github.io/categories/Traval/SoutheastAsia/"/>
+      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
     
     
       <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
-      <category term="Indonesia" scheme="https://cyfreeman.github.io/tags/Indonesia/"/>
+      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
     
-      <category term="Southeast_Asia" scheme="https://cyfreeman.github.io/tags/Southeast-Asia/"/>
-    
-      <category term="Bali" scheme="https://cyfreeman.github.io/tags/Bali/"/>
+      <category term="Neuschwanstein Castle" scheme="https://cyfreeman.github.io/tags/Neuschwanstein-Castle/"/>
     
   </entry>
   

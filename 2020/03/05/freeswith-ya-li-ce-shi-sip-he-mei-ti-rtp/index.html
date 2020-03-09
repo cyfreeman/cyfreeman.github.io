@@ -824,14 +824,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-06
+                    2020-03-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    971
+                    992
                 </div>
                 
 
@@ -854,12 +854,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="pre-准备环境："><a href="#pre-准备环境：" class="headerlink" title="pre:准备环境："></a>pre:准备环境：</h1><p>10.17.33.223容器化部署freeswitch<br>笔记本电脑与手机用于录制RTP媒体包<br>10.17.33.221/222基于SIPP部署呼叫压测终端</p>
-<h1 id="一、录制RTP流媒体文件"><a href="#一、录制RTP流媒体文件" class="headerlink" title="一、录制RTP流媒体文件"></a>一、录制RTP流媒体文件</h1><h2 id="1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过"><a href="#1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过" class="headerlink" title="1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过"></a>1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过</h2><p><img src="/images/pasted-5.png" alt="upload successful"><br><img src="/images/pasted-4.png" alt="upload successful"></p>
-<h3 id="2、启动做好的docker-image镜像，并检查sofia-status状态OK"><a href="#2、启动做好的docker-image镜像，并检查sofia-status状态OK" class="headerlink" title="2、启动做好的docker image镜像，并检查sofia status状态OK"></a>2、启动做好的docker image镜像，并检查sofia status状态OK</h3><p><img src="/images/pasted-7.png" alt="upload successful"></p>
-<h2 id="3、设置eyebeam只有ulaw语音编码器"><a href="#3、设置eyebeam只有ulaw语音编码器" class="headerlink" title="3、设置eyebeam只有ulaw语音编码器"></a>3、设置eyebeam只有ulaw语音编码器</h2><p><img src="/images/pasted-8.png" alt="upload successful"></p>
-<h2 id="4、用wireshark抓包150秒"><a href="#4、用wireshark抓包150秒" class="headerlink" title="4、用wireshark抓包150秒"></a>4、用wireshark抓包150秒</h2><p><img src="/images/pasted-9.png" alt="upload successful"></p>
-<h1 id="二、写呼叫脚本"><a href="#二、写呼叫脚本" class="headerlink" title="二、写呼叫脚本"></a>二、写呼叫脚本</h1><h2 id="2-1-Caller-xml"><a href="#2-1-Caller-xml" class="headerlink" title="2.1 Caller.xml"></a>2.1 Caller.xml</h2><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"us-ascii"</span>?<span class="token operator">></span>
+                <h2 id="pre-准备环境："><a href="#pre-准备环境：" class="headerlink" title="pre:准备环境："></a>pre:准备环境：</h2><p>10.17.33.223容器化部署freeswitch<br>笔记本电脑与手机用于录制RTP媒体包<br>10.17.33.221/222基于SIPP部署呼叫压测终端</p>
+<h2 id="一、录制RTP流媒体文件"><a href="#一、录制RTP流媒体文件" class="headerlink" title="一、录制RTP流媒体文件"></a>一、录制RTP流媒体文件</h2><h3 id="1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过"><a href="#1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过" class="headerlink" title="1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过"></a>1、手机和电脑终端注册sip流程到服务器，较简单，为减少篇幅先跳过</h3><p><img src="/images/pasted-5.png" alt="终端注册"><br><img src="/images/pasted-4.png" alt="终端注册"></p>
+<h3 id="2、启动做好的docker-image镜像，并检查sofia-status状态OK"><a href="#2、启动做好的docker-image镜像，并检查sofia-status状态OK" class="headerlink" title="2、启动做好的docker image镜像，并检查sofia status状态OK"></a>2、启动做好的docker image镜像，并检查sofia status状态OK</h3><p><img src="/images/pasted-7.png" alt="检查网络状态"></p>
+<h3 id="3、设置eyebeam只有ulaw语音编码器"><a href="#3、设置eyebeam只有ulaw语音编码器" class="headerlink" title="3、设置eyebeam只有ulaw语音编码器"></a>3、设置eyebeam只有ulaw语音编码器</h3><p><img src="/images/pasted-8.png" alt="设置格式"></p>
+<h3 id="4、用wireshark抓包150秒"><a href="#4、用wireshark抓包150秒" class="headerlink" title="4、用wireshark抓包150秒"></a>4、用wireshark抓包150秒</h3><p><img src="/images/pasted-9.png" alt="wireshark抓包"></p>
+<h2 id="二、写呼叫脚本"><a href="#二、写呼叫脚本" class="headerlink" title="二、写呼叫脚本"></a>二、写呼叫脚本</h2><h3 id="2-1-Caller-xml"><a href="#2-1-Caller-xml" class="headerlink" title="2.1 Caller.xml"></a>2.1 Caller.xml</h3><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"us-ascii"</span>?<span class="token operator">></span>
 <span class="token operator">&lt;</span>scenario name<span class="token operator">=</span><span class="token string">"New_call"</span><span class="token operator">></span>
  <span class="token operator">&lt;</span><span class="token operator">!</span>--
  In client mode <span class="token punctuation">(</span>sipp placing calls<span class="token punctuation">)</span>, the Call-ID MUST be         
@@ -960,7 +960,7 @@
 --<span class="token operator">></span>
 <span class="token operator">&lt;</span>CallLengthRepartition value<span class="token operator">=</span><span class="token string">"10, 50, 100, 500, 1000, 5000, 10000"</span>/<span class="token operator">></span>
 <span class="token operator">&lt;</span>/scenario<span class="token operator">></span></code></pre>
-<h2 id="2-2-Called-xml"><a href="#2-2-Called-xml" class="headerlink" title="2.2 Called.xml"></a>2.2 Called.xml</h2><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"ISO-8859-1"</span>?<span class="token operator">></span>
+<h3 id="2-2-Called-xml"><a href="#2-2-Called-xml" class="headerlink" title="2.2 Called.xml"></a>2.2 Called.xml</h3><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"ISO-8859-1"</span>?<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">!</span>DOCTYPE scenario SYSTEM <span class="token string">"sipp.dtd"</span><span class="token operator">></span>
 <span class="token operator">&lt;</span>scenario name<span class="token operator">=</span><span class="token string">"Basic UAS responder"</span><span class="token operator">></span>
  <span class="token operator">&lt;</span><span class="token operator">!</span>--
@@ -1061,15 +1061,17 @@
 <span class="token operator">&lt;</span>ResponseTimeRepartition value<span class="token operator">=</span><span class="token string">"10, 20, 30, 40, 50, 100, 150, 200"</span>/<span class="token operator">></span>
 <span class="token operator">&lt;</span>CallLengthRepartition value<span class="token operator">=</span><span class="token string">"10, 50, 100, 500, 1000, 5000, 10000"</span>/<span class="token operator">></span>
 <span class="token operator">&lt;</span>/scenario<span class="token operator">></span></code></pre>
-<h2 id="2-3-Caller-bat"><a href="#2-3-Caller-bat" class="headerlink" title="2.3 Caller.bat"></a>2.3 Caller.bat</h2><pre class=" language-bash"><code class="language-bash">sipp -sn uac 10.17.33.223:5060 -r 4 -rp 1000 -p 15060 -i 10.17.33.221 -s 1005 -sf caller.xml -l 600</code></pre>
-<h2 id="2-4-Called-bat"><a href="#2-4-Called-bat" class="headerlink" title="2.4 Called.bat"></a>2.4 Called.bat</h2><pre class=" language-bash"><code class="language-bash">sipp -sn uac 10.17.33.223:5060 -r 1 -rp 1000 -p 5060 -i 10.17.33.222 -s 1017 -sf caller.xml -l 1200</code></pre>
-<h1 id="三、两台非freeswitch服务器部署sipp"><a href="#三、两台非freeswitch服务器部署sipp" class="headerlink" title="三、两台非freeswitch服务器部署sipp"></a>三、两台非freeswitch服务器部署sipp</h1><p>可参考：<a href="https://segmentfault.com/a/1190000004272862" target="_blank" rel="noopener">https://segmentfault.com/a/1190000004272862</a></p>
-<h1 id="四、启动脚本，开始测试"><a href="#四、启动脚本，开始测试" class="headerlink" title="四、启动脚本，开始测试"></a>四、启动脚本，开始测试</h1><p>发现问题：</p>
-<p><img src="/images/pasted-10.png" alt="upload successful"></p>
+<h3 id="2-3-Caller-bat"><a href="#2-3-Caller-bat" class="headerlink" title="2.3 Caller.bat"></a>2.3 Caller.bat</h3><pre class=" language-bash"><code class="language-bash">sipp -sn uac 10.17.33.223:5060 -r 4 -rp 1000 -p 15060 -i 10.17.33.221 -s 1005 -sf caller.xml -l 600</code></pre>
+<h3 id="2-4-Called-bat"><a href="#2-4-Called-bat" class="headerlink" title="2.4 Called.bat"></a>2.4 Called.bat</h3><pre class=" language-bash"><code class="language-bash">sipp -sn uac 10.17.33.223:5060 -r 1 -rp 1000 -p 5060 -i 10.17.33.222 -s 1017 -sf caller.xml -l 1200</code></pre>
+<h2 id="三、两台非freeswitch服务器部署sipp"><a href="#三、两台非freeswitch服务器部署sipp" class="headerlink" title="三、两台非freeswitch服务器部署sipp"></a>三、两台非freeswitch服务器部署sipp</h2><p>可参考：<a href="https://segmentfault.com/a/1190000004272862" target="_blank" rel="noopener">https://segmentfault.com/a/1190000004272862</a></p>
+<h2 id="四、启动脚本，开始测试"><a href="#四、启动脚本，开始测试" class="headerlink" title="四、启动脚本，开始测试"></a>四、启动脚本，开始测试</h2><p>发现问题：</p>
+<p><img src="/images/pasted-10.png" alt="问题日志"></p>
 <p>定位发现号码不认可，添加网关：</p>
-<p><img src="/images/pasted-11.png" alt="upload successful"></p>
+<p><img src="/images/pasted-11.png" alt="添加网关配置"></p>
 <p>很多网关不需要注册即可使用，不用管这个</p>
-<p><img src="/images/pasted-12.png" alt="upload successful"></p>
+<p><img src="/images/pasted-12.png" alt=""></p>
+<p><img src="/images/pasted-71.png" alt="测通呼叫流程"><br>机器配置2vC4G，非录音情况下支撑500并发cpu利用率达到60%。</p>
+<p><img src="/images/pasted-70.png" alt="500并发压测"></p>
 
             </div>
             <hr/>
@@ -1539,7 +1541,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.9k</span>&nbsp;字
+                class="white-color">3.7k</span>&nbsp;字
             
             
             
