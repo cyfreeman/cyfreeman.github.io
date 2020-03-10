@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>linux编译安装制定安装路径（freeswitch为例））</title>
+      <link href="/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/"/>
+      <url>/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="problem："><a href="#problem：" class="headerlink" title="problem："></a>problem：</h2><p>请问怎么指定freeswitch的安装目录？</p><h2 id="solved："><a href="#solved：" class="headerlink" title="solved："></a>solved：</h2><p>./configure –prefix=”your prefer path….”</p><p>example：./configure –prefix=/opt/fscy，后续安装会安装到/opt/fscy目录下。</p><h2 id="analyse"><a href="#analyse" class="headerlink" title="analyse"></a>analyse</h2><p>说明一下–prefix参数的作用，其主要用在编译安装源代码应用中的./configure环节。</p><p>1、源码安装一般包括几个步骤：配置（configure），编译（make），安装（make install）。</p><p>2、其中configure是一个可执行脚本，在源码目录中执行可以完成自动的配置工作，即./configure。</p><p>3、在实际的安装过程中，我们可以增加–prefix参数，这样可以将要安装的应用安装到指定的目录中，如，我们要安装git应用，在配置环节可以使用如下命令：</p><p>./configure –prefix=/usr/local/git<br>之后再执行make &amp; make install命令就可以将git安装到了/usr/local/git目录中，这样做的好处就是方便以后的维护。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo一篇文章归属多个categories设置</title>
+      <link href="/2020/03/09/hexo-yi-pian-wen-zhang-gui-shu-duo-ge-categories-she-zhi/"/>
+      <url>/2020/03/09/hexo-yi-pian-wen-zhang-gui-shu-duo-ge-categories-she-zhi/</url>
+      
+        <content type="html"><![CDATA[<p>在categories下归属子目录前后加[]，不加的话默认media的路径为/signalinng/media</p><p><img src="/images/pasted-79.png" alt="示意"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> frontend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> frontend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决freeswitch黄金30S，nat穿透问题</title>
       <link href="/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/"/>
       <url>/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/</url>
@@ -13,7 +63,11 @@
       
       <categories>
           
+          <category> media </category>
+          
           <category> signaling </category>
+          
+          <category> networkArchitecture </category>
           
       </categories>
       
@@ -357,11 +411,11 @@
       
         <tags>
             
+            <tag> Cinque Terre </tag>
+            
             <tag> Traval </tag>
             
             <tag> Europe </tag>
-            
-            <tag> Cinque Terre </tag>
             
         </tags>
       
@@ -527,6 +581,37 @@
     
     
     <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -583,37 +668,6 @@
             <tag> Europe </tag>
             
             <tag> Paris </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -688,37 +742,6 @@
     
     
     <entry>
-      <title>普吉岛</title>
-      <link href="/2020/03/06/pu-ji-dao/"/>
-      <url>/2020/03/06/pu-ji-dao/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> pucket island </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>曼谷</title>
       <link href="/2020/03/06/man-gu/"/>
       <url>/2020/03/06/man-gu/</url>
@@ -742,6 +765,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> Bankok </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>普吉岛</title>
+      <link href="/2020/03/06/pu-ji-dao/"/>
+      <url>/2020/03/06/pu-ji-dao/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> pucket island </tag>
             
         </tags>
       

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-09T04:59:06.351Z</updated>
+  <updated>2020-03-10T02:12:59.668Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -17,11 +17,67 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>linux编译安装制定安装路径（freeswitch为例））</title>
+    <link href="https://cyfreeman.github.io/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/</id>
+    <published>2020-03-10T02:09:00.000Z</published>
+    <updated>2020-03-10T02:12:59.668Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;problem：&quot;&gt;&lt;a href=&quot;#problem：&quot; class=&quot;headerlink&quot; title=&quot;problem：&quot;&gt;&lt;/a&gt;problem：&lt;/h2&gt;&lt;p&gt;请问怎么指定freeswitch的安装目录？&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo一篇文章归属多个categories设置</title>
+    <link href="https://cyfreeman.github.io/2020/03/09/hexo-yi-pian-wen-zhang-gui-shu-duo-ge-categories-she-zhi/"/>
+    <id>https://cyfreeman.github.io/2020/03/09/hexo-yi-pian-wen-zhang-gui-shu-duo-ge-categories-she-zhi/</id>
+    <published>2020-03-09T05:26:00.000Z</published>
+    <updated>2020-03-10T02:07:01.747Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在categories下归属子目录前后加[]，不加的话默认media的路径为/signalinng/media&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pasted-79.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="frontend" scheme="https://cyfreeman.github.io/categories/frontend/"/>
+    
+    
+      <category term="frontend" scheme="https://cyfreeman.github.io/tags/frontend/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决freeswitch黄金30S，nat穿透问题</title>
     <link href="https://cyfreeman.github.io/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/"/>
     <id>https://cyfreeman.github.io/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/</id>
     <published>2020-03-09T04:34:00.000Z</published>
-    <updated>2020-03-09T04:59:06.351Z</updated>
+    <updated>2020-03-09T05:13:34.823Z</updated>
     
     <summary type="html">
     
@@ -36,7 +92,11 @@
     </summary>
     
     
+      <category term="media" scheme="https://cyfreeman.github.io/categories/media/"/>
+    
       <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="networkArchitecture" scheme="https://cyfreeman.github.io/categories/networkArchitecture/"/>
     
     
       <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
@@ -342,11 +402,11 @@
       <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
     
     
+      <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
+    
       <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
     
   </entry>
   
@@ -474,58 +534,6 @@
       <category term="Switzerland" scheme="https://cyfreeman.github.io/tags/Switzerland/"/>
     
       <category term="Alps" scheme="https://cyfreeman.github.io/tags/Alps/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>罗马假日</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/yi-da-li/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/yi-da-li/</id>
-    <published>2020-03-05T16:36:00.000Z</published>
-    <updated>2020-03-06T03:31:26.443Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Italy" scheme="https://cyfreeman.github.io/tags/Italy/"/>
-    
-      <category term="Rome" scheme="https://cyfreeman.github.io/tags/Rome/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Paris</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/fa-guo/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/fa-guo/</id>
-    <published>2020-03-05T16:36:00.000Z</published>
-    <updated>2020-03-06T03:40:11.206Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Paris" scheme="https://cyfreeman.github.io/tags/Paris/"/>
     
   </entry>
   
