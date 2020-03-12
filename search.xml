@@ -4,6 +4,135 @@
   
     
     <entry>
+      <title>基于java的sip客户端注册流程梳理</title>
+      <link href="/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/"/>
+      <url>/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="pre"><a href="#pre" class="headerlink" title="pre"></a>pre</h2><p>今天实现了基于sip信令的码号注册成功，梳理一下关键点和流程。</p><h2 id="一、Value"><a href="#一、Value" class="headerlink" title="一、Value"></a>一、Value</h2><pre class=" language-bash"><code class="language-bash">//基本信息username:注册到sip server的账号server  ：sip server的IP地址password：待注册账号的密码，需要sip server配置认可//建立sip信令SipFactory sipFactory：加载使用sip apiSipStack sipStack：为sip信令交互创建transactionID、提供收发信息IOSipProvider sipProvider：由sipStack创建，向server发送msgMessageFactory messageFactory：创建sip消息体HeaderFactory headerFactory：创建sip消息头AddressFactory addressFactory：创建地址信息ListeningPoint listeningPoint：sip消息监听地址设置Properties properties：sip消息其他属性配置ClientTransaction inviteTid：将request封装事物IP发送到sip serverRequest request：sip请求体Response response：sip server的响应体//自定义填充信息部分proxy：信令转发代理，非中转不需要填sipIPlocalIPsipport：本地端口rport：监听端口protocol <span class="token operator">=</span> <span class="token string">"UDP"</span>tag <span class="token operator">=</span> <span class="token punctuation">(</span>new Random<span class="token punctuation">(</span><span class="token punctuation">))</span>.nextInt<span class="token punctuation">(</span><span class="token punctuation">)</span>：标签，组成消息头ContactHeader contactHeader：联系消息头</code></pre><h2 id="二、初始化"><a href="#二、初始化" class="headerlink" title="二、初始化"></a>二、初始化</h2><pre class=" language-bash"><code class="language-bash">    public void init<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        try <span class="token punctuation">{</span>            // Get the local IP address.            localIP <span class="token operator">=</span> InetAddress.getLocalHost<span class="token punctuation">(</span><span class="token punctuation">)</span>.getHostAddress<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the SIP factory and <span class="token keyword">set</span> the path name.            sipFactory <span class="token operator">=</span> SipFactory.getInstance<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            sipFactory.setPathName<span class="token punctuation">(</span><span class="token string">"gov.nist"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create and <span class="token keyword">set</span> the SIP stack properties.            properties <span class="token operator">=</span> new Properties<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            properties.setProperty<span class="token punctuation">(</span><span class="token string">"javax.sip.STACK_NAME"</span>, <span class="token string">"stack"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            properties.setProperty<span class="token punctuation">(</span><span class="token string">"gov.nist.javax.sip.TRACE_LEVEL"</span>, <span class="token string">"32"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            if<span class="token punctuation">(</span>proxy <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>                properties.setProperty<span class="token punctuation">(</span><span class="token string">"javax.sip.OUTBOUND_PROXY"</span>, sipIP + <span class="token string">':'</span> + sipport + <span class="token string">'/'</span> + protocol<span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>            properties.setProperty<span class="token punctuation">(</span><span class="token string">"gov.nist.javax.sip.LOG_MESSAGE_CONTENT"</span>, <span class="token string">"true"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            properties.setProperty<span class="token punctuation">(</span><span class="token string">"gov.nist.javax.sip.DEBUG_LOG"</span>,  <span class="token string">"mss-jsip-debuglog.txt"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            properties.setProperty<span class="token punctuation">(</span><span class="token string">"gov.nist.javax.sip.SERVER_LOG"</span>,<span class="token string">"mss-jsip-messages.xml"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the SIP stack.            sipStack <span class="token operator">=</span> sipFactory.createSipStack<span class="token punctuation">(</span>this.properties<span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the SIP message factory.            messageFactory <span class="token operator">=</span> sipFactory.createMessageFactory<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the SIP header factory.            headerFactory <span class="token operator">=</span> sipFactory.createHeaderFactory<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the SIP address factory.            addressFactory <span class="token operator">=</span> sipFactory.createAddressFactory<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the SIP listening point and bind it to the local IP            // address, port and protocol.            listeningPoint <span class="token operator">=</span> sipStack.createListeningPoint<span class="token punctuation">(</span>localIP, rport, protocol<span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the SIP provider.            sipProvider <span class="token operator">=</span> sipStack.createSipProvider<span class="token punctuation">(</span>listeningPoint<span class="token punctuation">)</span><span class="token punctuation">;</span>            // Add our application as a SIP listener.            sipProvider.addSipListener<span class="token punctuation">(</span>this<span class="token punctuation">)</span><span class="token punctuation">;</span>            // Display the local IP address and port <span class="token keyword">in</span> the text area.        <span class="token punctuation">}</span> catch <span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span> <span class="token punctuation">{</span>            e.printStackTrace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // If an error occurs, display an error message box and exit.            System.exit<span class="token punctuation">(</span>-1<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span></code></pre><h2 id="三、注册"><a href="#三、注册" class="headerlink" title="三、注册"></a>三、注册</h2><pre class=" language-bash"><code class="language-bash">    public void register<span class="token punctuation">(</span>Response response<span class="token punctuation">)</span> <span class="token punctuation">{</span>        try <span class="token punctuation">{</span>//            cseq++<span class="token punctuation">;</span>            current_process <span class="token operator">=</span> cseq + <span class="token string">"REGISTER"</span><span class="token punctuation">;</span>            ArrayList viaHeaders <span class="token operator">=</span> new ArrayList<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            ViaHeader viaHeader <span class="token operator">=</span> headerFactory.createViaHeader<span class="token punctuation">(</span>localIP,                    rport, <span class="token string">"udp"</span>, null<span class="token punctuation">)</span><span class="token punctuation">;</span>            viaHeader.setRPort<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            viaHeaders.add<span class="token punctuation">(</span>viaHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>            // The <span class="token string">"Max-Forwards"</span> header.            MaxForwardsHeader maxForwardsHeader <span class="token operator">=</span> headerFactory.createMaxForwardsHeader<span class="token punctuation">(</span>70<span class="token punctuation">)</span><span class="token punctuation">;</span>            // The <span class="token string">"Call-Id"</span> header.            CallIdHeader callIdHeader <span class="token operator">=</span> sipProvider.getNewCallId<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // The <span class="token string">"CSeq"</span> header.            @SuppressWarnings<span class="token punctuation">(</span><span class="token string">"deprecation"</span><span class="token punctuation">)</span>            CSeqHeader cSeqHeader <span class="token operator">=</span> headerFactory.createCSeqHeader<span class="token punctuation">(</span>cseq,Request.REGISTER<span class="token punctuation">)</span><span class="token punctuation">;</span>            Address fromAddress <span class="token operator">=</span> addressFactory.createAddress<span class="token punctuation">(</span><span class="token string">"sip:"</span>                    + username + <span class="token string">'@'</span> + server<span class="token punctuation">)</span><span class="token punctuation">;</span>            FromHeader fromHeader <span class="token operator">=</span> headerFactory.createFromHeader<span class="token punctuation">(</span>                    fromAddress, String.valueOf<span class="token punctuation">(</span>this.tag<span class="token punctuation">))</span><span class="token punctuation">;</span>            // The <span class="token string">"To"</span> header.            ToHeader toHeader <span class="token operator">=</span> headerFactory.createToHeader<span class="token punctuation">(</span>fromAddress , null<span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the contact address used <span class="token keyword">for</span> all SIP messages.            contactAddress <span class="token operator">=</span> addressFactory.createAddress<span class="token punctuation">(</span><span class="token string">"sip:"</span> + username + <span class="token string">"@"</span>+ localIP +<span class="token string">":"</span>+rport+ <span class="token string">";"</span>+ <span class="token string">"transport=UDP"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // Create the contact header used <span class="token keyword">for</span> all SIP messages.            contactHeader <span class="token operator">=</span> headerFactory.createContactHeader<span class="token punctuation">(</span>contactAddress<span class="token punctuation">)</span><span class="token punctuation">;</span>            URI requestURI <span class="token operator">=</span> addressFactory.createURI<span class="token punctuation">(</span><span class="token string">"sip:"</span> + server<span class="token punctuation">)</span><span class="token punctuation">;</span>            request <span class="token operator">=</span> messageFactory.createRequest<span class="token punctuation">(</span>requestURI, Request.REGISTER,callIdHeader, cSeqHeader, fromHeader, toHeader, viaHeaders, maxForwardsHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>            request.addHeader<span class="token punctuation">(</span>contactHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>//      System.out.println<span class="token punctuation">(</span>request.toString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>            if<span class="token punctuation">(</span>response <span class="token operator">!=</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>                System.out.println<span class="token punctuation">(</span>response.toString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>                <span class="token keyword">if</span> <span class="token punctuation">(</span>response.getStatusCode<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> 401<span class="token punctuation">)</span> <span class="token punctuation">{</span>                    AuthorizationHeader authHeader <span class="token operator">=</span> makeAuthHeader<span class="token punctuation">(</span>headerFactory, response, request, username, password<span class="token punctuation">)</span><span class="token punctuation">;</span>                    request.addHeader<span class="token punctuation">(</span>authHeader<span class="token punctuation">)</span><span class="token punctuation">;</span>                    inviteTid <span class="token operator">=</span> sipProvider.getNewClientTransaction<span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span>                    // send the request out.                    inviteTid.sendRequest<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token punctuation">}</span>            <span class="token punctuation">}</span>            <span class="token keyword">else</span> <span class="token punctuation">{</span>                inviteTid <span class="token operator">=</span> sipProvider.getNewClientTransaction<span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span>                // send the request out.                inviteTid.sendRequest<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>//      dialog <span class="token operator">=</span> inviteTid.getDialog<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            System.out.println<span class="token punctuation">(</span>request.toString<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>            // Send the request statelessly through the SIP provider.//          this.sipProvider.sendRequest<span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span>            // Display the message <span class="token keyword">in</span> the text area.//      logger.debug<span class="token punctuation">(</span><span class="token string">"Request sent:\n"</span> + request.toString<span class="token punctuation">(</span><span class="token punctuation">)</span> + <span class="token string">"\n\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span> catch <span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span> <span class="token punctuation">{</span>            // If an error occurred, display the error.            e.printStackTrace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>//      logger.debug<span class="token punctuation">(</span><span class="token string">"Request sent failed: "</span> + e.getMessage<span class="token punctuation">(</span><span class="token punctuation">)</span> + <span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span></code></pre><h2 id="四、鉴权"><a href="#四、鉴权" class="headerlink" title="四、鉴权"></a>四、鉴权</h2><pre class=" language-bash"><code class="language-bash">    private AuthorizationHeader makeAuthHeader<span class="token punctuation">(</span>HeaderFactory headerFactory2,  Response response, Request request, String username2,                                               String password2<span class="token punctuation">)</span> throws ParseException <span class="token punctuation">{</span>        // TODO Auto-generated method stub        // Authenticate header with challenge we need to reply to        WWWAuthenticateHeader ah_c <span class="token operator">=</span>  <span class="token punctuation">(</span>WWWAuthenticateHeader<span class="token punctuation">)</span>response.getHeader<span class="token punctuation">(</span>WWWAuthenticateHeader.NAME<span class="token punctuation">)</span><span class="token punctuation">;</span>        // Authorization header we will build with response to challenge        AuthorizationHeader ah_r <span class="token operator">=</span>    headerFactory.createAuthorizationHeader<span class="token punctuation">(</span>ah_c.getScheme<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>        // assemble data we need to create response string        URI request_uri <span class="token operator">=</span> request.getRequestURI<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        String request_method <span class="token operator">=</span> request.getMethod<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        String nonce  <span class="token operator">=</span> ah_c.getNonce<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        String algrm  <span class="token operator">=</span> ah_c.getAlgorithm<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        String realm  <span class="token operator">=</span> ah_c.getRealm<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        MessageDigest mdigest<span class="token punctuation">;</span>        try <span class="token punctuation">{</span>            mdigest <span class="token operator">=</span> MessageDigest.getInstance<span class="token punctuation">(</span>algrm<span class="token punctuation">)</span><span class="token punctuation">;</span>            // A1            String A1 <span class="token operator">=</span> username + <span class="token string">":"</span> + realm + <span class="token string">":"</span> + password<span class="token punctuation">;</span>            String HA1 <span class="token operator">=</span> toHexString<span class="token punctuation">(</span>mdigest.digest<span class="token punctuation">(</span>A1.getBytes<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // A2            String A2 <span class="token operator">=</span> request_method.toUpperCase<span class="token punctuation">(</span><span class="token punctuation">)</span> + <span class="token string">":"</span> + request_uri <span class="token punctuation">;</span>            String HA2 <span class="token operator">=</span> toHexString<span class="token punctuation">(</span>mdigest.digest<span class="token punctuation">(</span>A2.getBytes<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            // KD            String KD <span class="token operator">=</span> HA1 + <span class="token string">":"</span> + nonce + <span class="token string">":"</span> + HA2<span class="token punctuation">;</span>            String responsenew <span class="token operator">=</span> toHexString<span class="token punctuation">(</span>mdigest.digest<span class="token punctuation">(</span>KD.getBytes<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            ah_r.setUsername<span class="token punctuation">(</span>username<span class="token punctuation">)</span><span class="token punctuation">;</span>            ah_r.setRealm<span class="token punctuation">(</span>realm<span class="token punctuation">)</span><span class="token punctuation">;</span>            ah_r.setNonce<span class="token punctuation">(</span>nonce<span class="token punctuation">)</span><span class="token punctuation">;</span>            ah_r.setURI<span class="token punctuation">(</span>request_uri<span class="token punctuation">)</span><span class="token punctuation">;</span>            ah_r.setAlgorithm<span class="token punctuation">(</span>algrm<span class="token punctuation">)</span><span class="token punctuation">;</span>            ah_r.setResponse<span class="token punctuation">(</span>responsenew<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span> catch <span class="token punctuation">(</span>NoSuchAlgorithmException e<span class="token punctuation">)</span> <span class="token punctuation">{</span>            // TODO Auto-generated catch block            e.printStackTrace<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">return</span> ah_r<span class="token punctuation">;</span>    <span class="token punctuation">}</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sip码号注册鉴权失败</title>
+      <link href="/2020/03/12/sip-bian-yi-bao-cuo/"/>
+      <url>/2020/03/12/sip-bian-yi-bao-cuo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="鉴权失败"><a href="#鉴权失败" class="headerlink" title="鉴权失败"></a>鉴权失败</h2><pre class=" language-bash"><code class="language-bash">REGISTER sip:10.17.33.223 SIP/2.0Call-ID: d944cbb3e057911913ee89c7e8d63ba3@10.8.11.68CSeq: 21 REGISTERFrom: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span><span class="token punctuation">;</span>tag<span class="token operator">=</span>1394664510To: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span>Via: SIP/2.0/UDP 10.8.11.68:52216<span class="token punctuation">;</span>rport<span class="token punctuation">;</span>branch<span class="token operator">=</span>z9hG4bK-363034-444cdda481fef0cca553fe8b49612732Max-Forwards: 70Contact: <span class="token operator">&lt;</span>sip:1020@10.8.11.68:52216<span class="token punctuation">;</span>transport<span class="token operator">=</span>UDP<span class="token operator">></span>Content-Length: 0SIP/2.0 401 UnauthorizedVia: SIP/2.0/UDP 10.8.11.68:52216<span class="token punctuation">;</span>rport<span class="token operator">=</span>52216<span class="token punctuation">;</span>branch<span class="token operator">=</span>z9hG4bK-363034-444cdda481fef0cca553fe8b49612732From: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span><span class="token punctuation">;</span>tag<span class="token operator">=</span>1394664510To: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span><span class="token punctuation">;</span>tag<span class="token operator">=</span>9U0SFm16B9gycCall-ID: d944cbb3e057911913ee89c7e8d63ba3@10.8.11.68CSeq: 21 REGISTERUser-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bitAllow: INVITE,ACK,BYE,CANCEL,OPTIONS,MESSAGE,INFO,UPDATE,REGISTER,REFER,NOTIFY,PUBLISH,SUBSCRIBESupported: timer,path,replacesWWW-Authenticate: Digest realm<span class="token operator">=</span><span class="token string">"10.17.33.223"</span>,nonce<span class="token operator">=</span><span class="token string">"6a36fa28-8d61-4bd4-bfde-7cdaa14f3d36"</span>,algorithm<span class="token operator">=</span>MD5,qop<span class="token operator">=</span><span class="token string">"auth"</span>Content-Length: 0REGISTER sip:10.17.33.223 SIP/2.0Call-ID: 8376f2ed62ec7622353d3d5fae0bc2ff@10.8.11.68CSeq: 22 REGISTERFrom: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span><span class="token punctuation">;</span>tag<span class="token operator">=</span>1394664510To: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span>Via: SIP/2.0/UDP 10.8.11.68:52216<span class="token punctuation">;</span>rport<span class="token punctuation">;</span>branch<span class="token operator">=</span>z9hG4bK-363034-9db7b43da3b5d27dcf8a07c1c611b89dMax-Forwards: 70Contact: <span class="token operator">&lt;</span>sip:1020@10.8.11.68:52216<span class="token punctuation">;</span>transport<span class="token operator">=</span>UDP<span class="token operator">></span>Authorization: Digest username<span class="token operator">=</span><span class="token string">"1020"</span>,realm<span class="token operator">=</span><span class="token string">"10.17.33.223"</span>,nonce<span class="token operator">=</span><span class="token string">"6a36fa28-8d61-4bd4-bfde-7cdaa14f3d36"</span>,uri<span class="token operator">=</span><span class="token string">"sip:10.17.33.223"</span>,algorithm<span class="token operator">=</span>MD5,response<span class="token operator">=</span><span class="token string">"553a2b907a0769e3a1f57430f7163987"</span>Content-Length: 0SIP/2.0 403 ForbiddenVia: SIP/2.0/UDP 10.8.11.68:52216<span class="token punctuation">;</span>rport<span class="token operator">=</span>52216<span class="token punctuation">;</span>branch<span class="token operator">=</span>z9hG4bK-363034-9db7b43da3b5d27dcf8a07c1c611b89dFrom: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span><span class="token punctuation">;</span>tag<span class="token operator">=</span>1394664510To: <span class="token operator">&lt;</span>sip:username@10.17.33.223<span class="token operator">></span><span class="token punctuation">;</span>tag<span class="token operator">=</span>a5SjHFja9H7grCall-ID: 8376f2ed62ec7622353d3d5fae0bc2ff@10.8.11.68CSeq: 22 REGISTERUser-Agent: FreeSWITCH-mod_sofia/1.10.2-release~64bitAllow: INVITE,ACK,BYE,CANCEL,OPTIONS,MESSAGE,INFO,UPDATE,REGISTER,REFER,NOTIFY,PUBLISH,SUBSCRIBESupported: timer,path,replacesContent-Length: 0</code></pre><h2 id="定位问题"><a href="#定位问题" class="headerlink" title="定位问题"></a>定位问题</h2><p>抓包显示找不到该用户：<br>2020-03-12 07:00:51.918859 [WARNING] sofia_reg.c:2929 Can’t find user [<a href="mailto:1020@10.17.33.223">1020@10.17.33.223</a>] from 10.8.11.68</p><p><img src="/images/pasted-84.png" alt="显示找不到用户"></p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>freeswitch默认账户1000~1019，用1020测试并未配置该用户，改用1019成功注册！</p><p><img src="/images/pasted-85.png" alt="successful"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sip编译报错gov.nist.javax.sip.SipStackImpl could not be instantiated. Ensure the Path Name has been set.</title>
+      <link href="/2020/03/11/sip-bian-yi-bao-cuo-gov.nist.javax.sip.sipstackimpl-could-not-be-instantiated.ensure-the-path-name-has-been-set./"/>
+      <url>/2020/03/11/sip-bian-yi-bao-cuo-gov.nist.javax.sip.sipstackimpl-could-not-be-instantiated.ensure-the-path-name-has-been-set./</url>
+      
+        <content type="html"><![CDATA[<h2 id="报错："><a href="#报错：" class="headerlink" title="报错："></a>报错：</h2><pre class=" language-bash"><code class="language-bash">javax.sip.PeerUnavailableException: The Peer SIP Stack: gov.nist.javax.sip.SipStackImpl could not be instantiated. Ensure the Path Name has been set.    at javax.sip.SipFactory.createStack<span class="token punctuation">(</span>SipFactory.java:324<span class="token punctuation">)</span>    at javax.sip.SipFactory.createSipStack<span class="token punctuation">(</span>SipFactory.java:152<span class="token punctuation">)</span></code></pre><h2 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h2><p>添加log4j到pom.xml</p><pre class=" language-bash"><code class="language-bash">        <span class="token operator">&lt;</span><span class="token operator">!</span>-- https://mvnrepository.com/artifact/log4j/log4j --<span class="token operator">></span>        <span class="token operator">&lt;</span>dependency<span class="token operator">></span>            <span class="token operator">&lt;</span>groupId<span class="token operator">></span>log4j<span class="token operator">&lt;</span>/groupId<span class="token operator">></span>            <span class="token operator">&lt;</span>artifactId<span class="token operator">></span>log4j<span class="token operator">&lt;</span>/artifactId<span class="token operator">></span>            <span class="token operator">&lt;</span>version<span class="token operator">></span>1.2.17<span class="token operator">&lt;</span>/version<span class="token operator">></span>        <span class="token operator">&lt;</span>/dependency<span class="token operator">></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决freeswitch语音文件加载慢问题</title>
+      <link href="/2020/03/10/jie-jue-freeswitch-yu-yin-wen-jian-xia-zai-man-wen-ti/"/>
+      <url>/2020/03/10/jie-jue-freeswitch-yu-yin-wen-jian-xia-zai-man-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<p>make -j cd-sounds-install<br>make -j cd-moh-install<br>总是下载的很慢，有时间的话可以等待，我一般晚上下班回家前执行，第二天来就弄好了，如果急的话，也可以从windows下载，再通过XFTP等工具挪到服务器，chmod一下权限即可直接安装。</p><p><img src="/images/pasted-81.png" alt="存放目录"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> media </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> media </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>服务器被国外IP恶意扫描处理方法</title>
+      <link href="/2020/03/10/fu-wu-qi-bei-guo-wai-ip-e-yi-sao-miao-chu-li-fang-fa/"/>
+      <url>/2020/03/10/fu-wu-qi-bei-guo-wai-ip-e-yi-sao-miao-chu-li-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>服务器遇到被荷兰某ip疯狂扫描，最初采取添加黑名单方式，添加了几百个，貌似对方会变换IP继续攻击<br>可以启用fail2ban  尝试3次失败的ip ban掉的方法来屏蔽<br><img src="/images/pasted-80.png" alt="被荷兰某IP疯狂扫描"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> networkArchitecture </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux编译安装制定安装路径（freeswitch为例））</title>
       <link href="/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/"/>
       <url>/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/</url>
@@ -63,9 +192,9 @@
       
       <categories>
           
-          <category> media </category>
-          
           <category> signaling </category>
+          
+          <category> media </category>
           
           <category> networkArchitecture </category>
           
@@ -411,9 +540,9 @@
       
         <tags>
             
-            <tag> Cinque Terre </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Cinque Terre </tag>
             
             <tag> Europe </tag>
             
@@ -742,37 +871,6 @@
     
     
     <entry>
-      <title>曼谷</title>
-      <link href="/2020/03/06/man-gu/"/>
-      <url>/2020/03/06/man-gu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> Bankok </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>普吉岛</title>
       <link href="/2020/03/06/pu-ji-dao/"/>
       <url>/2020/03/06/pu-ji-dao/</url>
@@ -796,6 +894,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> pucket island </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>曼谷</title>
+      <link href="/2020/03/06/man-gu/"/>
+      <url>/2020/03/06/man-gu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> Bankok </tag>
             
         </tags>
       
@@ -866,6 +995,35 @@
     
     
     <entry>
+      <title>悉尼</title>
+      <link href="/2020/03/06/ao-da-li-ya/"/>
+      <url>/2020/03/06/ao-da-li-ya/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Oceania </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Oceania </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>日本</title>
       <link href="/2020/03/06/ri-ben/"/>
       <url>/2020/03/06/ri-ben/</url>
@@ -889,35 +1047,6 @@
             <tag> EastAsia </tag>
             
             <tag> Japan </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>悉尼</title>
-      <link href="/2020/03/06/ao-da-li-ya/"/>
-      <url>/2020/03/06/ao-da-li-ya/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
             
         </tags>
       

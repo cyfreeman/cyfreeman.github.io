@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-10T02:12:59.668Z</updated>
+  <updated>2020-03-12T09:16:25.149Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,146 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于java的sip客户端注册流程梳理</title>
+    <link href="https://cyfreeman.github.io/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/</id>
+    <published>2020-03-12T08:32:00.000Z</published>
+    <updated>2020-03-12T09:16:25.149Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;pre&quot;&gt;&lt;a href=&quot;#pre&quot; class=&quot;headerlink&quot; title=&quot;pre&quot;&gt;&lt;/a&gt;pre&lt;/h2&gt;&lt;p&gt;今天实现了基于sip信令的码号注册成功，梳理一下关键点和流程。&lt;/p&gt;
+&lt;h2 id=&quot;一、Value&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sip码号注册鉴权失败</title>
+    <link href="https://cyfreeman.github.io/2020/03/12/sip-bian-yi-bao-cuo/"/>
+    <id>https://cyfreeman.github.io/2020/03/12/sip-bian-yi-bao-cuo/</id>
+    <published>2020-03-12T02:58:00.000Z</published>
+    <updated>2020-03-12T08:04:33.242Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;鉴权失败&quot;&gt;&lt;a href=&quot;#鉴权失败&quot; class=&quot;headerlink&quot; title=&quot;鉴权失败&quot;&gt;&lt;/a&gt;鉴权失败&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;REGISTER
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sip编译报错gov.nist.javax.sip.SipStackImpl could not be instantiated. Ensure the Path Name has been set.</title>
+    <link href="https://cyfreeman.github.io/2020/03/11/sip-bian-yi-bao-cuo-gov.nist.javax.sip.sipstackimpl-could-not-be-instantiated.ensure-the-path-name-has-been-set./"/>
+    <id>https://cyfreeman.github.io/2020/03/11/sip-bian-yi-bao-cuo-gov.nist.javax.sip.sipstackimpl-could-not-be-instantiated.ensure-the-path-name-has-been-set./</id>
+    <published>2020-03-11T07:59:00.000Z</published>
+    <updated>2020-03-12T02:56:40.408Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;报错：&quot;&gt;&lt;a href=&quot;#报错：&quot; class=&quot;headerlink&quot; title=&quot;报错：&quot;&gt;&lt;/a&gt;报错：&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决freeswitch语音文件加载慢问题</title>
+    <link href="https://cyfreeman.github.io/2020/03/10/jie-jue-freeswitch-yu-yin-wen-jian-xia-zai-man-wen-ti/"/>
+    <id>https://cyfreeman.github.io/2020/03/10/jie-jue-freeswitch-yu-yin-wen-jian-xia-zai-man-wen-ti/</id>
+    <published>2020-03-10T07:29:00.000Z</published>
+    <updated>2020-03-10T07:34:37.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;make -j cd-sounds-install&lt;br&gt;make -j
+        
+      
+    
+    </summary>
+    
+    
+      <category term="media" scheme="https://cyfreeman.github.io/categories/media/"/>
+    
+    
+      <category term="media" scheme="https://cyfreeman.github.io/tags/media/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>服务器被国外IP恶意扫描处理方法</title>
+    <link href="https://cyfreeman.github.io/2020/03/10/fu-wu-qi-bei-guo-wai-ip-e-yi-sao-miao-chu-li-fang-fa/"/>
+    <id>https://cyfreeman.github.io/2020/03/10/fu-wu-qi-bei-guo-wai-ip-e-yi-sao-miao-chu-li-fang-fa/</id>
+    <published>2020-03-10T04:59:00.000Z</published>
+    <updated>2020-03-10T05:01:11.215Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;服务器遇到被荷兰某ip疯狂扫描，最初采取添加黑名单方式，添加了几百个，貌似对方会变换IP继续攻击&lt;br&gt;可以启用fail2ban  尝试3次失败的ip ban掉的方法来屏蔽&lt;br&gt;&lt;img src=&quot;/images/pasted-80.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="networkArchitecture" scheme="https://cyfreeman.github.io/categories/networkArchitecture/"/>
+    
+    
+      <category term="network" scheme="https://cyfreeman.github.io/tags/network/"/>
+    
+  </entry>
   
   <entry>
     <title>linux编译安装制定安装路径（freeswitch为例））</title>
@@ -92,9 +232,9 @@
     </summary>
     
     
-      <category term="media" scheme="https://cyfreeman.github.io/categories/media/"/>
-    
       <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="media" scheme="https://cyfreeman.github.io/categories/media/"/>
     
       <category term="networkArchitecture" scheme="https://cyfreeman.github.io/categories/networkArchitecture/"/>
     
@@ -402,9 +542,9 @@
       <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
     
     
-      <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
-    
       <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
+    
+      <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
     
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
     
@@ -432,133 +572,6 @@
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
     
       <category term="mykonos" scheme="https://cyfreeman.github.io/tags/mykonos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>荷兰</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/a-mu-si-te-dan/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/a-mu-si-te-dan/</id>
-    <published>2020-03-05T16:39:00.000Z</published>
-    <updated>2020-03-06T03:22:20.256Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Netherlands" scheme="https://cyfreeman.github.io/tags/Netherlands/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>圣托里尼</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/sheng-tuo-li-ni/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/sheng-tuo-li-ni/</id>
-    <published>2020-03-05T16:38:00.000Z</published>
-    <updated>2020-03-06T03:28:30.838Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Santorini" scheme="https://cyfreeman.github.io/tags/Santorini/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>雅典卫城</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/ya-dian-wei-cheng/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/ya-dian-wei-cheng/</id>
-    <published>2020-03-05T16:38:00.000Z</published>
-    <updated>2020-03-06T03:27:18.947Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Athens" scheme="https://cyfreeman.github.io/tags/Athens/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>阿尔卑斯山少女峰</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/rui-shi/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/rui-shi/</id>
-    <published>2020-03-05T16:37:00.000Z</published>
-    <updated>2020-03-06T03:38:32.748Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Switzerland" scheme="https://cyfreeman.github.io/tags/Switzerland/"/>
-    
-      <category term="Alps" scheme="https://cyfreeman.github.io/tags/Alps/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>新天鹅堡</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/de-guo/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/de-guo/</id>
-    <published>2020-03-05T16:36:00.000Z</published>
-    <updated>2020-03-06T03:44:21.885Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Neuschwanstein Castle" scheme="https://cyfreeman.github.io/tags/Neuschwanstein-Castle/"/>
     
   </entry>
   
