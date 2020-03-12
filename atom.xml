@@ -232,9 +232,9 @@
     </summary>
     
     
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
       <category term="media" scheme="https://cyfreeman.github.io/categories/media/"/>
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
     
       <category term="networkArchitecture" scheme="https://cyfreeman.github.io/categories/networkArchitecture/"/>
     

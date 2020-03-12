@@ -192,9 +192,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> media </category>
+          
+          <category> signaling </category>
           
           <category> networkArchitecture </category>
           
@@ -995,35 +995,6 @@
     
     
     <entry>
-      <title>悉尼</title>
-      <link href="/2020/03/06/ao-da-li-ya/"/>
-      <url>/2020/03/06/ao-da-li-ya/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>日本</title>
       <link href="/2020/03/06/ri-ben/"/>
       <url>/2020/03/06/ri-ben/</url>
@@ -1047,6 +1018,35 @@
             <tag> EastAsia </tag>
             
             <tag> Japan </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>悉尼</title>
+      <link href="/2020/03/06/ao-da-li-ya/"/>
+      <url>/2020/03/06/ao-da-li-ya/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Oceania </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Oceania </tag>
             
         </tags>
       
