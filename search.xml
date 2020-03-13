@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>freeswitch 修改 rtp 端口范围</title>
+      <link href="/2020/03/13/freeswitch-xiu-gai-rtp-duan-kou-fan-wei/"/>
+      <url>/2020/03/13/freeswitch-xiu-gai-rtp-duan-kou-fan-wei/</url>
+      
+        <content type="html"><![CDATA[<pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> freeswitch/conf/autoload_configsvim switch.conf.xml </code></pre><p><img src="/images/pasted-95.png" alt="修改"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于java的sip客户端注册流程梳理</title>
       <link href="/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/"/>
       <url>/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/</url>
@@ -540,9 +565,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Cinque Terre </tag>
+            
+            <tag> Traval </tag>
             
             <tag> Europe </tag>
             
@@ -871,37 +896,6 @@
     
     
     <entry>
-      <title>普吉岛</title>
-      <link href="/2020/03/06/pu-ji-dao/"/>
-      <url>/2020/03/06/pu-ji-dao/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> pucket island </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>曼谷</title>
       <link href="/2020/03/06/man-gu/"/>
       <url>/2020/03/06/man-gu/</url>
@@ -925,6 +919,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> Bankok </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>普吉岛</title>
+      <link href="/2020/03/06/pu-ji-dao/"/>
+      <url>/2020/03/06/pu-ji-dao/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> pucket island </tag>
             
         </tags>
       
@@ -1146,7 +1171,7 @@
       <link href="/2020/03/06/xi-an-zhi-xing/"/>
       <url>/2020/03/06/xi-an-zhi-xing/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>在华为工作期间，一次机会到西安研究所出差一个月，顺便游了一下西安城</p><h2 id="一、大雁塔"><a href="#一、大雁塔" class="headerlink" title="一、大雁塔"></a>一、大雁塔</h2><p>第一次到大雁塔是读研时候，来西安出差，找峰兄简单一游，故地重游已时隔两年</p><p><img src="/images/pasted-86.png" alt="大雁塔"></p><h2 id="二、华清池"><a href="#二、华清池" class="headerlink" title="二、华清池"></a>二、华清池</h2><p><img src="/images/pasted-87.png" alt="77事变现场"></p><p><img src="/images/pasted-88.png" alt="杨贵妃？"></p><h2 id="三、兵马俑"><a href="#三、兵马俑" class="headerlink" title="三、兵马俑"></a>三、兵马俑</h2><p><img src="/images/pasted-89.png" alt="图中所示均为路人"></p><p><img src="/images/pasted-90.png" alt="甲级残废兵马俑"></p><p><img src="/images/pasted-91.png" alt="小矮马车"></p><p><img src="/images/pasted-92.png" alt="人多还是兵马俑多"></p><p><img src="/images/pasted-93.png" alt="one more"></p><p><img src="/images/pasted-94.png" alt="导游都很幽默"></p>]]></content>
       
       
       <categories>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-12T09:16:25.149Z</updated>
+  <updated>2020-03-13T05:14:00.538Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>freeswitch 修改 rtp 端口范围</title>
+    <link href="https://cyfreeman.github.io/2020/03/13/freeswitch-xiu-gai-rtp-duan-kou-fan-wei/"/>
+    <id>https://cyfreeman.github.io/2020/03/13/freeswitch-xiu-gai-rtp-duan-kou-fan-wei/</id>
+    <published>2020-03-13T05:12:00.000Z</published>
+    <updated>2020-03-13T05:14:00.538Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; freeswitch/conf/autoload_configs
+vim
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
   
   <entry>
     <title>基于java的sip客户端注册流程梳理</title>
@@ -542,36 +570,11 @@
       <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
     
     
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
       <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
     
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>米克诺斯</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/mi-ke-nuo-si/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/mi-ke-nuo-si/</id>
-    <published>2020-03-05T16:39:00.000Z</published>
-    <updated>2020-03-06T03:24:41.625Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
       <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="mykonos" scheme="https://cyfreeman.github.io/tags/mykonos/"/>
     
   </entry>
   
