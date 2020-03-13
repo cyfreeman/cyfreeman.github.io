@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-13T05:14:00.538Z</updated>
+  <updated>2020-03-13T13:07:45.988Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,98 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sip-ClientTransaction示例</title>
+    <link href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/</id>
+    <published>2020-03-13T12:33:00.000Z</published>
+    <updated>2020-03-13T13:07:45.988Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、ClientTransaction&quot;&gt;&lt;a href=&quot;#一、ClientTransaction&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jain-sip-ri/javax.sdp/javax.sip*框架梳理</title>
+    <link href="https://cyfreeman.github.io/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/</id>
+    <published>2020-03-13T11:41:00.000Z</published>
+    <updated>2020-03-13T12:32:25.719Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;pre:&lt;br&gt;sip信令是VOIP、NGN、IMS以及5G网络都应用的随路信令，开发电信网元稳定性是首要因素，现梳理jain-sip，以便系统性掌握，用于指导后续开发与实践。&lt;/p&gt;
+&lt;p&gt;logs:&lt;br&gt;2020.03.13: 首次更新&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sip注册同一个信令交互被分解问题</title>
+    <link href="https://cyfreeman.github.io/2020/03/13/sip-zhu-ce-tong-yi-ge-xin-ling-jiao-hu-bei-fen-jie-wen-ti/"/>
+    <id>https://cyfreeman.github.io/2020/03/13/sip-zhu-ce-tong-yi-ge-xin-ling-jiao-hu-bei-fen-jie-wen-ti/</id>
+    <published>2020-03-13T09:44:00.000Z</published>
+    <updated>2020-03-13T11:30:39.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1、现象&quot;&gt;&lt;a href=&quot;#1、现象&quot; class=&quot;headerlink&quot; title=&quot;1、现象&quot;&gt;&lt;/a&gt;1、现象&lt;/h2&gt;&lt;p&gt;正常的信令交互如下图所示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pasted-106.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
   
   <entry>
     <title>freeswitch 修改 rtp 端口范围</title>
@@ -437,9 +529,9 @@ vim
       <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
     
     
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
       <category term="Munich" scheme="https://cyfreeman.github.io/tags/Munich/"/>
     
@@ -470,9 +562,9 @@ vim
       <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
     
     
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
       <category term="Palais de Versailles" scheme="https://cyfreeman.github.io/tags/Palais-de-Versailles/"/>
     
@@ -495,86 +587,11 @@ vim
       <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
     
     
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
       <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
       <category term="Jardin Monet" scheme="https://cyfreeman.github.io/tags/Jardin-Monet/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>苏黎世</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/su-li-shi/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/su-li-shi/</id>
-    <published>2020-03-06T03:37:00.000Z</published>
-    <updated>2020-03-06T04:54:40.810Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Zurich" scheme="https://cyfreeman.github.io/tags/Zurich/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>威尼斯水城</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/wei-ni-si-shui-cheng/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/wei-ni-si-shui-cheng/</id>
-    <published>2020-03-06T03:34:00.000Z</published>
-    <updated>2020-03-06T03:34:47.849Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Venice water city" scheme="https://cyfreeman.github.io/tags/Venice-water-city/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>五渔村</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/wu-yu-cun/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/wu-yu-cun/</id>
-    <published>2020-03-06T03:32:00.000Z</published>
-    <updated>2020-03-06T03:37:05.979Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Cinque Terre" scheme="https://cyfreeman.github.io/tags/Cinque-Terre/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
     
   </entry>
   
