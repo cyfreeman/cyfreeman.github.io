@@ -13,18 +13,18 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -37,23 +37,23 @@
       <link href="/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/"/>
       <url>/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/</url>
       
-        <content type="html"><![CDATA[<p>pre:<br>sip信令是VOIP、NGN、IMS以及5G网络都应用的随路信令，开发电信网元稳定性是首要因素，现梳理jain-sip，以便系统性掌握，用于指导后续开发与实践。</p><p>logs:<br>2020.03.13: 首次更新</p><h2 id="一、jain-sip-ri组成"><a href="#一、jain-sip-ri组成" class="headerlink" title="一、jain-sip-ri组成"></a>一、jain-sip-ri组成</h2><p>1、为android开发提供支撑<br>2、为测试提供支撑<br>3、为java开发提供支撑（主要分析）</p><h2 id="二、框架梳理（更新ing）"><a href="#二、框架梳理（更新ing）" class="headerlink" title="二、框架梳理（更新ing）"></a>二、框架梳理（更新ing）</h2><h3 id="2-1-javax-sdp"><a href="#2-1-javax-sdp" class="headerlink" title="2.1 javax.sdp"></a>2.1 javax.sdp</h3><p>简介：目前判定用于信令交互后的媒体RTP包对接，优先级排后<br><a href="https://www.example.com/" target="_blank" rel="noopener" title="示例链接">示例链接</a></p><h3 id="2-2-javax-sip"><a href="#2-2-javax-sip" class="headerlink" title="2.2 javax.sip"></a>2.2 javax.sip</h3><p>简介：提供开发所用主叫的API接口，着重学习掌握这里</p><p>Interface ：</p><p>1、ClientTransaction ：用于向server发送transaction请求。<a href="https://www.example.com/" target="_blank" rel="noopener" title="示例链接">示例链接</a></p><p>2、Dialog：端到端电话的sip流程。</p><p>3、ListeningPoint：监听IP端口，一般调取response信令</p><p>4、ServerTransaction：server处理Client的sip信令及响应</p><p>5、SipListener：为应用与sip协议栈提供衔接</p><p>6、SipProvider：基于sip协议栈传送消息实体</p><p>7、SipStack：sip信令协议栈</p><p>8、Transaction：事务——sip信令的基本组成</p><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-3-javax-sip-address"><a href="#2-3-javax-sip-address" class="headerlink" title="2.3 javax.sip.address"></a>2.3 javax.sip.address</h3><p>简介：用于sip信令路由寻址</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-4-javax-sip-header"><a href="#2-4-javax-sip-header" class="headerlink" title="2.4 javax.sip.header"></a>2.4 javax.sip.header</h3><p>简介：封装信令头字段</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-5-javax-sip-message"><a href="#2-5-javax-sip-message" class="headerlink" title="2.5 javax.sip.message"></a>2.5 javax.sip.message</h3><p>简介：封装sip消息体</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre>]]></content>
+        <content type="html"><![CDATA[<p>pre:<br>sip信令是VOIP、NGN、IMS以及5G网络都应用的随路信令，开发电信网元稳定性是首要因素，现梳理jain-sip，以便系统性掌握，用于指导后续开发与实践。</p><p>logs:<br>2020.03.13: 首次更新</p><h2 id="一、jain-sip-ri组成"><a href="#一、jain-sip-ri组成" class="headerlink" title="一、jain-sip-ri组成"></a>一、jain-sip-ri组成</h2><p>1、为android开发提供支撑<br>2、为测试提供支撑<br>3、为java开发提供支撑（主要分析）</p><h2 id="二、框架梳理（更新ing）"><a href="#二、框架梳理（更新ing）" class="headerlink" title="二、框架梳理（更新ing）"></a>二、框架梳理（更新ing）</h2><h3 id="2-1-javax-sdp"><a href="#2-1-javax-sdp" class="headerlink" title="2.1 javax.sdp"></a>2.1 javax.sdp</h3><p>简介：目前判定用于信令交互后的媒体RTP包对接，优先级排后<br><a href="https://www.example.com/" target="_blank" rel="noopener" title="示例链接">示例链接</a></p><h3 id="2-2-javax-sip"><a href="#2-2-javax-sip" class="headerlink" title="2.2 javax.sip"></a>2.2 javax.sip</h3><p>简介：提供开发所用主叫的API接口，着重学习掌握这里</p><p>Interface ：</p><p>1、ClientTransaction ：用于向server发送transaction请求。<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>2、Dialog：端到端电话的sip流程。</p><p>3、ListeningPoint：监听IP端口，一般调取response信令</p><p>4、ServerTransaction：server处理Client的sip信令及响应</p><p>5、SipListener：为应用与sip协议栈提供衔接</p><p>6、SipProvider：基于sip协议栈传送消息实体</p><p>7、SipStack：sip信令协议栈</p><p>8、Transaction：事务——sip信令的基本组成</p><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-3-javax-sip-address"><a href="#2-3-javax-sip-address" class="headerlink" title="2.3 javax.sip.address"></a>2.3 javax.sip.address</h3><p>简介：用于sip信令路由寻址</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-4-javax-sip-header"><a href="#2-4-javax-sip-header" class="headerlink" title="2.4 javax.sip.header"></a>2.4 javax.sip.header</h3><p>简介：封装信令头字段</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-5-javax-sip-message"><a href="#2-5-javax-sip-message" class="headerlink" title="2.5 javax.sip.message"></a>2.5 javax.sip.message</h3><p>简介：封装sip消息体</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre>]]></content>
       
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -121,9 +121,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -173,9 +173,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -493,9 +493,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Munich </tag>
             
@@ -524,9 +524,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Palais de Versailles </tag>
             
@@ -555,9 +555,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Jardin Monet </tag>
             
@@ -586,9 +586,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Zurich </tag>
             
@@ -617,9 +617,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Venice water city </tag>
             
@@ -648,11 +648,11 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
             
             <tag> Cinque Terre </tag>
+            
+            <tag> Europe </tag>
             
         </tags>
       
@@ -679,9 +679,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> mykonos </tag>
             
@@ -710,9 +710,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Netherlands </tag>
             
@@ -741,9 +741,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Santorini </tag>
             
@@ -772,9 +772,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Athens </tag>
             
@@ -803,9 +803,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Switzerland </tag>
             
@@ -836,9 +836,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Italy </tag>
             
@@ -869,9 +869,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Neuschwanstein Castle </tag>
             
@@ -900,9 +900,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Paris </tag>
             
