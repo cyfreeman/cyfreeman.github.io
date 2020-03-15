@@ -4,27 +4,56 @@
   
     
     <entry>
-      <title>sip-ClientTransaction示例</title>
-      <link href="/2020/03/13/sip-clienttransaction-shi-li/"/>
-      <url>/2020/03/13/sip-clienttransaction-shi-li/</url>
+      <title>Sip-Dialog示例</title>
+      <link href="/2020/03/15/sip-dialog-shi-li/"/>
+      <url>/2020/03/15/sip-dialog-shi-li/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、ClientTransaction"><a href="#一、ClientTransaction" class="headerlink" title="一、ClientTransaction"></a>一、ClientTransaction</h2><p>1、客户端向sip服务器发请求<br>2、客户端匹配sip服务器的响应及激活后续信令交互<br>3、由SipProvider.getNewClientTransaction(Request)产生<br>4、根据响应选择下一步操作（开发）<br>5、超时响应<br>6、客户端的一个任务需要一系列ClientTransaction<br>7、事务ID必须唯一，由from/to/callid/cia/cseq等经过算法计算得来<br>8、更多详细定义参考RFC-3261</p><h2 id="二、信令交互举例"><a href="#二、信令交互举例" class="headerlink" title="二、信令交互举例"></a>二、信令交互举例</h2><p>Invite Transaction:<br>Calling –&gt; Proceeding –&gt; Completed –&gt; Terminated</p><p>Non-Invite Transaction:<br>Trying –&gt; Proceeding –&gt; Completed –&gt; Terminated</p><h2 id="三、方法"><a href="#三、方法" class="headerlink" title="三、方法"></a>三、方法</h2><p>1、createAck(): 被绊了</p><p>2、createCancel()：从与该客户端事务关联的请求创建cancel信令</p><p>3、sendRequest()：发送事务内的request</p><p>4、继承方法<br>getApplicationData, getBranchId, getDialog, getRequest, getRetransmitTimer, getState, setApplicationData, setRetransmitTimer, terminate</p><h2 id="四、实例"><a href="#四、实例" class="headerlink" title="四、实例"></a>四、实例</h2><p><img src="/images/pasted-110.png" alt="获取branchID和发送request"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、dialog"><a href="#一、dialog" class="headerlink" title="一、dialog"></a>一、dialog</h2><p>1、端到端的dialog连接<br>2、有状态机，如下：<br>Invite Dialog States:<br>Null –&gt; Early –&gt; Confirmed –&gt; Terminated</p><p>Other Dialog-creating Requests Dialog States (ie. SUBSCRIBE):<br>Null –&gt; Confirmed –&gt; Terminated.</p><h2 id="二、方法"><a href="#二、方法" class="headerlink" title="二、方法"></a>二、方法</h2><p>1、    createAck(long cseq)<br>2、  createPrack(Response relResponse)<br>3、    createReliableProvisionalResponse(int statusCode)<br>4、    createRequest(String method)<br>5、    delete()<br>6、    getApplicationData()<br>7、    getCallId()<br>8、    getDialogId()<br>9、    getLocalParty()<br>10、    getLocalSeqNumber()<br>11、    getLocalTag()<br>12、    getRemoteParty()<br>13、    getRemoteSeqNumber()<br>14、    getRemoteTag()<br>15、    getRemoteTarget()<br>16、    getRouteSet()<br>17、    getState()<br>18、    incrementLocalSequenceNumber()<br>19、    isSecure()<br>20、    isServer()<br>21、    sendAck(Request ackRequest)<br>22、    sendReliableProvisionalResponse(Response relResponse)<br>23、    sendRequest(ClientTransaction clientTransaction)<br>24、    setApplicationData(Object applicationData)<br>25、    terminateOnBye(boolean terminateFlag)</p><h2 id="三、实例"><a href="#三、实例" class="headerlink" title="三、实例"></a>三、实例</h2><p>待补充</p>]]></content>
       
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> signaling </tag>
+            
             <tag> backend </tag>
             
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sip-ClientTransaction示例</title>
+      <link href="/2020/03/13/sip-clienttransaction-shi-li/"/>
+      <url>/2020/03/13/sip-clienttransaction-shi-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、ClientTransaction"><a href="#一、ClientTransaction" class="headerlink" title="一、ClientTransaction"></a>一、ClientTransaction</h2><p>1、客户端向sip服务器发请求<br>2、客户端匹配sip服务器的响应及激活后续信令交互<br>3、由SipProvider.getNewClientTransaction(Request)产生<br>4、根据响应选择下一步操作（开发）<br>5、超时响应<br>6、客户端的一个任务需要一系列ClientTransaction<br>7、事务ID必须唯一，由from/to/callid/cia/cseq等经过算法计算得来<br>8、更多详细定义参考RFC-3261</p><h2 id="二、信令交互举例"><a href="#二、信令交互举例" class="headerlink" title="二、信令交互举例"></a>二、信令交互举例</h2><p>Invite Transaction:<br>Calling –&gt; Proceeding –&gt; Completed –&gt; Terminated</p><p>Non-Invite Transaction:<br>Trying –&gt; Proceeding –&gt; Completed –&gt; Terminated</p><h2 id="三、方法"><a href="#三、方法" class="headerlink" title="三、方法"></a>三、方法</h2><p>1、createAck(): 被绊了</p><p>2、createCancel()：从与该客户端事务关联的请求创建cancel信令，调用后发送到server</p><p>3、sendRequest()：发送事务内的request，调用后发送到server</p><p>4、继承方法<br>getApplicationData, getBranchId, getDialog, getRequest, getRetransmitTimer, getState, setApplicationData, setRetransmitTimer, terminate</p><h2 id="四、实例"><a href="#四、实例" class="headerlink" title="四、实例"></a>四、实例</h2><p><img src="/images/pasted-110.png" alt="获取branchID和发送request"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -37,23 +66,23 @@
       <link href="/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/"/>
       <url>/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/</url>
       
-        <content type="html"><![CDATA[<p>pre:<br>sip信令是VOIP、NGN、IMS以及5G网络都应用的随路信令，开发电信网元稳定性是首要因素，现梳理jain-sip，以便系统性掌握，用于指导后续开发与实践。</p><p>logs:<br>2020.03.13: 首次更新</p><h2 id="一、jain-sip-ri组成"><a href="#一、jain-sip-ri组成" class="headerlink" title="一、jain-sip-ri组成"></a>一、jain-sip-ri组成</h2><p>1、为android开发提供支撑<br>2、为测试提供支撑<br>3、为java开发提供支撑（主要分析）</p><h2 id="二、框架梳理（更新ing）"><a href="#二、框架梳理（更新ing）" class="headerlink" title="二、框架梳理（更新ing）"></a>二、框架梳理（更新ing）</h2><h3 id="2-1-javax-sdp"><a href="#2-1-javax-sdp" class="headerlink" title="2.1 javax.sdp"></a>2.1 javax.sdp</h3><p>简介：目前判定用于信令交互后的媒体RTP包对接，优先级排后<br><a href="https://www.example.com/" target="_blank" rel="noopener" title="示例链接">示例链接</a></p><h3 id="2-2-javax-sip"><a href="#2-2-javax-sip" class="headerlink" title="2.2 javax.sip"></a>2.2 javax.sip</h3><p>简介：提供开发所用主叫的API接口，着重学习掌握这里</p><p>Interface ：</p><p>1、ClientTransaction ：用于向server发送transaction请求。<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>2、Dialog：端到端电话的sip流程。</p><p>3、ListeningPoint：监听IP端口，一般调取response信令</p><p>4、ServerTransaction：server处理Client的sip信令及响应</p><p>5、SipListener：为应用与sip协议栈提供衔接</p><p>6、SipProvider：基于sip协议栈传送消息实体</p><p>7、SipStack：sip信令协议栈</p><p>8、Transaction：事务——sip信令的基本组成</p><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-3-javax-sip-address"><a href="#2-3-javax-sip-address" class="headerlink" title="2.3 javax.sip.address"></a>2.3 javax.sip.address</h3><p>简介：用于sip信令路由寻址</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-4-javax-sip-header"><a href="#2-4-javax-sip-header" class="headerlink" title="2.4 javax.sip.header"></a>2.4 javax.sip.header</h3><p>简介：封装信令头字段</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-5-javax-sip-message"><a href="#2-5-javax-sip-message" class="headerlink" title="2.5 javax.sip.message"></a>2.5 javax.sip.message</h3><p>简介：封装sip消息体</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre>]]></content>
+        <content type="html"><![CDATA[<p>pre:<br>sip信令是VOIP、NGN、IMS以及5G网络都应用的随路信令，开发电信网元稳定性是首要因素，现梳理jain-sip，以便系统性掌握，用于指导后续开发与实践。</p><p>logs:<br>2020.03.13: 首次更新</p><h2 id="一、jain-sip-ri组成"><a href="#一、jain-sip-ri组成" class="headerlink" title="一、jain-sip-ri组成"></a>一、jain-sip-ri组成</h2><p>1、为android开发提供支撑<br>2、为测试提供支撑<br>3、为java开发提供支撑（主要分析）</p><h2 id="二、框架梳理（更新ing）"><a href="#二、框架梳理（更新ing）" class="headerlink" title="二、框架梳理（更新ing）"></a>二、框架梳理（更新ing）</h2><h3 id="2-1-javax-sdp"><a href="#2-1-javax-sdp" class="headerlink" title="2.1 javax.sdp"></a>2.1 javax.sdp</h3><p>简介：目前判定用于信令交互后的媒体RTP包对接，优先级排后</p><h3 id="2-2-javax-sip"><a href="#2-2-javax-sip" class="headerlink" title="2.2 javax.sip"></a>2.2 javax.sip</h3><p>简介：提供开发所用主叫的API接口，着重学习掌握这里</p><p>Interface ：</p><p>1、ClientTransaction ：用于向server发送transaction请求。<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>2、Dialog：端到端电话的sip流程。<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>3、ListeningPoint：监听IP端口，一般调取response信令</p><p>4、ServerTransaction：server处理Client的sip信令及响应</p><p>5、SipListener：为应用与sip协议栈提供衔接</p><p>6、SipProvider：基于sip协议栈传送消息实体</p><p>7、SipStack：sip信令协议栈</p><p>8、Transaction：事务——sip信令的基本组成</p><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-3-javax-sip-address"><a href="#2-3-javax-sip-address" class="headerlink" title="2.3 javax.sip.address"></a>2.3 javax.sip.address</h3><p>简介：用于sip信令路由寻址</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-4-javax-sip-header"><a href="#2-4-javax-sip-header" class="headerlink" title="2.4 javax.sip.header"></a>2.4 javax.sip.header</h3><p>简介：封装信令头字段</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-5-javax-sip-message"><a href="#2-5-javax-sip-message" class="headerlink" title="2.5 javax.sip.message"></a>2.5 javax.sip.message</h3><p>简介：封装sip消息体</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre>]]></content>
       
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> backend </tag>
-            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -121,9 +150,9 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
@@ -173,9 +202,9 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
@@ -648,9 +677,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Cinque Terre </tag>
+            
+            <tag> Traval </tag>
             
             <tag> Europe </tag>
             
@@ -818,6 +847,37 @@
     
     
     <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -843,37 +903,6 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       

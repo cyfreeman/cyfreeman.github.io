@@ -776,12 +776,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/backend/">
-                                <span class="chip bg-color">backend</span>
-                            </a>
-                        
                             <a href="/tags/signaling/">
                                 <span class="chip bg-color">signaling</span>
+                            </a>
+                        
+                            <a href="/tags/backend/">
+                                <span class="chip bg-color">backend</span>
                             </a>
                         
                     </div>
@@ -792,12 +792,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/backend/" class="post-category">
-                                backend
-                            </a>
-                        
                             <a href="/categories/signaling/" class="post-category">
                                 signaling
+                            </a>
+                        
+                            <a href="/categories/backend/" class="post-category">
+                                backend
                             </a>
                         
                     </div>
@@ -816,14 +816,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-13
+                    2020-03-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    186
+                    200
                 </div>
                 
 
@@ -850,8 +850,8 @@
 <h2 id="二、信令交互举例"><a href="#二、信令交互举例" class="headerlink" title="二、信令交互举例"></a>二、信令交互举例</h2><p>Invite Transaction:<br>Calling –&gt; Proceeding –&gt; Completed –&gt; Terminated</p>
 <p>Non-Invite Transaction:<br>Trying –&gt; Proceeding –&gt; Completed –&gt; Terminated</p>
 <h2 id="三、方法"><a href="#三、方法" class="headerlink" title="三、方法"></a>三、方法</h2><p>1、createAck(): 被绊了</p>
-<p>2、createCancel()：从与该客户端事务关联的请求创建cancel信令</p>
-<p>3、sendRequest()：发送事务内的request</p>
+<p>2、createCancel()：从与该客户端事务关联的请求创建cancel信令，调用后发送到server</p>
+<p>3、sendRequest()：发送事务内的request，调用后发送到server</p>
 <p>4、继承方法<br>getApplicationData, getBranchId, getDialog, getRequest, getRetransmitTimer, getState, setApplicationData, setRetransmitTimer, terminate</p>
 <h2 id="四、实例"><a href="#四、实例" class="headerlink" title="四、实例"></a>四、实例</h2><p><img src="/images/pasted-110.png" alt="获取branchID和发送request"></p>
 
@@ -917,12 +917,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/backend/">
-                                    <span class="chip bg-color">backend</span>
-                                </a>
-                            
                                 <a href="/tags/signaling/">
                                     <span class="chip bg-color">signaling</span>
+                                </a>
+                            
+                                <a href="/tags/backend/">
+                                    <span class="chip bg-color">backend</span>
                                 </a>
                             
                         </div>
@@ -1088,56 +1088,55 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/03/13/sip-clienttransaction-shi-li/">
+                <a href="/2020/03/15/sip-dialog-shi-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="sip-ClientTransaction示例">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Sip-Dialog示例">
                         
-                        <span class="card-title">sip-ClientTransaction示例</span>
+                        <span class="card-title">Sip-Dialog示例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、ClientTransaction1、客户端向sip服务器发请求2、客户端匹配sip服务器的响应及激活后续信令交互3、由SipProvider.getNewClientTransaction(Request)产生4、根据响应选择下一步操
+                            一、dialog1、端到端的dialog连接2、有状态机，如下：Invite Dialog States:Null –&gt; Early –&gt; Confirmed –&gt; Terminated
+Other Dialog-crea
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-13
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/backend/" class="post-category">
-                                    backend
-                                </a>
-                            
                             <a href="/categories/signaling/" class="post-category">
                                     signaling
+                                </a>
+                            
+                            <a href="/categories/backend/" class="post-category">
+                                    backend
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/backend/">
-                        <span class="chip bg-color">backend</span>
-                    </a>
-                    
                     <a href="/tags/signaling/">
                         <span class="chip bg-color">signaling</span>
+                    </a>
+                    
+                    <a href="/tags/backend/">
+                        <span class="chip bg-color">backend</span>
                     </a>
                     
                 </div>
@@ -1176,12 +1175,12 @@ logs:2020.03.13: 首次更新
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/backend/" class="post-category">
-                                    backend
-                                </a>
-                            
                             <a href="/categories/signaling/" class="post-category">
                                     signaling
+                                </a>
+                            
+                            <a href="/categories/backend/" class="post-category">
+                                    backend
                                 </a>
                             
                             
@@ -1191,12 +1190,12 @@ logs:2020.03.13: 首次更新
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/backend/">
-                        <span class="chip bg-color">backend</span>
-                    </a>
-                    
                     <a href="/tags/signaling/">
                         <span class="chip bg-color">signaling</span>
+                    </a>
+                    
+                    <a href="/tags/backend/">
+                        <span class="chip bg-color">backend</span>
                     </a>
                     
                 </div>
@@ -1350,7 +1349,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.3k</span>&nbsp;字
+                class="white-color">6.5k</span>&nbsp;字
             
             
             
