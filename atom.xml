@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-15T14:59:52.586Z</updated>
+  <updated>2020-03-16T04:55:38.793Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SIP—ListeningPoint梳理</title>
+    <link href="https://cyfreeman.github.io/2020/03/16/sip-listeningpoint-shu-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/16/sip-listeningpoint-shu-li/</id>
+    <published>2020-03-16T04:43:00.000Z</published>
+    <updated>2020-03-16T04:55:38.793Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、监听网络端口&lt;br&gt;2、默认端口5060、5061&lt;br&gt;3、支持SCTP、TCP、TLS、UDP&lt;br&gt;4、    getIPAddress()：获取侦听点IP地址&lt;br&gt;5、    getPort()：获取侦听端口&lt;br&gt;6、   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SIP信令流程梳理</title>
+    <link href="https://cyfreeman.github.io/2020/03/16/sip-xin-ling-liu-cheng-shu-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/16/sip-xin-ling-liu-cheng-shu-li/</id>
+    <published>2020-03-16T03:33:00.000Z</published>
+    <updated>2020-03-16T03:47:16.220Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、注册&quot;&gt;&lt;a href=&quot;#一、注册&quot; class=&quot;headerlink&quot; title=&quot;一、注册&quot;&gt;&lt;/a&gt;一、注册&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-113.png&quot; alt=&quot;sip注册流程&quot;&gt;&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
   
   <entry>
     <title>Sip-Dialog示例</title>
@@ -532,72 +589,6 @@ vim
       <category term="Great Barrier Reef" scheme="https://cyfreeman.github.io/tags/Great-Barrier-Reef/"/>
     
       <category term="hamilton island" scheme="https://cyfreeman.github.io/tags/hamilton-island/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>慕尼黑</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/mu-ni-hei-kao-zhu-zhou/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/mu-ni-hei-kao-zhu-zhou/</id>
-    <published>2020-03-06T03:44:00.000Z</published>
-    <updated>2020-03-08T12:51:39.345Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、慕尼黑烤猪肘&quot;&gt;&lt;a href=&quot;#一、慕尼黑烤猪肘&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Munich" scheme="https://cyfreeman.github.io/tags/Munich/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>凡尔赛宫</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/fan-er-sai-gong/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/fan-er-sai-gong/</id>
-    <published>2020-03-06T03:42:00.000Z</published>
-    <updated>2020-03-09T03:48:50.950Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;凡尔赛宫（法語：Château de
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/categories/Traval/Europe/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Europe" scheme="https://cyfreeman.github.io/tags/Europe/"/>
-    
-      <category term="Palais de Versailles" scheme="https://cyfreeman.github.io/tags/Palais-de-Versailles/"/>
     
   </entry>
   
