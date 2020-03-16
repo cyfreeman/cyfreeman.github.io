@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>SIP—SipProvider梳理</title>
+      <link href="/2020/03/16/sip-sipprovider-shu-li/"/>
+      <url>/2020/03/16/sip-sipprovider-shu-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、SipProvider"><a href="#一、SipProvider" class="headerlink" title="一、SipProvider"></a>一、SipProvider</h2><p>1、通用ClientTransaction.sendRequest()</p><p>2、stateful：ServerTransaction.sendResponse(Response)</p><p>3、dialog stateful：Dialog.sendRequest(ClientTransaction)<br>Dialog.sendAck(Request)</p><p>4、stateless:sendResponse(Response)<br>sendRequest(Request)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SIP—SipListener梳理</title>
+      <link href="/2020/03/16/sip-siplistener-shu-li/"/>
+      <url>/2020/03/16/sip-siplistener-shu-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、SipListener"><a href="#一、SipListener" class="headerlink" title="一、SipListener"></a>一、SipListener</h2><p>1、建立应用与sip协议栈之间的沟通桥梁</p><p>2、捕捉sip信令交互事件，用于后续处理</p><p>3、划分：request/response/timeout/ioexception/transaction/dialogterminate</p><p>4、一个sip协议栈有一个SipListener,且只允许一个SipListener注册，一个SipListener允许注册到多个sip协议栈</p><p>5、request消息（transaction）有状态和无状态的发送途径：SipProvider、ClientTransaction.sendRequest()</p><p>6、 response消息可以通过ServerTransaction.sendResponse(Response) 回复</p><p>7、request消息（dialog）回复： Dialog.sendRequest(ClientTransaction)</p><h2 id="二、方法"><a href="#二、方法" class="headerlink" title="二、方法"></a>二、方法</h2><p>1、void processTransactionTerminated(TransactionTerminatedEvent transactionTerminatedEvent)</p><p>2、void processIOException(IOExceptionEvent exceptionEvent)</p><p>3、void processRequest(RequestEvent requestEvent)</p><p>3.1 消息处理：</p><p>1）在servertransaction为null时，如果应用程序决定有状态地响应请求，则必须从SipProvider.getNewServerTransaction（Request）方法请求新的服务器事务，并使用此服务器事务根据请求的内容发送响应。</p><p>2）在servertransaction不为null时，应用基于request消息操作</p><p>3.2 UAS行为：</p><p>1）回复2XX是接受，同时会建立一个会话session</p><p>2）回复3xx/4XX/5xx/6xx表示不接受，含义不同；</p><p>3）回复1xx代表建议client继续呼叫（临时回复）</p><p>3.3 有状态代理：</p><p>3.3.1 处理每次收到的request必须重新建立一个transaction</p><p>3.3.2 代理前转步骤：<br>1）拷贝一份request<br>2）更新request URI<br>3) 更新Max-Forwards header<br>4）选择性添加记录路由头<br>5）选择性添加包头<br>6）Postprocess 路由信息<br>7）提取下一跳地址、端口和协议<br>8）加穿越头<br>9）必要时添加内容长度标题<br>10） ClientTransaction.sendRequest()基于这个前转一个新request<br>11）基于 processResponse(ResponseEvent)处理所有收到的响应<br>12）不发100（Trying）响应给非invite请求</p><p>3.3.3 可以fork多个request到不通的远端，必须要用stateful协议</p><p>3.4 无状态代理（requestEvent.getServerTransaction() == null）</p><p>3.4.1 无状态代理对transaction没有任何感知</p><p>3.4.2 处理请求步骤：<br>1）验证请求<br>2）预处理路由信息<br>3）确定请求的单个目标<br>4）基于 SipProvider.sendRequest(Request)转request到目标地址<br>5）不对cancel请求进行处理</p><p>4、void processResponse(ResponseEvent responseEvent)</p><p>4.1 响应处理</p><p>4.1.1 response可能与存在的request应用不相干</p><p>4.1.2 如果responseEvent.getClientTransaction() == null,则不相干，并被认为是偏离消息，用SipProvider.sendResponse(Response)处理；<br>不等于Null,则基于response消息进行处理</p><p>4.1.3 UAC处理行为：</p><p>1）要回ACK给所有最终收到的响应</p><p>2）response在300~699之间，ACK为transaction层发起的结束</p><p>3）response是2XX，ACK为UAC应用发起的结束，同时建立UAC和UAS之间的链接</p><p>4.2 stateful代理处理步骤：<br>1）找响应上下文<br>2）移除掉via头字段<br>3）添加response内容到respongse消息中<br>4）检查是否可以直接前转发送<br>5）选择最佳response（没看懂）</p><p>5、void processTimeout(TimeoutEvent timeoutEvent)<br>超时</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SIP—ListeningPoint梳理</title>
       <link href="/2020/03/16/sip-listeningpoint-shu-li/"/>
       <url>/2020/03/16/sip-listeningpoint-shu-li/</url>
@@ -729,9 +779,9 @@
       
         <tags>
             
-            <tag> Cinque Terre </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Cinque Terre </tag>
             
             <tag> Europe </tag>
             
@@ -1060,37 +1110,6 @@
     
     
     <entry>
-      <title>曼谷</title>
-      <link href="/2020/03/06/man-gu/"/>
-      <url>/2020/03/06/man-gu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> Bankok </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>普吉岛</title>
       <link href="/2020/03/06/pu-ji-dao/"/>
       <url>/2020/03/06/pu-ji-dao/</url>
@@ -1114,6 +1133,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> pucket island </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>曼谷</title>
+      <link href="/2020/03/06/man-gu/"/>
+      <url>/2020/03/06/man-gu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> Bankok </tag>
             
         </tags>
       
