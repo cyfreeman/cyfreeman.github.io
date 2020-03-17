@@ -164,11 +164,11 @@
     
     
     <entry>
-      <title>jain-sip-ri/javax.sdp/javax.sip*框架梳理</title>
+      <title>jain-sip-ri/javax.sip*sip信令交互应用梳理</title>
       <link href="/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/"/>
       <url>/2020/03/13/jain-sip-ri-javax-sdp-javax-sip-kuang-jia-shu-li/</url>
       
-        <content type="html"><![CDATA[<p>pre:<br>sip信令是VOIP、NGN、IMS以及5G网络都应用的随路信令，开发电信网元稳定性是首要因素，现梳理jain-sip，以便系统性掌握，用于指导后续开发与实践。</p><p>logs:<br>2020.03.13: 首次更新</p><h2 id="一、jain-sip-ri组成"><a href="#一、jain-sip-ri组成" class="headerlink" title="一、jain-sip-ri组成"></a>一、jain-sip-ri组成</h2><p>1、为android开发提供支撑<br>2、为测试提供支撑<br>3、为java开发提供支撑（主要分析）</p><h2 id="二、框架梳理（更新ing）"><a href="#二、框架梳理（更新ing）" class="headerlink" title="二、框架梳理（更新ing）"></a>二、框架梳理（更新ing）</h2><h3 id="2-1-javax-sdp"><a href="#2-1-javax-sdp" class="headerlink" title="2.1 javax.sdp"></a>2.1 javax.sdp</h3><p>简介：目前判定用于信令交互后的媒体RTP包对接，优先级排后</p><h3 id="2-2-javax-sip"><a href="#2-2-javax-sip" class="headerlink" title="2.2 javax.sip"></a>2.2 javax.sip</h3><p>简介：提供开发所用主叫的API接口，着重学习掌握这里</p><p>Interface ：</p><p>1、ClientTransaction ：用于向server发送transaction请求。<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>2、Dialog：端到端电话的sip流程。<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>3、ListeningPoint：监听IP端口，一般调取response信令</p><p>4、ServerTransaction：server处理Client的sip信令及响应</p><p>5、SipListener：为应用与sip协议栈提供衔接</p><p>6、SipProvider：基于sip协议栈传送消息实体</p><p>7、SipStack：sip信令协议栈</p><p>8、Transaction：事务——sip信令的基本组成</p><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-3-javax-sip-address"><a href="#2-3-javax-sip-address" class="headerlink" title="2.3 javax.sip.address"></a>2.3 javax.sip.address</h3><p>简介：用于sip信令路由寻址</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-4-javax-sip-header"><a href="#2-4-javax-sip-header" class="headerlink" title="2.4 javax.sip.header"></a>2.4 javax.sip.header</h3><p>简介：封装信令头字段</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-5-javax-sip-message"><a href="#2-5-javax-sip-message" class="headerlink" title="2.5 javax.sip.message"></a>2.5 javax.sip.message</h3><p>简介：封装sip消息体</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre>]]></content>
+        <content type="html"><![CDATA[<p>pre:<br>sip信令是VOIP、NGN、IMS以及5G网络都应用的随路信令，开发电信网元稳定性是首要因素，现梳理jain-sip，以便系统性掌握，用于指导后续开发与实践。</p><p>logs:<br>2020.03.13: 首次更新</p><h2 id="一、jain-sip-ri组成"><a href="#一、jain-sip-ri组成" class="headerlink" title="一、jain-sip-ri组成"></a>一、jain-sip-ri组成</h2><p>1、为android开发提供支撑<br>2、为测试提供支撑<br>3、为java开发提供支撑（主要分析）</p><h2 id="二、框架梳理（更新ing）"><a href="#二、框架梳理（更新ing）" class="headerlink" title="二、框架梳理（更新ing）"></a>二、框架梳理（更新ing）</h2><h3 id="2-1-javax-sdp"><a href="#2-1-javax-sdp" class="headerlink" title="2.1 javax.sdp"></a>2.1 javax.sdp</h3><p>简介：目前判定用于信令交互后的媒体RTP包对接，优先级排后</p><h3 id="2-2-javax-sip"><a href="#2-2-javax-sip" class="headerlink" title="2.2 javax.sip"></a>2.2 javax.sip</h3><p>简介：提供开发所用主叫的API接口，着重学习掌握这里</p><p>Interface ：</p><p>1、ClientTransaction ：用于向server发送transaction请求。<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>2、Dialog：端到端电话的sip流程。<a href="https://cyfreeman.github.io/2020/03/15/sip-dialog-shi-li/" title="用法和实例">用法和实例传送</a></p><p>3、ListeningPoint：监听IP端口，一般调取response信令<a href="https://cyfreeman.github.io/2020/03/16/sip-listeningpoint-shu-li/" title="用法和实例">用法和实例传送</a></p><p>4、ServerTransaction：server处理Client的sip信令及响应<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>5、SipListener：为应用与sip协议栈提供衔接<a href="https://cyfreeman.github.io/2020/03/16/sip-siplistener-shu-li/" title="用法和实例">用法和实例传送</a></p><p>6、SipProvider：基于sip协议栈传送消息实体<a href="https://cyfreeman.github.io/2020/03/16/sip-sipprovider-shu-li//" title="用法和实例">用法和实例传送</a></p><p>7、SipStack：sip信令协议栈<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><p>8、Transaction：事务——sip信令的基本组成<a href="https://cyfreeman.github.io/2020/03/13/sip-clienttransaction-shi-li/" title="用法和实例">用法和实例传送</a></p><h3 id="2-3-javax-sip-address"><a href="#2-3-javax-sip-address" class="headerlink" title="2.3 javax.sip.address"></a>2.3 javax.sip.address</h3><p>简介：用于sip信令路由寻址</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-4-javax-sip-header"><a href="#2-4-javax-sip-header" class="headerlink" title="2.4 javax.sip.header"></a>2.4 javax.sip.header</h3><p>简介：封装信令头字段</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><h3 id="2-5-javax-sip-message"><a href="#2-5-javax-sip-message" class="headerlink" title="2.5 javax.sip.message"></a>2.5 javax.sip.message</h3><p>简介：封装sip消息体</p><p>Interface ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Class ：</p><pre class=" language-bash"><code class="language-bash"></code></pre><p>Exception ：</p><pre class=" language-bash"><code class="language-bash"></code></pre>]]></content>
       
       
       <categories>
@@ -511,37 +511,6 @@
     
     
     <entry>
-      <title>拜伦湾</title>
-      <link href="/2020/03/06/bai-lun-wan/"/>
-      <url>/2020/03/06/bai-lun-wan/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
-            
-            <tag> Byron Bay </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>布里斯班黄金海岸</title>
       <link href="/2020/03/06/bu-li-si-ban-huang-jin-hai-an/"/>
       <url>/2020/03/06/bu-li-si-ban-huang-jin-hai-an/</url>
@@ -624,9 +593,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Munich </tag>
             
@@ -655,9 +624,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Palais de Versailles </tag>
             
@@ -686,9 +655,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Jardin Monet </tag>
             
@@ -717,9 +686,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Zurich </tag>
             
@@ -748,9 +717,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Venice water city </tag>
             
@@ -779,11 +748,11 @@
       
         <tags>
             
-            <tag> Europe </tag>
+            <tag> Cinque Terre </tag>
             
             <tag> Traval </tag>
             
-            <tag> Cinque Terre </tag>
+            <tag> Europe </tag>
             
         </tags>
       
@@ -810,9 +779,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> mykonos </tag>
             
@@ -841,9 +810,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Netherlands </tag>
             
@@ -872,9 +841,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Santorini </tag>
             
@@ -903,9 +872,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Athens </tag>
             
@@ -934,9 +903,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Switzerland </tag>
             
@@ -967,9 +936,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Neuschwanstein Castle </tag>
             
@@ -998,9 +967,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Italy </tag>
             
@@ -1031,9 +1000,9 @@
       
         <tags>
             
-            <tag> Europe </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Europe </tag>
             
             <tag> Paris </tag>
             
@@ -1110,37 +1079,6 @@
     
     
     <entry>
-      <title>普吉岛</title>
-      <link href="/2020/03/06/pu-ji-dao/"/>
-      <url>/2020/03/06/pu-ji-dao/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> pucket island </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>曼谷</title>
       <link href="/2020/03/06/man-gu/"/>
       <url>/2020/03/06/man-gu/</url>
@@ -1164,6 +1102,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> Bankok </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>普吉岛</title>
+      <link href="/2020/03/06/pu-ji-dao/"/>
+      <url>/2020/03/06/pu-ji-dao/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> pucket island </tag>
             
         </tags>
       
@@ -1234,11 +1203,11 @@
     
     
     <entry>
-      <title>日本</title>
+      <title>日本—东京-大阪-神户-奈良-宇治</title>
       <link href="/2020/03/06/ri-ben/"/>
       <url>/2020/03/06/ri-ben/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="一、东京——浅草寺、东京塔、富士山"><a href="#一、东京——浅草寺、东京塔、富士山" class="headerlink" title="一、东京——浅草寺、东京塔、富士山"></a>一、东京——浅草寺、东京塔、富士山</h2><p><img src="/images/pasted-117.png" alt=""></p><p><img src="/images/pasted-118.png" alt="浅草寺"></p><p><img src="/images/pasted-119.png" alt="东京塔"></p><p><img src="/images/pasted-120.png" alt="跑步的人很多"></p><p><img src="/images/pasted-126.png" alt="富士山下河口湖"></p><p><img src="/images/pasted-127.png" alt="大雾，无缘富士山"></p><p><img src="/images/pasted-128.png" alt=""></p><p><img src="/images/pasted-129.png" alt=""></p><p><img src="/images/pasted-130.png" alt=""><br><img src="/images/pasted-121.png" alt=""></p><p><img src="/images/pasted-131.png" alt="RIP"></p><h2 id="二、奈良"><a href="#二、奈良" class="headerlink" title="二、奈良"></a>二、奈良</h2><p><img src="/images/pasted-122.png" alt="神鹿"></p><p><img src="/images/pasted-125.png" alt="奈良神鹿"></p><p><img src="/images/pasted-144.png" alt="山顶"></p><p><img src="/images/pasted-145.png" alt=""></p><h2 id="三、宇治"><a href="#三、宇治" class="headerlink" title="三、宇治"></a>三、宇治</h2><p><img src="/images/pasted-123.png" alt=""></p><h2 id="四、秋叶原"><a href="#四、秋叶原" class="headerlink" title="四、秋叶原"></a>四、秋叶原</h2><p><img src="/images/pasted-132.png" alt="地铁口"></p><p><img src="/images/pasted-133.png" alt="某宅男"></p><p><img src="/images/pasted-134.png" alt=""></p><p><img src="/images/pasted-135.png" alt="手办"></p><p><img src="/images/pasted-136.png" alt=""></p><h2 id="五、神户"><a href="#五、神户" class="headerlink" title="五、神户"></a>五、神户</h2><p><img src="/images/pasted-137.png" alt="庙"></p><p><img src="/images/pasted-138.png" alt=""></p><p><img src="/images/pasted-139.png" alt=""></p><h2 id="六、北野异人馆"><a href="#六、北野异人馆" class="headerlink" title="六、北野异人馆"></a>六、北野异人馆</h2><p><img src="/images/pasted-140.png" alt=""></p><p><img src="/images/pasted-141.png" alt=""></p><p><img src="/images/pasted-142.png" alt=""></p><p><img src="/images/pasted-143.png" alt=""></p><h2 id="七、大阪环球影城"><a href="#七、大阪环球影城" class="headerlink" title="七、大阪环球影城"></a>七、大阪环球影城</h2><p><img src="/images/pasted-146.png" alt=""></p><p><img src="/images/pasted-147.png" alt=""></p><p><img src="/images/pasted-148.png" alt="哈利波特的神秘之旅"></p><p><img src="/images/pasted-149.png" alt=""></p><p><img src="/images/pasted-150.png" alt=""></p><p><img src="/images/pasted-151.png" alt=""></p><p><img src="/images/pasted-152.png" alt=""></p><p><img src="/images/pasted-153.png" alt=""></p><p><img src="/images/pasted-155.png" alt="心斋桥"></p>]]></content>
       
       
       <categories>
@@ -1352,6 +1321,35 @@
     
     
     <entry>
+      <title>武汉之行</title>
+      <link href="/2020/03/06/wu-han-zhi-xing/"/>
+      <url>/2020/03/06/wu-han-zhi-xing/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Domestic </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>古都西安</title>
       <link href="/2020/03/06/xi-an-zhi-xing/"/>
       <url>/2020/03/06/xi-an-zhi-xing/</url>
@@ -1381,9 +1379,9 @@
     
     
     <entry>
-      <title>武汉之行</title>
-      <link href="/2020/03/06/wu-han-zhi-xing/"/>
-      <url>/2020/03/06/wu-han-zhi-xing/</url>
+      <title>西岭雪山</title>
+      <link href="/2020/03/06/xi-ling-xue-shan/"/>
+      <url>/2020/03/06/xi-ling-xue-shan/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -1415,35 +1413,6 @@
       <url>/2020/03/06/jiu-zhai-gou/</url>
       
         <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说有就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Domestic </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Domestic </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>西岭雪山</title>
-      <link href="/2020/03/06/xi-ling-xue-shan/"/>
-      <url>/2020/03/06/xi-ling-xue-shan/</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
