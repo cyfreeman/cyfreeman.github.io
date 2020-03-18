@@ -4,6 +4,139 @@
   
     
     <entry>
+      <title>SIP信令应答码</title>
+      <link href="/2020/03/18/sip-xin-ling-ying-da-ma/"/>
+      <url>/2020/03/18/sip-xin-ling-ying-da-ma/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-164.png" alt="应答码"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rfc3261—sip信令交互规范下载</title>
+      <link href="/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/"/>
+      <url>/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/</url>
+      
+        <content type="html"><![CDATA[<p><a href="/download/rfc3261.pdf"">rfc3261英文版点击下载</a><br><a href="/download/RFC3261-中文.pdf"">rfc3261中文版点击下载</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sip信令notify消息捕捉问题</title>
+      <link href="/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/"/>
+      <url>/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、报错描述"><a href="#一、报错描述" class="headerlink" title="一、报错描述"></a>一、报错描述</h2><p>在成功向sip server发送register后，server会发送notify消息</p><p><img src="/images/pasted-162.png" alt=""></p><h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>client监听端口捕捉不到notify消息，导致没法正确处理</p><p><img src="/images/pasted-163.png" alt="很多老外也遇到这个问题（11年前。。。）"></p><h2 id="三、解决（ing）"><a href="#三、解决（ing）" class="headerlink" title="三、解决（ing）"></a>三、解决（ing）</h2><p>时间短任务重，目前没有影响，悬而未决中。。。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>基于java的sip信令注册流程梳理</title>
+      <link href="/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/"/>
+      <url>/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-157.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>基于java的sip信令消息初始化梳理</title>
+      <link href="/2020/03/17/ji-yu-java-de-sip-xin-ling-xiao-xi-chu-shi-hua-shu-li/"/>
+      <url>/2020/03/17/ji-yu-java-de-sip-xin-ling-xiao-xi-chu-shi-hua-shu-li/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-156.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SIP—SipProvider梳理</title>
       <link href="/2020/03/16/sip-sipprovider-shu-li/"/>
       <url>/2020/03/16/sip-sipprovider-shu-li/</url>
@@ -197,7 +330,7 @@
       <link href="/2020/03/13/sip-zhu-ce-tong-yi-ge-xin-ling-jiao-hu-bei-fen-jie-wen-ti/"/>
       <url>/2020/03/13/sip-zhu-ce-tong-yi-ge-xin-ling-jiao-hu-bei-fen-jie-wen-ti/</url>
       
-        <content type="html"><![CDATA[<h2 id="1、现象"><a href="#1、现象" class="headerlink" title="1、现象"></a>1、现象</h2><p>正常的信令交互如下图所示</p><p><img src="/images/pasted-106.png" alt="正常的流程"></p><p>一个信令交互被分解为两个<br><img src="/images/pasted-107.png" alt="一个信令交互被分解"></p><h2 id="2、分析"><a href="#2、分析" class="headerlink" title="2、分析"></a>2、分析</h2><p>经查资料，显示sip事物transaction代表一次sip事务，包括第一个请求到最终一个请求过程。</p><p><img src="/images/pasted-108.png" alt="查资料截图"></p><p>理论上叫transactionID，但是经过查找并未发现该字眼字段，经过对正常与异常信令进行对比发现，branchID即标志一个信令交互流程，如下图所示：</p><p><img src="/images/pasted-109.png" alt="branchID"></p><h2 id="3、解决"><a href="#3、解决" class="headerlink" title="3、解决"></a>3、解决</h2><p>待续</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="1、现象"><a href="#1、现象" class="headerlink" title="1、现象"></a>1、现象</h2><p>正常的信令交互如下图所示</p><p><img src="/images/pasted-106.png" alt="正常的流程"></p><p>一个信令交互被分解为两个<br><img src="/images/pasted-107.png" alt="一个信令交互被分解"></p><h2 id="2、分析"><a href="#2、分析" class="headerlink" title="2、分析"></a>2、分析</h2><p>经查资料，显示sip事物transaction代表一次sip事务，包括第一个请求到最终一个请求过程。</p><p><img src="/images/pasted-108.png" alt="查资料截图"></p><p>理论上叫transactionID，但是经过查找并未发现该字眼字段，经过对正常与异常信令进行对比发现，branchID即标志一个信令交互流程，如下图所示：</p><p><img src="/images/pasted-109.png" alt="branchID"></p><h2 id="3、解决"><a href="#3、解决" class="headerlink" title="3、解决"></a>3、解决</h2><p>用同一个transactionID发送请求与响应解决了该问题</p><p><img src="/images/pasted-159.png" alt="捕捉transaction"><br><img src="/images/pasted-158.png" alt=""></p>]]></content>
       
       
       <categories>
@@ -748,9 +881,9 @@
       
         <tags>
             
-            <tag> Cinque Terre </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Cinque Terre </tag>
             
             <tag> Europe </tag>
             
@@ -918,37 +1051,6 @@
     
     
     <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -974,6 +1076,37 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -1079,37 +1212,6 @@
     
     
     <entry>
-      <title>曼谷</title>
-      <link href="/2020/03/06/man-gu/"/>
-      <url>/2020/03/06/man-gu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> Bankok </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>普吉岛</title>
       <link href="/2020/03/06/pu-ji-dao/"/>
       <url>/2020/03/06/pu-ji-dao/</url>
@@ -1133,6 +1235,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> pucket island </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>曼谷</title>
+      <link href="/2020/03/06/man-gu/"/>
+      <url>/2020/03/06/man-gu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> Bankok </tag>
             
         </tags>
       
@@ -1203,6 +1336,35 @@
     
     
     <entry>
+      <title>悉尼</title>
+      <link href="/2020/03/06/ao-da-li-ya/"/>
+      <url>/2020/03/06/ao-da-li-ya/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Oceania </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Oceania </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>日本—东京-大阪-神户-奈良-宇治</title>
       <link href="/2020/03/06/ri-ben/"/>
       <url>/2020/03/06/ri-ben/</url>
@@ -1226,35 +1388,6 @@
             <tag> EastAsia </tag>
             
             <tag> Japan </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>悉尼</title>
-      <link href="/2020/03/06/ao-da-li-ya/"/>
-      <url>/2020/03/06/ao-da-li-ya/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
             
         </tags>
       
@@ -1379,11 +1512,11 @@
     
     
     <entry>
-      <title>西岭雪山</title>
-      <link href="/2020/03/06/xi-ling-xue-shan/"/>
-      <url>/2020/03/06/xi-ling-xue-shan/</url>
+      <title>九寨沟</title>
+      <link href="/2020/03/06/jiu-zhai-gou/"/>
+      <url>/2020/03/06/jiu-zhai-gou/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说有就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
       
       
       <categories>
@@ -1408,11 +1541,11 @@
     
     
     <entry>
-      <title>九寨沟</title>
-      <link href="/2020/03/06/jiu-zhai-gou/"/>
-      <url>/2020/03/06/jiu-zhai-gou/</url>
+      <title>西岭雪山</title>
+      <link href="/2020/03/06/xi-ling-xue-shan/"/>
+      <url>/2020/03/06/xi-ling-xue-shan/</url>
       
-        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说有就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>

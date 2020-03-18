@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-16T10:00:53.567Z</updated>
+  <updated>2020-03-18T04:00:56.965Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,149 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SIP信令应答码</title>
+    <link href="https://cyfreeman.github.io/2020/03/18/sip-xin-ling-ying-da-ma/"/>
+    <id>https://cyfreeman.github.io/2020/03/18/sip-xin-ling-ying-da-ma/</id>
+    <published>2020-03-18T04:00:00.000Z</published>
+    <updated>2020-03-18T04:00:56.965Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-164.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>rfc3261—sip信令交互规范下载</title>
+    <link href="https://cyfreeman.github.io/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/"/>
+    <id>https://cyfreeman.github.io/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/</id>
+    <published>2020-03-18T01:56:00.000Z</published>
+    <updated>2020-03-18T01:59:17.505Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;/download/rfc3261.pdf&quot;&quot;&gt;rfc3261英文版点击下载&lt;/a&gt;&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sip信令notify消息捕捉问题</title>
+    <link href="https://cyfreeman.github.io/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/"/>
+    <id>https://cyfreeman.github.io/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/</id>
+    <published>2020-03-17T09:22:00.000Z</published>
+    <updated>2020-03-18T01:55:38.720Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、报错描述&quot;&gt;&lt;a href=&quot;#一、报错描述&quot; class=&quot;headerlink&quot; title=&quot;一、报错描述&quot;&gt;&lt;/a&gt;一、报错描述&lt;/h2&gt;&lt;p&gt;在成功向sip
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于java的sip信令注册流程梳理</title>
+    <link href="https://cyfreeman.github.io/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/</id>
+    <published>2020-03-17T07:05:00.000Z</published>
+    <updated>2020-03-17T07:36:05.408Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-157.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于java的sip信令消息初始化梳理</title>
+    <link href="https://cyfreeman.github.io/2020/03/17/ji-yu-java-de-sip-xin-ling-xiao-xi-chu-shi-hua-shu-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/17/ji-yu-java-de-sip-xin-ling-xiao-xi-chu-shi-hua-shu-li/</id>
+    <published>2020-03-17T07:03:00.000Z</published>
+    <updated>2020-03-17T07:04:54.209Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-156.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
   
   <entry>
     <title>SIP—SipProvider梳理</title>
@@ -227,7 +370,7 @@
     <link href="https://cyfreeman.github.io/2020/03/13/sip-zhu-ce-tong-yi-ge-xin-ling-jiao-hu-bei-fen-jie-wen-ti/"/>
     <id>https://cyfreeman.github.io/2020/03/13/sip-zhu-ce-tong-yi-ge-xin-ling-jiao-hu-bei-fen-jie-wen-ti/</id>
     <published>2020-03-13T09:44:00.000Z</published>
-    <updated>2020-03-13T11:30:39.627Z</updated>
+    <updated>2020-03-17T08:11:22.665Z</updated>
     
     <summary type="html">
     
@@ -443,146 +586,6 @@ vim
     
     
       <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo一篇文章归属多个categories设置</title>
-    <link href="https://cyfreeman.github.io/2020/03/09/hexo-yi-pian-wen-zhang-gui-shu-duo-ge-categories-she-zhi/"/>
-    <id>https://cyfreeman.github.io/2020/03/09/hexo-yi-pian-wen-zhang-gui-shu-duo-ge-categories-she-zhi/</id>
-    <published>2020-03-09T05:26:00.000Z</published>
-    <updated>2020-03-10T02:07:01.747Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;在categories下归属子目录前后加[]，不加的话默认media的路径为/signalinng/media&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/pasted-79.png&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="frontend" scheme="https://cyfreeman.github.io/categories/frontend/"/>
-    
-    
-      <category term="frontend" scheme="https://cyfreeman.github.io/tags/frontend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决freeswitch黄金30S，nat穿透问题</title>
-    <link href="https://cyfreeman.github.io/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/"/>
-    <id>https://cyfreeman.github.io/2020/03/09/jie-jue-freeswitch-huang-jin-30s-nat-chuan-tou-wen-ti/</id>
-    <published>2020-03-09T04:34:00.000Z</published>
-    <updated>2020-03-09T05:13:34.823Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、问题背景&quot;&gt;&lt;a href=&quot;#一、问题背景&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-      <category term="media" scheme="https://cyfreeman.github.io/categories/media/"/>
-    
-      <category term="networkArchitecture" scheme="https://cyfreeman.github.io/categories/networkArchitecture/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-      <category term="media" scheme="https://cyfreeman.github.io/tags/media/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>批判性思维的形成与实践</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/pi-pan-xing-si-wei-de-yang-cheng/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/pi-pan-xing-si-wei-de-yang-cheng/</id>
-    <published>2020-03-06T07:08:00.000Z</published>
-    <updated>2020-03-06T09:42:45.604Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、来源&quot;&gt;&lt;a href=&quot;#一、来源&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
-    
-      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
-    
-    
-      <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
-    
-      <category term="成长" scheme="https://cyfreeman.github.io/tags/%E6%88%90%E9%95%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《程序员的自我修养》</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/cheng-xu-yuan-de-zi-wo-xiu-yang/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/cheng-xu-yuan-de-zi-wo-xiu-yang/</id>
-    <published>2020-03-06T05:11:00.000Z</published>
-    <updated>2020-03-06T10:07:53.497Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
-    
-      <category term="summary" scheme="https://cyfreeman.github.io/categories/read/summary/"/>
-    
-    
-      <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
-    
-      <category term="programer" scheme="https://cyfreeman.github.io/tags/programer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>布里斯班黄金海岸</title>
-    <link href="https://cyfreeman.github.io/2020/03/06/bu-li-si-ban-huang-jin-hai-an/"/>
-    <id>https://cyfreeman.github.io/2020/03/06/bu-li-si-ban-huang-jin-hai-an/</id>
-    <published>2020-03-06T03:47:00.000Z</published>
-    <updated>2020-03-06T03:48:34.636Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="Oceania" scheme="https://cyfreeman.github.io/categories/Traval/Oceania/"/>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
-      <category term="Oceania" scheme="https://cyfreeman.github.io/tags/Oceania/"/>
-    
-      <category term="Gold Coast" scheme="https://cyfreeman.github.io/tags/Gold-Coast/"/>
     
   </entry>
   
