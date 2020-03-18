@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-18T04:00:56.965Z</updated>
+  <updated>2020-03-18T07:20:35.531Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sip信令请求与应答包头的处理</title>
+    <link href="https://cyfreeman.github.io/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/"/>
+    <id>https://cyfreeman.github.io/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/</id>
+    <published>2020-03-18T06:51:00.000Z</published>
+    <updated>2020-03-18T07:20:35.531Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、应答中的 From 头域必须和请求中的 From 头域相等。&lt;/p&gt;
+&lt;p&gt;2、应答中的 Call-ID 头域必须和请求中的 Call-ID 头域相等。&lt;/p&gt;
+&lt;p&gt;3、应答中的 Cseq 头域必须和请求中的 Cseq 头域相等。&lt;/p&gt;
+&lt;p&gt;4、应答中的 Via
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
   
   <entry>
     <title>SIP信令应答码</title>
@@ -75,7 +105,7 @@
     <link href="https://cyfreeman.github.io/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/"/>
     <id>https://cyfreeman.github.io/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/</id>
     <published>2020-03-17T09:22:00.000Z</published>
-    <updated>2020-03-18T01:55:38.720Z</updated>
+    <updated>2020-03-18T07:52:29.231Z</updated>
     
     <summary type="html">
     
@@ -558,34 +588,6 @@ vim
     
     
       <category term="network" scheme="https://cyfreeman.github.io/tags/network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux编译安装制定安装路径（freeswitch为例））</title>
-    <link href="https://cyfreeman.github.io/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/"/>
-    <id>https://cyfreeman.github.io/2020/03/10/linux-bian-yi-an-zhuang-zhi-ding-an-zhuang-lu-jing-freeswitch-wei-li/</id>
-    <published>2020-03-10T02:09:00.000Z</published>
-    <updated>2020-03-10T02:12:59.668Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;problem：&quot;&gt;&lt;a href=&quot;#problem：&quot; class=&quot;headerlink&quot; title=&quot;problem：&quot;&gt;&lt;/a&gt;problem：&lt;/h2&gt;&lt;p&gt;请问怎么指定freeswitch的安装目录？&lt;/p&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
-    
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
     
   </entry>
   

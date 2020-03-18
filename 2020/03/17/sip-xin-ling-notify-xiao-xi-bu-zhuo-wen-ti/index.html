@@ -815,7 +815,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    63
+                    86
                 </div>
                 
 
@@ -840,7 +840,10 @@
             <div id="articleContent">
                 <h2 id="一、报错描述"><a href="#一、报错描述" class="headerlink" title="一、报错描述"></a>一、报错描述</h2><p>在成功向sip server发送register后，server会发送notify消息</p>
 <p><img src="/images/pasted-162.png" alt=""></p>
-<h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>client监听端口捕捉不到notify消息，导致没法正确处理</p>
+<h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>client监听端口捕捉不到notify消息，导致没法正确处理<br>1、经查看RFC3261标准，发现一个UA每次注册必须要用同一个callid</p>
+<p><img src="/images/pasted-168.png" alt="same callid in one transaction"></p>
+<p><img src="/images/pasted-169.png" alt="需要用相同的callid更新注册周期"></p>
+<p><img src="/images/pasted-170.png" alt="两次注册间的callid不一样"></p>
 <p><img src="/images/pasted-163.png" alt="很多老外也遇到这个问题（11年前。。。）"></p>
 <h2 id="三、解决（ing）"><a href="#三、解决（ing）" class="headerlink" title="三、解决（ing）"></a>三、解决（ing）</h2><p>时间短任务重，目前没有影响，悬而未决中。。。</p>
 
@@ -1325,7 +1328,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.4k</span>&nbsp;字
+                class="white-color">7.7k</span>&nbsp;字
             
             
             
