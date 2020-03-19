@@ -128,6 +128,34 @@
   </entry>
   
   <entry>
+    <title>sip信令Invite请求错误码96:mandatory_ie_missing</title>
+    <link href="https://cyfreeman.github.io/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/"/>
+    <id>https://cyfreeman.github.io/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/</id>
+    <published>2020-03-17T08:56:00.000Z</published>
+    <updated>2020-03-18T13:02:33.857Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、报错&quot;&gt;&lt;a href=&quot;#一、报错&quot; class=&quot;headerlink&quot; title=&quot;一、报错&quot;&gt;&lt;/a&gt;一、报错&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-160.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
     <title>基于java的sip信令注册流程梳理</title>
     <link href="https://cyfreeman.github.io/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/"/>
     <id>https://cyfreeman.github.io/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/</id>
@@ -561,33 +589,6 @@ vim
     
     
       <category term="media" scheme="https://cyfreeman.github.io/tags/media/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>服务器被国外IP恶意扫描处理方法</title>
-    <link href="https://cyfreeman.github.io/2020/03/10/fu-wu-qi-bei-guo-wai-ip-e-yi-sao-miao-chu-li-fang-fa/"/>
-    <id>https://cyfreeman.github.io/2020/03/10/fu-wu-qi-bei-guo-wai-ip-e-yi-sao-miao-chu-li-fang-fa/</id>
-    <published>2020-03-10T04:59:00.000Z</published>
-    <updated>2020-03-10T05:01:11.215Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;服务器遇到被荷兰某ip疯狂扫描，最初采取添加黑名单方式，添加了几百个，貌似对方会变换IP继续攻击&lt;br&gt;可以启用fail2ban  尝试3次失败的ip ban掉的方法来屏蔽&lt;br&gt;&lt;img src=&quot;/images/pasted-80.png&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="networkArchitecture" scheme="https://cyfreeman.github.io/categories/networkArchitecture/"/>
-    
-    
-      <category term="network" scheme="https://cyfreeman.github.io/tags/network/"/>
     
   </entry>
   

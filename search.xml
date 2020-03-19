@@ -104,6 +104,31 @@
     
     
     <entry>
+      <title>sip信令Invite请求错误码96:mandatory_ie_missing</title>
+      <link href="/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/"/>
+      <url>/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、报错"><a href="#一、报错" class="headerlink" title="一、报错"></a>一、报错</h2><p><img src="/images/pasted-160.png" alt=""></p><h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>与正常信令流程对比，发现确实codelist</p><p><img src="/images/pasted-161.png" alt="确实codelist"></p><p>通过查看RFC3261规范，需要专门增加编解码格式</p><p><img src="/images/pasted-165.png" alt="rfc3261规范"></p><p><img src="/images/pasted-171.png" alt="mandatory(强制)"></p><p><img src="/images/pasted-172.png" alt="媒体类型"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于java的sip信令注册流程梳理</title>
       <link href="/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/"/>
       <url>/2020/03/17/ji-yu-java-de-sip-xin-ling-zhu-ce-liu-cheng-shu-li/</url>
@@ -1076,37 +1101,6 @@
     
     
     <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1132,6 +1126,37 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
