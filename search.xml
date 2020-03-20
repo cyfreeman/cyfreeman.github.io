@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>sip客户端收不到200 OK信令</title>
+      <link href="/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/"/>
+      <url>/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、问题"><a href="#一、问题" class="headerlink" title="一、问题"></a>一、问题</h2><p>在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令</p><p><img src="/images/pasted-186.png" alt="无法接受导致无法处理"></p><h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>从sip server服务器抓包看，已经发出200 OK信令，应该在sip client接收侧，打开一看果然本地防火墙把idea权限拦了。</p><h2 id="二、解决"><a href="#二、解决" class="headerlink" title="二、解决"></a>二、解决</h2><p>修改防火墙针对IDEA权限，解决问题</p><p><img src="/images/pasted-187.png" alt="修改权限"></p><p><img src="/images/pasted-188.png" alt="验证确认收到200 OK信令"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>sip信令请求与应答包头的处理</title>
       <link href="/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/"/>
       <url>/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/</url>
@@ -108,7 +133,7 @@
       <link href="/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/"/>
       <url>/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、报错"><a href="#一、报错" class="headerlink" title="一、报错"></a>一、报错</h2><p><img src="/images/pasted-160.png" alt=""></p><h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>与正常信令流程对比，发现确实codelist</p><p><img src="/images/pasted-161.png" alt="确实codelist"></p><p>通过查看RFC3261规范，需要专门增加编解码格式</p><p><img src="/images/pasted-165.png" alt="rfc3261规范"></p><p><img src="/images/pasted-171.png" alt="mandatory(强制)"></p><p><img src="/images/pasted-172.png" alt="媒体类型"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、报错"><a href="#一、报错" class="headerlink" title="一、报错"></a>一、报错</h2><p><img src="/images/pasted-160.png" alt=""></p><h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>与正常信令流程对比，发现确实codelist</p><p><img src="/images/pasted-161.png" alt="确实codelist"></p><p>通过查看RFC3261规范，需要专门增加编解码格式</p><p><img src="/images/pasted-165.png" alt="rfc3261规范"></p><p><img src="/images/pasted-171.png" alt="mandatory(强制)"></p><p><img src="/images/pasted-172.png" alt="媒体类型"></p><h2 id="三、解决"><a href="#三、解决" class="headerlink" title="三、解决"></a>三、解决</h2><p><img src="/images/pasted-174.png" alt="添加content type支持"></p><h2 id="四、验证"><a href="#四、验证" class="headerlink" title="四、验证"></a>四、验证</h2><p>修改之后再次交互，发现已经正常，并且呼叫已经路由到了被叫。</p><p><img src="/images/pasted-175.png" alt="success"></p><p><img src="/images/pasted-176.png" alt="呼叫已经到了被叫"></p>]]></content>
       
       
       <categories>
@@ -824,7 +849,7 @@
       <link href="/2020/03/06/mo-nai-hua-yuan/"/>
       <url>/2020/03/06/mo-nai-hua-yuan/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="一、关于莫奈"><a href="#一、关于莫奈" class="headerlink" title="一、关于莫奈"></a>一、关于莫奈</h2><p>克劳德·莫奈（Claude Monet，1840年11月14日－1926年12月5日），法国画家，被誉为“印象派领导者”，是印象派代表人物和创始人之一。<br>莫奈是法国最重要的画家之一，印象派的理论和实践大部分都有他的推广。莫奈擅长光与影的实验与表现技法。他最重要的风格是改变了阴影和轮廓线的画法，在莫奈的画作中看不到非常明确的阴影，也看不到突显或平涂式的轮廓线。光和影的色彩描绘是莫奈绘画的最大特色。<br>2019年5月14日，法国印象派画家克劳德·莫奈的作品《干草堆》在纽约苏富比拍卖行以破纪录的1.107亿美元（1美元约合人民币6.87元）高价拍出。这是莫奈作品拍卖价格的最高纪录，也是印象派画作拍卖最高纪录。</p><h2 id="二、莫奈花园"><a href="#二、莫奈花园" class="headerlink" title="二、莫奈花园"></a>二、莫奈花园</h2><p>到了巴黎才知道有莫奈这么个画家，莫奈在这里完成了他的著名作品《睡莲》系列和《日本桥》系列。</p><p><img src="/images/pasted-189.png" alt="莫奈的住房"></p><p><img src="/images/pasted-190.png" alt="住房正面"></p><p><img src="/images/pasted-191.png" alt="室内的油画"></p><p><img src="/images/pasted-192.png" alt="陈列"></p><p><img src="/images/pasted-193.png" alt="陈列2"></p><p><img src="/images/pasted-194.png" alt="住房正面的花棚"></p><p><img src="/images/pasted-195.png" alt="果树"></p><p><img src="/images/pasted-196.png" alt="莫奈花园内的水榭"></p><p><img src="/images/pasted-197.png" alt="庭院"></p><p><img src="/images/pasted-198.png" alt="花园一角"></p>]]></content>
       
       
       <categories>
@@ -855,7 +880,7 @@
       <link href="/2020/03/06/su-li-shi/"/>
       <url>/2020/03/06/su-li-shi/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/pasted-177.png" alt=""></p><p><img src="/images/pasted-180.png" alt=""></p><p><img src="/images/pasted-179.png" alt=""></p><p><img src="/images/pasted-178.png" alt=""></p><p><img src="/images/pasted-181.png" alt=""></p><p><img src="/images/pasted-182.png" alt=""></p><p><img src="/images/pasted-183.png" alt=""></p><p><img src="/images/pasted-184.png" alt=""></p><p><img src="/images/pasted-185.png" alt=""></p>]]></content>
       
       
       <categories>
@@ -1101,6 +1126,37 @@
     
     
     <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1126,37 +1182,6 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -1386,6 +1411,35 @@
     
     
     <entry>
+      <title>悉尼</title>
+      <link href="/2020/03/06/ao-da-li-ya/"/>
+      <url>/2020/03/06/ao-da-li-ya/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Oceania </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Oceania </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>日本—东京-大阪-神户-奈良-宇治</title>
       <link href="/2020/03/06/ri-ben/"/>
       <url>/2020/03/06/ri-ben/</url>
@@ -1409,35 +1463,6 @@
             <tag> EastAsia </tag>
             
             <tag> Japan </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>悉尼</title>
-      <link href="/2020/03/06/ao-da-li-ya/"/>
-      <url>/2020/03/06/ao-da-li-ya/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
             
         </tags>
       

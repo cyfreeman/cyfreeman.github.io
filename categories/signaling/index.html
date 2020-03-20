@@ -703,11 +703,11 @@
                 </a>
                 
                 
-                <a href="/categories/signaling/" title="signaling: 21">
+                <a href="/categories/signaling/" title="signaling: 22">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F5EEF8;">signaling
-                        <span class="tag-length">21</span>
+                        <span class="tag-length">22</span>
                     </span>
                 </a>
                 
@@ -766,29 +766,20 @@
                 </a>
                 
                 
-                <a href="/categories/Traval/Domestic/" title="Domestic: 7">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #A3E4D7;">Domestic
-                        <span class="tag-length">7</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/categories/Traval/Europe/" title="Europe: 14">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #85C1E9;">Europe
+                            style="background-color: #A3E4D7;">Europe
                         <span class="tag-length">14</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/Traval/SoutheastAsia/" title="SoutheastAsia: 5">
+                <a href="/categories/Traval/Domestic/" title="Domestic: 7">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F8C471;">SoutheastAsia
-                        <span class="tag-length">5</span>
+                            style="background-color: #85C1E9;">Domestic
+                        <span class="tag-length">7</span>
                     </span>
                 </a>
                 
@@ -796,17 +787,17 @@
                 <a href="/categories/Traval/Oceania/" title="Oceania: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9E79F;">Oceania
+                            style="background-color: #F8C471;">Oceania
                         <span class="tag-length">3</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/Traval/EastAsia/" title="EastAsia: 1">
+                <a href="/categories/Traval/SoutheastAsia/" title="SoutheastAsia: 5">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F8F9F9;">EastAsia
-                        <span class="tag-length">1</span>
+                            style="background-color: #F9E79F;">SoutheastAsia
+                        <span class="tag-length">5</span>
                     </span>
                 </a>
                 
@@ -824,6 +815,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #FEF9E7;">essay
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/Traval/EastAsia/" title="EastAsia: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F8F9F9;">EastAsia
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -847,6 +847,54 @@
 
     <article id="articles" class="container articles">
         <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="sip客户端收不到200 OK信令">
+                            
+                            <span class="card-title">sip客户端收不到200 OK信令</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、问题在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令
+
+二、分析从sip server服务器抓包看，已经发出200 OK信令，应该在s
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/signaling/" class="post-category">
+                                    signaling
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/signaling/">
+                            <span class="chip bg-color">signaling</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -1058,6 +1106,10 @@
 
 通过查看RFC3261规范，需要专门增加编解码格式
 
+
+
+三、解决
+四、验证修改之后再次交互，发现已经正常，并且呼叫已经路由到了被叫。
 
 
 
@@ -1298,56 +1350,6 @@
                 </div>
             </div>
             
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/03/16/sip-listeningpoint-shu-li/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="SIP—ListeningPoint梳理">
-                            
-                            <span class="card-title">SIP—ListeningPoint梳理</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、监听网络端口2、默认端口5060、50613、支持SCTP、TCP、TLS、UDP4、    getIPAddress()：获取侦听点IP地址5、    getPort()：获取侦听端口6、    getSentBy()7、    ge
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/signaling/" class="post-category">
-                                    signaling
-                                </a>
-                                
-                                <a href="/categories/backend/" class="post-category">
-                                    backend
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/signaling/">
-                            <span class="chip bg-color">signaling</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 </main>
@@ -1393,7 +1395,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.8k</span>&nbsp;字
+                class="white-color">8.2k</span>&nbsp;字
             
             
             

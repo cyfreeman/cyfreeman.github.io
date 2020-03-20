@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-18T07:20:35.531Z</updated>
+  <updated>2020-03-19T07:40:01.404Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sip客户端收不到200 OK信令</title>
+    <link href="https://cyfreeman.github.io/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/"/>
+    <id>https://cyfreeman.github.io/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/</id>
+    <published>2020-03-19T07:22:00.000Z</published>
+    <updated>2020-03-19T07:40:01.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、问题&quot;&gt;&lt;a href=&quot;#一、问题&quot; class=&quot;headerlink&quot; title=&quot;一、问题&quot;&gt;&lt;/a&gt;一、问题&lt;/h2&gt;&lt;p&gt;在向服务器发送INVITE信令时，媒体协商后收不到server的200
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
   
   <entry>
     <title>sip信令请求与应答包头的处理</title>
@@ -132,7 +159,7 @@
     <link href="https://cyfreeman.github.io/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/"/>
     <id>https://cyfreeman.github.io/2020/03/17/sip-xin-ling-invite-qing-qiu-cuo-wu-ma-96-mandatory-ie-missing/</id>
     <published>2020-03-17T08:56:00.000Z</published>
-    <updated>2020-03-18T13:02:33.857Z</updated>
+    <updated>2020-03-19T02:24:28.662Z</updated>
     
     <summary type="html">
     
@@ -562,33 +589,6 @@ vim
     
     
       <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决freeswitch语音文件加载慢问题</title>
-    <link href="https://cyfreeman.github.io/2020/03/10/jie-jue-freeswitch-yu-yin-wen-jian-xia-zai-man-wen-ti/"/>
-    <id>https://cyfreeman.github.io/2020/03/10/jie-jue-freeswitch-yu-yin-wen-jian-xia-zai-man-wen-ti/</id>
-    <published>2020-03-10T07:29:00.000Z</published>
-    <updated>2020-03-10T07:34:37.993Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;make -j cd-sounds-install&lt;br&gt;make -j
-        
-      
-    
-    </summary>
-    
-    
-      <category term="media" scheme="https://cyfreeman.github.io/categories/media/"/>
-    
-    
-      <category term="media" scheme="https://cyfreeman.github.io/tags/media/"/>
     
   </entry>
   

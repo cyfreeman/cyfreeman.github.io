@@ -1076,33 +1076,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/">
+                <a href="/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="sip信令请求与应答包头的处理">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="sip客户端收不到200 OK信令">
                         
-                        <span class="card-title">sip信令请求与应答包头的处理</span>
+                        <span class="card-title">sip客户端收不到200 OK信令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、应答中的 From 头域必须和请求中的 From 头域相等。
-2、应答中的 Call-ID 头域必须和请求中的 Call-ID 头域相等。
-3、应答中的 Cseq 头域必须和请求中的 Cseq 头域相等。
-4、应答中的 Via 头域必须
+                            一、问题在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令
+
+二、分析从sip server服务器抓包看，已经发出200 OK信令，应该在s
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1115,7 +1113,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1324,7 +1321,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.8k</span>&nbsp;字
+                class="white-color">8.2k</span>&nbsp;字
             
             
             

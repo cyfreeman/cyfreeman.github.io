@@ -883,6 +883,55 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="sip客户端收不到200 OK信令">
+                            
+                            <span class="card-title">sip客户端收不到200 OK信令</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、问题在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令
+
+二、分析从sip server服务器抓包看，已经发出200 OK信令，应该在s
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/signaling/" class="post-category">
+                                    signaling
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/signaling/">
+                            <span class="chip bg-color">signaling</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/">
                         <div class="card-image">
                             
@@ -1096,6 +1145,10 @@
 
 通过查看RFC3261规范，需要专门增加编解码格式
 
+
+
+三、解决
+四、验证修改之后再次交互，发现已经正常，并且呼叫已经路由到了被叫。
 
 
 
@@ -1340,57 +1393,6 @@
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/03/16/sip-listeningpoint-shu-li/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="SIP—ListeningPoint梳理">
-                            
-                            <span class="card-title">SIP—ListeningPoint梳理</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、监听网络端口2、默认端口5060、50613、支持SCTP、TCP、TLS、UDP4、    getIPAddress()：获取侦听点IP地址5、    getPort()：获取侦听端口6、    getSentBy()7、    ge
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/signaling/" class="post-category">
-                                    signaling
-                                </a>
-                                
-                                <a href="/categories/backend/" class="post-category">
-                                    backend
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/signaling/">
-                            <span class="chip bg-color">signaling</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
         </div>
     </article>
 
@@ -1437,7 +1439,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">7.8k</span>&nbsp;字
+                class="white-color">8.2k</span>&nbsp;字
             
             
             
