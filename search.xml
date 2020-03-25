@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>Beers</title>
+      <link href="/2020/03/25/beers/"/>
+      <url>/2020/03/25/beers/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1、慕尼黑扎啤"><a href="#1、慕尼黑扎啤" class="headerlink" title="1、慕尼黑扎啤"></a>1、慕尼黑扎啤</h2><p><img src="/images/pasted-224.png" alt="慕尼黑黑黄啤"></p><h2 id="2、越南——saigon"><a href="#2、越南——saigon" class="headerlink" title="2、越南——saigon"></a>2、越南——saigon</h2><p><img src="/images/pasted-225.png" alt=""></p><h2 id="3、越南——saigon-special"><a href="#3、越南——saigon-special" class="headerlink" title="3、越南——saigon special"></a>3、越南——saigon special</h2><p><img src="/images/pasted-226.png" alt=""></p><h2 id="4、印尼的茅台"><a href="#4、印尼的茅台" class="headerlink" title="4、印尼的茅台"></a>4、印尼的茅台</h2><p><img src="/images/pasted-227.png" alt=""></p><h2 id="5、印尼——bintang"><a href="#5、印尼——bintang" class="headerlink" title="5、印尼——bintang"></a>5、印尼——bintang</h2><p><img src="/images/pasted-228.png" alt=""></p><p><img src="/images/pasted-229.png" alt=""></p><h2 id="6、希腊——fix-hellas"><a href="#6、希腊——fix-hellas" class="headerlink" title="6、希腊——fix hellas"></a>6、希腊——fix hellas</h2><p><img src="/images/pasted-230.png" alt=""></p><h2 id="7、荷兰——vedett-extra-blond"><a href="#7、荷兰——vedett-extra-blond" class="headerlink" title="7、荷兰——vedett extra blond"></a>7、荷兰——vedett extra blond</h2><p>![(/images/pasted-231.png)</p><p><img src="/images/pasted-234.png" alt=""></p><h2 id="8、荷兰——jupiler"><a href="#8、荷兰——jupiler" class="headerlink" title="8、荷兰——jupiler"></a>8、荷兰——jupiler</h2><p><img src="/images/pasted-232.png" alt=""></p><h2 id="9、荷兰——喜力"><a href="#9、荷兰——喜力" class="headerlink" title="9、荷兰——喜力"></a>9、荷兰——喜力</h2><p><img src="/images/pasted-233.png" alt=""></p><h2 id="10、比利时——affligem-9度麦芽度）"><a href="#10、比利时——affligem-9度麦芽度）" class="headerlink" title="10、比利时——affligem(9度麦芽度）"></a>10、比利时——affligem(9度麦芽度）</h2><p><img src="/images/pasted-235.png" alt=""></p><h2 id="11、圣托里尼——mythos"><a href="#11、圣托里尼——mythos" class="headerlink" title="11、圣托里尼——mythos"></a>11、圣托里尼——mythos</h2><p><img src="/images/pasted-236.png" alt=""></p><h2 id="12、米克诺斯——beplina"><a href="#12、米克诺斯——beplina" class="headerlink" title="12、米克诺斯——beplina"></a>12、米克诺斯——beplina</h2><p><img src="/images/pasted-237.png" alt=""></p><h2 id="13、圣托里尼——yellow-donkey"><a href="#13、圣托里尼——yellow-donkey" class="headerlink" title="13、圣托里尼——yellow donkey"></a>13、圣托里尼——yellow donkey</h2><p><img src="/images/pasted-238.png" alt=""></p><p><img src="/images/pasted-239.png" alt=""></p><h2 id="14、雅典的四罐"><a href="#14、雅典的四罐" class="headerlink" title="14、雅典的四罐"></a>14、雅典的四罐</h2><p><img src="/images/pasted-240.png" alt="upload successful"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> FindBeers </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FindBeers </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>sip客户端收不到200 OK信令</title>
       <link href="/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/"/>
       <url>/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、问题"><a href="#一、问题" class="headerlink" title="一、问题"></a>一、问题</h2><p>在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令</p><p><img src="/images/pasted-186.png" alt="无法接受导致无法处理"></p><h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>从sip server服务器抓包看，已经发出200 OK信令，应该在sip client接收侧，打开一看果然本地防火墙把idea权限拦了。</p><h2 id="二、解决"><a href="#二、解决" class="headerlink" title="二、解决"></a>二、解决</h2><p>修改防火墙针对IDEA权限，解决问题</p><p><img src="/images/pasted-187.png" alt="修改权限"></p><p><img src="/images/pasted-188.png" alt="验证确认收到200 OK信令"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、问题"><a href="#一、问题" class="headerlink" title="一、问题"></a>一、问题</h2><p>在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令</p><p><img src="/images/pasted-186.png" alt="无法接受导致无法处理"></p><h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>javax.sip.AUTOMATIC_DIALOG_SUPPORT 默认为开启，开启后遇到200由协议栈自动应答</p><p><img src="/images/pasted-199.png" alt=""></p><h2 id="二、解决"><a href="#二、解决" class="headerlink" title="二、解决"></a>二、解决</h2><p><img src="/images/pasted-187.png" alt="修改权限"></p><p><img src="/images/pasted-188.png" alt="验证确认收到200 OK信令"></p>]]></content>
       
       
       <categories>
@@ -79,11 +106,11 @@
     
     
     <entry>
-      <title>rfc3261—sip信令交互规范下载</title>
+      <title>sip、RTP、sdp相关rfc规范下载</title>
       <link href="/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/"/>
       <url>/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/</url>
       
-        <content type="html"><![CDATA[<p><a href="/download/rfc3261.pdf"">rfc3261英文版点击下载</a><br><a href="/download/RFC3261-中文.pdf"">rfc3261中文版点击下载</a></p>]]></content>
+        <content type="html"><![CDATA[<p><a href="/download/rfc3261.pdf"">rfc3261点击下载</a><br><a href="/download/RFC4773.pdf"">rfc4773点击下载</a><br><a href="/download/RFC4566.pdf"">rfc4566点击下载</a><br><a href="/download/RFC3551.pdf"">rfc3551点击下载</a><br><a href="/download/RFC2617.pdf"">rfc2617点击下载</a></p>]]></content>
       
       
       <categories>
@@ -719,37 +746,6 @@
     
     
     <entry>
-      <title>布里斯班黄金海岸</title>
-      <link href="/2020/03/06/bu-li-si-ban-huang-jin-hai-an/"/>
-      <url>/2020/03/06/bu-li-si-ban-huang-jin-hai-an/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
-            
-            <tag> Gold Coast </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>大堡礁-汉密尔顿岛</title>
       <link href="/2020/03/06/da-bao-jiao/"/>
       <url>/2020/03/06/da-bao-jiao/</url>
@@ -973,7 +969,7 @@
       <link href="/2020/03/06/mi-ke-nuo-si/"/>
       <url>/2020/03/06/mi-ke-nuo-si/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="一、米克诺斯"><a href="#一、米克诺斯" class="headerlink" title="一、米克诺斯"></a>一、米克诺斯</h2><p>米克诺斯岛位于广阔的爱琴海海域，五光十色的岛屿风光美不胜收，犹如爱琴海上一颗璀璨明亮的珍珠。岛上最具特色的是其独特风格的建筑房屋，洁白如羽毛的白墙和五彩鲜艳的门窗、阳台，形成十分鲜明的对比，独具一番风味。穿梭在幽静的小巷中，更有鲜艳的花朵点缀其中，十分富有诗意。岛上还有几座洁白神圣的教堂、博物馆，你可以前往参观，感受希腊浓郁的宗教气息和民俗文化；<br>米克诺斯岛上的小镇自然叫做米克诺斯镇，小巷里弄到处都是各式各样的小玩艺，游客如果带足银两，血拼一场收获绝不会少。由于米克诺斯岛并不大，建议租车环岛，这样省时更省力。除了游玩，米克诺斯岛还有更happy的节目，它真正驰名的时”天体海滩”和”夜生活”。蜚声世界的”天堂海滩”，就在米克诺斯岛上哦。不论是同性恋还是异性恋，这都是个彻底解放自己的好机会，身材好不好？没有关系，把握机会体验天体营的快感，才是米克诺斯的最大收获。<br>米克诺斯(又译作密克诺斯)是希腊爱琴海上的一个小岛，因旅游业而闻名，是基克拉泽斯群岛之一。米科诺斯岛面积86平方公里，常住居民约6,200 (2002年)。全岛主要由花岗岩构成，最高点海拔364米。岛上的淡水供应主要来自海水淡化。</p><h2 id="二、景色"><a href="#二、景色" class="headerlink" title="二、景色"></a>二、景色</h2><p><img src="/images/pasted-217.png" alt="upload successful"></p><p><img src="/images/pasted-218.png" alt="upload successful"></p><p><img src="/images/pasted-219.png" alt="upload successful"></p><p><img src="/images/pasted-220.png" alt="upload successful"></p><p><img src="/images/pasted-221.png" alt="upload successful"></p><p><img src="/images/pasted-222.png" alt="upload successful"></p>]]></content>
       
       
       <categories>
@@ -1035,7 +1031,7 @@
       <link href="/2020/03/06/sheng-tuo-li-ni/"/>
       <url>/2020/03/06/sheng-tuo-li-ni/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="一、圣托里尼"><a href="#一、圣托里尼" class="headerlink" title="一、圣托里尼"></a>一、圣托里尼</h2><p>圣托里尼（希腊文：Σαντορίνη）是在希腊大陆东南200公里的爱琴海上由一群火山组成的岛环，位于北纬 36.40° —东经 25.40°。圣托里尼岛环上最大的一个岛也叫圣托里尼岛，别名锡拉岛（Θήρα）。圣托里尼岛位于基克拉泽斯群岛的最南端，面积约73平方公里，人口约一万四千余人，多为希腊人。“圣托里尼”是十三世纪时威尼斯人所命名的，起源于圣·爱莲（義大利語：Santa Irene）；在此前这个岛称为锡拉岛、卡利斯提（Καλλίστη，在古希臘語意為“最美”）或斯特隆基里（Στρογγύλη）。岛上建筑蓝白相间，衬以蔚蓝大海，美不胜收，是著名旅游胜地。</p><p>3600多年前这里发生一次几千年来最猛烈的火山爆發，留下一个大火山口和几百米厚的火山灰，可能间接地促成克里特島的米诺斯文明的消亡。</p><h2 id="二、最好喝的啤酒——驴牌"><a href="#二、最好喝的啤酒——驴牌" class="headerlink" title="二、最好喝的啤酒——驴牌"></a>二、最好喝的啤酒——驴牌</h2><p><img src="/images/pasted-209.png" alt="黄驴啤酒"></p><h2 id="三、蓝顶教堂与海景"><a href="#三、蓝顶教堂与海景" class="headerlink" title="三、蓝顶教堂与海景"></a>三、蓝顶教堂与海景</h2><p><img src="/images/pasted-210.png" alt="岸边的蓝顶教堂"></p><p><img src="/images/pasted-211.png" alt=""></p><p><img src="/images/pasted-212.png" alt="白房子与海岸线"></p><p><img src="/images/pasted-213.png" alt="沙滩，好多裸晒的"></p><p><img src="/images/pasted-214.png" alt=""></p><p><img src="/images/pasted-215.png" alt=""></p><p><img src="/images/pasted-216.png" alt=""></p><h2 id="四、结语"><a href="#四、结语" class="headerlink" title="四、结语"></a>四、结语</h2><p>世界上美景太多了，圣托里尼是地中海上最惬意的一个小岛，驴牌啤酒是我喝过最好喝的啤酒，只有当地特供。</p>]]></content>
       
       
       <categories>
@@ -1066,7 +1062,7 @@
       <link href="/2020/03/06/ya-dian-wei-cheng/"/>
       <url>/2020/03/06/ya-dian-wei-cheng/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="一、Acropolis"><a href="#一、Acropolis" class="headerlink" title="一、Acropolis"></a>一、Acropolis</h2><p>雅典卫城（Acropolis），是希腊最杰出的古建筑群，是综合性的公共建筑，为宗教政治的中心地。雅典卫城面积约有3公顷（3万平方米，其东西长约280米，南北最宽约130米，），位于雅典市中心的卫城山丘上，始建于公元前580年。卫城中最早的建筑是雅典娜神庙和其他宗教建筑。雅典卫城，也称为雅典的阿克罗波利斯，希腊语为“阿克罗波利斯”，原意为“高处的城市”或“高丘上的城邦”。</p><h2 id="二、来历"><a href="#二、来历" class="headerlink" title="二、来历"></a>二、来历</h2><p>雅典的城名来自智慧女神雅典娜的名字。在古希腊神话中，人<br>雅典卫城图片<br>雅典卫城图片(29张)<br> 们在爱琴海边建立了一座新城，雅典娜希望成为这座城的保护神，海神波塞冬也想获得新城的归属权，他们互不相让，于是争夺起来。<br>后来，神王宙斯裁定，谁能给人类一件最有用的东西，该城就归属谁。波塞冬用三叉戟敲了敲岩石，从里面跑出了一匹象征战争的战马。而雅典娜用长矛一击岩石，石头上立即迅速地生长出一株枝叶繁茂、果实累累的橄榄树。橄榄树象征着和平和丰收，人们欢呼起来。于是，雅典娜成为了新城的保护神。人们用她的名字将城命名为雅典。并将橄榄树栽满雅典各处。 </p><h2 id="三、主要建筑点"><a href="#三、主要建筑点" class="headerlink" title="三、主要建筑点"></a>三、主要建筑点</h2><p><img src="/images/pasted-200.png" alt="俯瞰"></p><p><img src="/images/pasted-201.png" alt="阿迪库斯剧场"></p><p><img src="/images/pasted-202.png" alt="庙门"></p><p><img src="/images/pasted-203.png" alt="帕特农神庙"></p><p><img src="/images/pasted-204.png" alt="庙门内部看"></p><p><img src="/images/pasted-205.png" alt="女生浮廊"></p><p><img src="/images/pasted-207.png" alt="酒神剧场"></p><p><img src="/images/pasted-208.png" alt="神庙俯瞰"></p><p><img src="/images/pasted-223.png" alt="跑步被抓的地方"></p>]]></content>
       
       
       <categories>
@@ -1411,35 +1407,6 @@
     
     
     <entry>
-      <title>悉尼</title>
-      <link href="/2020/03/06/ao-da-li-ya/"/>
-      <url>/2020/03/06/ao-da-li-ya/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>日本—东京-大阪-神户-奈良-宇治</title>
       <link href="/2020/03/06/ri-ben/"/>
       <url>/2020/03/06/ri-ben/</url>
@@ -1463,6 +1430,35 @@
             <tag> EastAsia </tag>
             
             <tag> Japan </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>悉尼</title>
+      <link href="/2020/03/06/ao-da-li-ya/"/>
+      <url>/2020/03/06/ao-da-li-ya/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Oceania </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Oceania </tag>
             
         </tags>
       
@@ -1587,11 +1583,11 @@
     
     
     <entry>
-      <title>九寨沟</title>
-      <link href="/2020/03/06/jiu-zhai-gou/"/>
-      <url>/2020/03/06/jiu-zhai-gou/</url>
+      <title>西岭雪山</title>
+      <link href="/2020/03/06/xi-ling-xue-shan/"/>
+      <url>/2020/03/06/xi-ling-xue-shan/</url>
       
-        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说有就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
@@ -1616,11 +1612,11 @@
     
     
     <entry>
-      <title>西岭雪山</title>
-      <link href="/2020/03/06/xi-ling-xue-shan/"/>
-      <url>/2020/03/06/xi-ling-xue-shan/</url>
+      <title>九寨沟</title>
+      <link href="/2020/03/06/jiu-zhai-gou/"/>
+      <url>/2020/03/06/jiu-zhai-gou/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说走就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
       
       
       <categories>

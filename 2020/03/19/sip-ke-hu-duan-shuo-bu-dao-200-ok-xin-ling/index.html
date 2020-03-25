@@ -808,14 +808,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    112
+                    78
                 </div>
                 
 
@@ -840,9 +840,9 @@
             <div id="articleContent">
                 <h2 id="一、问题"><a href="#一、问题" class="headerlink" title="一、问题"></a>一、问题</h2><p>在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令</p>
 <p><img src="/images/pasted-186.png" alt="无法接受导致无法处理"></p>
-<h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>从sip server服务器抓包看，已经发出200 OK信令，应该在sip client接收侧，打开一看果然本地防火墙把idea权限拦了。</p>
-<h2 id="二、解决"><a href="#二、解决" class="headerlink" title="二、解决"></a>二、解决</h2><p>修改防火墙针对IDEA权限，解决问题</p>
-<p><img src="/images/pasted-187.png" alt="修改权限"></p>
+<h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><p>javax.sip.AUTOMATIC_DIALOG_SUPPORT 默认为开启，开启后遇到200由协议栈自动应答</p>
+<p><img src="/images/pasted-199.png" alt=""></p>
+<h2 id="二、解决"><a href="#二、解决" class="headerlink" title="二、解决"></a>二、解决</h2><p><img src="/images/pasted-187.png" alt="修改权限"></p>
 <p><img src="/images/pasted-188.png" alt="验证确认收到200 OK信令"></p>
 
             </div>
@@ -1074,50 +1074,57 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/">
+                <a href="/2020/03/25/beers/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="sip客户端收不到200 OK信令">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Beers">
                         
-                        <span class="card-title">sip客户端收不到200 OK信令</span>
+                        <span class="card-title">Beers</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、问题在向服务器发送INVITE信令时，媒体协商后收不到server的200 OK信令，进而无法进行下一步逻辑处理，导致server一直发送200 OK信令
+                            1、慕尼黑扎啤
+2、越南——saigon
+3、越南——saigon special
+4、印尼的茅台
+5、印尼——bintang
 
-二、分析从sip server服务器抓包看，已经发出200 OK信令，应该在s
+6、希腊——fix hellas
+7、荷兰——vedett extra blond![(/images/pas
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-25
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/signaling/" class="post-category">
-                                    signaling
+                            <a href="/categories/Traval/" class="post-category">
+                                    Traval
+                                </a>
+                            
+                            <a href="/categories/Traval/FindBeers/" class="post-category">
+                                    FindBeers
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/signaling/">
-                        <span class="chip bg-color">signaling</span>
+                    <a href="/tags/FindBeers/">
+                        <span class="chip bg-color">FindBeers</span>
                     </a>
                     
                 </div>
@@ -1323,7 +1330,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">8.2k</span>&nbsp;字
+                class="white-color">9.4k</span>&nbsp;字
             
             
             
