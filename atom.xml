@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-25T06:25:44.941Z</updated>
+  <updated>2020-03-25T08:08:56.504Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>进行宏观行业把控的几个要点</title>
+    <link href="https://cyfreeman.github.io/2020/03/25/jin-xing-hong-guan-xing-ye-ba-kong-de-ji-ge-yao-dian/"/>
+    <id>https://cyfreeman.github.io/2020/03/25/jin-xing-hong-guan-xing-ye-ba-kong-de-ji-ge-yao-dian/</id>
+    <published>2020-03-25T08:05:00.000Z</published>
+    <updated>2020-03-25T08:08:56.504Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、梳理&quot;&gt;&lt;a href=&quot;#一、梳理&quot; class=&quot;headerlink&quot; title=&quot;一、梳理&quot;&gt;&lt;/a&gt;一、梳理&lt;/h2&gt;&lt;p&gt;梳理清晰自身优势以及产品有哪些&lt;/p&gt;
+&lt;h2 id=&quot;二、看行业发展、提高实力&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
+    
+  </entry>
   
   <entry>
     <title>Beers</title>
@@ -559,33 +589,6 @@ vim
       <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
     
       <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sip码号注册鉴权失败</title>
-    <link href="https://cyfreeman.github.io/2020/03/12/sip-bian-yi-bao-cuo/"/>
-    <id>https://cyfreeman.github.io/2020/03/12/sip-bian-yi-bao-cuo/</id>
-    <published>2020-03-12T02:58:00.000Z</published>
-    <updated>2020-03-12T08:04:33.242Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;鉴权失败&quot;&gt;&lt;a href=&quot;#鉴权失败&quot; class=&quot;headerlink&quot; title=&quot;鉴权失败&quot;&gt;&lt;/a&gt;鉴权失败&lt;/h2&gt;&lt;pre class=&quot; language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;REGISTER
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
     
     
       <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
