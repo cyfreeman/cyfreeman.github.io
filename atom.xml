@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-25T08:08:56.504Z</updated>
+  <updated>2020-03-26T00:54:23.970Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BICC信令国标</title>
+    <link href="https://cyfreeman.github.io/2020/03/26/bicc-xin-ling-guo-biao/"/>
+    <id>https://cyfreeman.github.io/2020/03/26/bicc-xin-ling-guo-biao/</id>
+    <published>2020-03-26T00:40:00.000Z</published>
+    <updated>2020-03-26T00:54:23.970Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;/download/第1部分：BICC的功能.pdf&quot;&quot;&gt;第1部分：BICC的功能.pdf 点击下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
   
   <entry>
     <title>进行宏观行业把控的几个要点</title>
@@ -559,36 +587,6 @@ vim
     
     
       <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于java的sip客户端注册流程梳理</title>
-    <link href="https://cyfreeman.github.io/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/"/>
-    <id>https://cyfreeman.github.io/2020/03/12/ji-yu-java-de-sip-ke-hu-duan-zhu-ce-liu-cheng-shu-li/</id>
-    <published>2020-03-12T08:32:00.000Z</published>
-    <updated>2020-03-12T09:16:25.149Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;pre&quot;&gt;&lt;a href=&quot;#pre&quot; class=&quot;headerlink&quot; title=&quot;pre&quot;&gt;&lt;/a&gt;pre&lt;/h2&gt;&lt;p&gt;今天实现了基于sip信令的码号注册成功，梳理一下关键点和流程。&lt;/p&gt;
-&lt;h2 id=&quot;一、Value&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
     
     
       <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>BICC信令国标</title>
+      <link href="/2020/03/26/bicc-xin-ling-guo-biao/"/>
+      <url>/2020/03/26/bicc-xin-ling-guo-biao/</url>
+      
+        <content type="html"><![CDATA[<p><a href="/download/第1部分：BICC的功能.pdf"">第1部分：BICC的功能.pdf 点击下载</a></p><p><a href="/download/第2部分：BICC的消息、参数的基本功能和格式.pdf"">第2部分：BICC的消息、参数的基本功能和格式.pdf 点击下载</a></p><p><a href="/download/第3部分：BICC的程序.pdf"">第3部分：BICC的程序 .pdf 点击下载</a></p><p><a href="/download/第4部分BICC的应用传送机制(APM)、隧道和IP承载控制协议.pdf"">第4部分BICC的应用传送机制(APM)、隧道和IP承载控制协议.pdf 点击下载</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>进行宏观行业把控的几个要点</title>
       <link href="/2020/03/25/jin-xing-hong-guan-xing-ye-ba-kong-de-ji-ge-yao-dian/"/>
       <url>/2020/03/25/jin-xing-hong-guan-xing-ye-ba-kong-de-ji-ge-yao-dian/</url>
@@ -979,9 +1004,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Cinque Terre </tag>
+            
+            <tag> Traval </tag>
             
             <tag> Europe </tag>
             
@@ -1310,37 +1335,6 @@
     
     
     <entry>
-      <title>曼谷</title>
-      <link href="/2020/03/06/man-gu/"/>
-      <url>/2020/03/06/man-gu/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> Bankok </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>普吉岛</title>
       <link href="/2020/03/06/pu-ji-dao/"/>
       <url>/2020/03/06/pu-ji-dao/</url>
@@ -1364,6 +1358,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> pucket island </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>曼谷</title>
+      <link href="/2020/03/06/man-gu/"/>
+      <url>/2020/03/06/man-gu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> Bankok </tag>
             
         </tags>
       
@@ -1434,35 +1459,6 @@
     
     
     <entry>
-      <title>悉尼</title>
-      <link href="/2020/03/06/ao-da-li-ya/"/>
-      <url>/2020/03/06/ao-da-li-ya/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Oceania </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Oceania </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>日本—东京-大阪-神户-奈良-宇治</title>
       <link href="/2020/03/06/ri-ben/"/>
       <url>/2020/03/06/ri-ben/</url>
@@ -1494,6 +1490,35 @@
     
     
     <entry>
+      <title>悉尼</title>
+      <link href="/2020/03/06/ao-da-li-ya/"/>
+      <url>/2020/03/06/ao-da-li-ya/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Oceania </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Oceania </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>七彩云南</title>
       <link href="/2020/03/06/yun-nan/"/>
       <url>/2020/03/06/yun-nan/</url>
@@ -1512,9 +1537,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -1541,9 +1566,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -1570,9 +1595,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -1599,9 +1624,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -1628,9 +1653,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -1657,9 +1682,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -1789,9 +1814,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
