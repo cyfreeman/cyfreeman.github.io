@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>M3UA协议</title>
+      <link href="/2020/03/26/m3ua-xie-yi/"/>
+      <url>/2020/03/26/m3ua-xie-yi/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SCTP协议</title>
+      <link href="/2020/03/26/sctp-xie-yi/"/>
+      <url>/2020/03/26/sctp-xie-yi/</url>
+      
+        <content type="html"><![CDATA[<p>RFC2960规范    <a href="/download/rfc2960(SCTP).pdf"">rfc2960(SCTP).pdf 点击下载</a><br>RFC3309补充规范    <a href="/download/rfc3309(SCTP补充).pdf"">rfc3309(SCTP补充).pdf 点击下载</a><br>RFC2960规范    <a href="/download/rfc3286(SCTP).pdf"">rfc3286(SCTP).pdf 点击下载</a></p><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>流控制传输协议（SCTP，Stream Control Transmission Protocol）是一种在网络连接两端之间同时传输多个数据流的协议。SCTP提供的服务于UDP和TCP类似。<br>SCTP提供的服务于UDP和TCP类似。SCTP在RFC2960中详细说明，并有RFC3309加以更新。RFC 3286给出了SCTP的简要介绍。SCTP在客户和服务器之间提供关联（association），并像TCP那样给应用提供可靠性、排序、流量控制以及全双工的数据传输。SCTP中使用“关联”一词替代“连接”是为了避免这样的内涵：一个连接只涉及两个IP地址间的通信。一个关联指代两个系统之间的一次通信，它可能因为SCTP支持多宿而涉及不止两个地址。<br>与TCP不同的是，SCTP是面向消息的（message-oriented）。它提供各个记录的按序递送服务。与UDP一样，由发送端写入的每一条记录的长度随数据一道传递给接收端应用。<br>SCTP能给在所连接的端点之间提供多个流，每个流各自可靠地按序递送消息。一个流上某个消息的丢失不会阻塞同一关联其他流上消息的投递。这种做法与TCP正好相反，就TCP而言，在单一字节流中任何位置的字节丢失都将在阻塞该连接上其后所有数据的递送，直到该丢失被修复为止。<br>SCTP还提供多宿特性，使得单个SCTP端点能够支持多个IP地址。该特性可以增强应对网络故障的健壮性。一个端点可能有多个冗余的连接，每个网络又可能有各自接入因特网基础设施的连接。当该端点与另一个端点建立一个关联之后，如果它的某个网络或某个跨域因特网的通路发生故障，SCTP就可以通过切换到使用已与该关联的另一个地址来避免发生的故障。</p><p><img src="/images/pasted-306.png" alt="服务的需求"></p><h2 id="二、SCTP功能与偶连"><a href="#二、SCTP功能与偶连" class="headerlink" title="二、SCTP功能与偶连"></a>二、SCTP功能与偶连</h2><p><img src="/images/pasted-307.png" alt=""></p><h3 id="2-1-主机和端点"><a href="#2-1-主机和端点" class="headerlink" title="2.1 主机和端点"></a>2.1 主机和端点</h3><p>一个主机可以有多个端点<br>一个端点可以包括多个传送地址</p><h3 id="2-2-工作模型"><a href="#2-2-工作模型" class="headerlink" title="2.2 工作模型"></a>2.2 工作模型</h3><p><img src="/images/pasted-308.png" alt="工作模型"></p><h3 id="2-3-偶连"><a href="#2-3-偶连" class="headerlink" title="2.3 偶连"></a>2.3 偶连</h3><h4 id="建立连接"><a href="#建立连接" class="headerlink" title="建立连接"></a>建立连接</h4><p>不同于TCP，SCTP通过四次握手来完成连接的建立：<br>1、连接发起者（一般为客户端）SCTP发送一个INIT消息（初始化）。该消息包括了连接发起者的IP地址清单、初始序列号、用于标识本耦联中所有报文的起始标记、客户请求的外出流的数目以及客户能够支持的外来流的数目<br>2、对端（服务器）发送一个INITACK消息确认连接发起者的INIT消息，其中含有服务器的IP地址清单、初始序列号、起始标记、服务器请求的外出流的数目、服务器能够支持的外来流的数目以及一个状态cookie，状态cookie包含服务器用于确信本耦联有效所需的所有状态，cookie是经过数字签名的，因而可以确保其有效性<br>3、客户以一个COOKIEECHO消息返回服务器的状态cookie，除COOKIEECHO外，该消息可能在同一个报文中捆绑一个用户数据<br>4、服务器以一个COOKIEACK消息确认客户返回的cookie是正确的，到此时该耦联就建立成功了。该消息也可能在同一个报文中捆绑一个用户数据。</p><p><img src="/images/pasted-316.png" alt="upload successful"><br>在一次SCTP四次握手中，INIT消息的接收端不必保存任何状态信息或者分配任何资源，这样就可防范SYNFlooding等DoS攻击。它在发送INIT-ACK消息时，采用了一种机制——“状态Cookie”，该Cookie具有发送端要建立自己状态所需的全部信息。<br>用于建立连接的INIT ACK只能在COOKIE WATI状态收到，在其它状态收到该报文时都会直接丢弃，类似的，COOKIE ACK只能在COOKIE ECHOED状态接收。<br>在常规的握手中，主动发起方的本地tag在发起握手时产生，主动发起方的对端tag在收到INIT ACK时产生。而连接的被动方的本地tag和对端tag都在收到INIT时产生，但是最终要到收到了COOKIE ECO后才确定并保存下来。<br>SCTP产生一个状态Cookie的过程如下：<br>1、使用收到的INIT和发出的INIT-ACK块中的信息创建一个关联的TCB（传输控制块）。<br>2、在TCB中，将当前日期设为创建日期，将协议参数“有效Cookie时间”设为生存期间。<br>3、根据TCB，收集重建TCB所需的最小信息子集，将该子集和密钥产生一个MAC（信息认证编码）。<br>4、结合上述最小信息子集和MAC产生状态Cookie。<br>5、在发送完INITACK（包含状态Cookie参数）后，发送方必须删除TCB以及任何与新关联有关的本地资源。<br>INIT和INIT-ACK都必须包含建立初始状态所需的参数：一组IP地址，保证可靠传输的初始序列号，每个被接收的SCTP报文中必须含有的验证标签，每一端请求发出的流数目和每一端能支持接收的流数目。交换完这些消息之后，INIT的发送端以COOKIE-ECHO消息的方式发送回状态Cookie。接收端根据所接收到的COOKIE-ECHO中的状态Cookie，完整地重建自己的状态，并回送COOKIE-ACK来确认关联已建立。<br>因此对于SCTP，即使接收再多的INIT消息,接收端也没有任何资源的消耗：它既不分配任何系统资源，也不保存此次新关联的状态，它只是把相应重建状态所用的状态Cookie作为参数，包含在每一个回送的INIT-ACK消息中，最后该状态Cookie会被COOKIE-ECHO消息发送回来。<br>类似于TCP，SCTP也多由客户端执行主动打开，而服务器执行被动打开。</p><h4 id="断开连接"><a href="#断开连接" class="headerlink" title="断开连接"></a>断开连接</h4><p><img src="/images/pasted-317.png" alt="upload successful"></p><h4 id="同时打开连接"><a href="#同时打开连接" class="headerlink" title="同时打开连接"></a>同时打开连接</h4><p>RFC规定，如果SCTP在COOKIE-WAIT或者COOKIE-ECHOED状态接收到INIT报文。则：<br>INIT报文的接收者产生一个INIT-ACK，该INIT-ACK使用的本端参数和自己发送的那个INIT报文的相同<br>1、执行状态COOKIE的计算过程，产生一个状态COOKIE<br>2、不允许修改SCTP的状态<br>3、状态COOKIE相关的TCB不能删除<br>4、不关闭T1-init定时器<br>如果SCTP在非COOKIE-WAIT状态接收到了INIT-ACK，则丢弃它。<br>同时断开连接<br>极少数情况下，耦联的双发可能同时执行主动关闭，即同时进入发送SHUTWODN并进入SHUTDOWN-SENT状态。在这种情况下关闭的流程为：<br>1、两端都发送SHUTWODN并进入SHUTDOWN-SENT状态<br>2、两端都收到对方的SHUTDOWN消息，并发送SHUTDOWN-ACK，然后进入SHUTDOWN-ACK-SENT状态<br>3、两端都收到对方的SHUTDOWN-ACK，并发送SHUTDOWN-COMPLETE，然后就进入close状态<br><img src="/images/pasted-311.png" alt=""></p><h4 id="状态变化图"><a href="#状态变化图" class="headerlink" title="状态变化图"></a>状态变化图</h4><p>SCTP的状态迁移图如下所示。<br><img src="/images/pasted-312.png" alt=""></p><h3 id="2-4-通路"><a href="#2-4-通路" class="headerlink" title="2.4 通路"></a>2.4 通路</h3><p><img src="/images/pasted-313.png" alt=""></p><h2 id="三、SCTP消息"><a href="#三、SCTP消息" class="headerlink" title="三、SCTP消息"></a>三、SCTP消息</h2><p><img src="/images/pasted-314.png" alt=""></p><p><img src="/images/pasted-315.png" alt=""></p><h2 id="四、SCTP信令流程"><a href="#四、SCTP信令流程" class="headerlink" title="四、SCTP信令流程"></a>四、SCTP信令流程</h2><p>1、偶联的建立、终止（详见2.3）<br>2、数据传递和证实<br>3、拥塞控制机制</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>sigtran协议簇</title>
+      <link href="/2020/03/26/sigtran-xie-yi-cu/"/>
+      <url>/2020/03/26/sigtran-xie-yi-cu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、sigtran定义"><a href="#一、sigtran定义" class="headerlink" title="一、sigtran定义"></a>一、sigtran定义</h2><p>什么是SIGTRAN？SIGTRAN是Signaling Transport的缩写。SIGTRAN协议是IETF的信令传送工作组建立的一套在IP网络上传送PSTN信令的传输控制协议。SIGTRAN定义了一个比较完善的SIGTRAN协议堆栈，分为IP协议层、信令传输层、信令传输适配层和信令应用层。每层所含内容如下：<br>IP协议层：IP<br>信令传输层：SCTP<br>信令传输适配层：SUA、M3UA、M2UA、M2PA、IUA<br>信令应用层：TCAP、TUP、ISUP、SCCP、MTP3、Q931/QSIG</p><p>不同的信令应用层需要不同的信令传输适配层，但IP协议层和信令传输层是共享的和相同的。信令传输适配层与信令应用层的对应关系如下：</p><p>SUA对应TCAP<br>M3UA对应TUP、ISUP、SCCP、TCAP<br>M2UA/M2PA对应MTP3、ISUP<br>IUA对应Q931/QSIG、ISUP</p><h2 id="二、整体功能"><a href="#二、整体功能" class="headerlink" title="二、整体功能"></a>二、整体功能</h2><p>下面我们通过一个例子来理解SIGTRAN的作用。小王需要从上海通过海运运输一些东西去深圳。小王需要先将货物包装在纸盒或者木盒中，然后使用汽车把装着货物的盒子运输到货运公司。货运公司会将货物装载到一个集装箱中，然后通过轮船运到深圳的港口。货运公司从集装箱中分出小王的货物，再发给收货人。<br>从上面的例子可以看出，货运公司负责使用海运运输小王的货物。在运输过程中，货运公司对货物进行了封装和解封装，但是并不会对货物进行处理。这正是对应了SIGTRAN 的特点。<br>SIGTRAN有两个主要功能：适配和传输。与此对应，SIGTRAN协议栈包含两层协议：传输协议和适配协议。<br>传输协议使用流控制传输协议SCTP。SCTP是在TCP协议的基础上发展而来，是一种提供了可靠、高效、有序的数据传输协议。与TCP相比，SCTP具有以下特点：<br>SCTP具有更高的安全性。<br>SCTP支持多宿主，IP网络的源地址和目的地址都只有一个，而SCTP在此基础上做了改进，源地址和目的地址都允许多个地址，一个端点可以由多于一个IP地址组成，使得网络可靠性增加。<br>SCTP支持多流传送消息，TCP只支持一个流。打个比方，TCP相当于一条高速公路，但每个方向只有一条车道，如果这条车道出现拥塞，其他数据包就只有等待了。而SCTP在每个方向上都采用多条通道，提高数据传输效率。<br>适配协议包含M3UA（MTP3 User Adaptation，MTP3用户适配层）、M2UA（MTP2 User Adaptation，MTP2用户适配层）、IUA（ISDN Q.921 User Adaptation，ISDN Q.921用户适配层）、M2PA（MTP2 Peer Adaptation，MTP第二层的用户对等适配层）、SUA（SCCP User Adaptation，SCCP用户适配层）等。比如说ISUP协议原来是在MTP3上面传送的，ISUP和MTP3之间有明确的层间接口。现在没有MTP3了，采用M3UA来替代，那么M3UA就要把这个层间接口原封不动的继承下来，不能让ISUP感觉到底层协议有变化，因此M3UA要很好地去适配ISUP消息，不能让它感觉到跟原来有任何不同的地方。<br>如图1所示，No.7用户层消息，比如一个IAM消息，在七号信令网络中采用MTP封装后，才能传送到信令网关。信令网关解封装MTP-1、MTP-2和MTP-3后看到此IAM消息。信令网关并不处理IAM消息，而是通过节点互通功能将此消息原封不动的封装进M3UA，外面再封装SCTP和IP，然后送给IP网络。IP网络中的设备解封装IP、SCTP和M3UA，终于看到了七号信令网络送来的IAM消息。<br>在图1可以看出，信令网关负责信令从MTP解封装七号信令的用户层消息，然后通过SIGTRAN再封装，反之亦然。<br>综上所述，SIGTRAN协议的作用是实现七号信令在IP网络中的适配与传输，它支持标准的原语接口，不需要对现有的SS7信令应用部分（如TUP、ISUP、MAP等）进行任何处理。它利用标准的IP传送协议作为低层传送，并通过增加自身的功能来满足SS7信令的传送要求，是NGN中重要的传输控制协议之一。<br><img src="/images/pasted-305.png" alt="图1 互通示例图"></p><h2 id="三、协议"><a href="#三、协议" class="headerlink" title="三、协议"></a>三、协议</h2><p>（1）SCTP协议（主要涉及）</p><p>SCTP<br>由IETF提出，是一个面向连接的传输层协议，采用了类似TCP的流量控制和拥塞控制算法，通过自身的证实与重发机制来保证用户数据在两个SCTP端点间可靠传送。相对于TCP等其他传输协议，SCTP传输时延小，可避免某些大数据对其他数据的阻塞，具有更高的可靠性和安全性。</p><p>（2）M3UA协议（主要涉及）</p><p>M3UA是MTP第三级用户适配层协议，提供信令点编码和IP地址的转换。用于在软交换与信令网关之间实现七号信令协议的传送，支持在IP网上传送MTP第三级的用户消息，包括ISUP、TUP和SCCP消息，TCAP消息作为SCCP的净荷可由M3UA透明传送。</p><p>（3）M2UA/M2PA协议</p><p>M2UA/M2PA是MTP第二级用户对等层间的适配层协议。</p><p>（4）IUA协议</p><p>IUA是ISDN Q.931用户适配层协议。</p><p>（5）SUA协议</p><p>SUA是SCCP用户适配层协议。SUA与M3UA不同，它直接实现了TCAP over IP功能。</p><p>SIGTRAN支持PSTN信令应用的标准原语接口，利用标准的IP传送协议作为低层传送信令，是NGN中重要的传输控制协议之一。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>BICC信令国标</title>
       <link href="/2020/03/26/bicc-xin-ling-guo-biao/"/>
       <url>/2020/03/26/bicc-xin-ling-guo-biao/</url>
@@ -1004,11 +1079,11 @@
       
         <tags>
             
-            <tag> Cinque Terre </tag>
-            
             <tag> Traval </tag>
             
             <tag> Europe </tag>
+            
+            <tag> Cinque Terre </tag>
             
         </tags>
       
@@ -1174,37 +1249,6 @@
     
     
     <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1230,6 +1274,37 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -1335,37 +1410,6 @@
     
     
     <entry>
-      <title>普吉岛</title>
-      <link href="/2020/03/06/pu-ji-dao/"/>
-      <url>/2020/03/06/pu-ji-dao/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> pucket island </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>曼谷</title>
       <link href="/2020/03/06/man-gu/"/>
       <url>/2020/03/06/man-gu/</url>
@@ -1389,6 +1433,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> Bankok </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>普吉岛</title>
+      <link href="/2020/03/06/pu-ji-dao/"/>
+      <url>/2020/03/06/pu-ji-dao/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> pucket island </tag>
             
         </tags>
       
