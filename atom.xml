@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-03-27T02:28:31.817Z</updated>
+  <updated>2020-03-31T05:21:32.460Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>澳门</title>
+    <link href="https://cyfreeman.github.io/2020/03/31/ao-men/"/>
+    <id>https://cyfreeman.github.io/2020/03/31/ao-men/</id>
+    <published>2020-03-31T05:20:00.000Z</published>
+    <updated>2020-03-31T05:21:32.460Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-389.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/pasted-390.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/pasted-391.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
+    
+      <category term="Domestic" scheme="https://cyfreeman.github.io/categories/Traval/Domestic/"/>
+    
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
+    
+      <category term="Domestic" scheme="https://cyfreeman.github.io/tags/Domestic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>香港</title>
+    <link href="https://cyfreeman.github.io/2020/03/31/xiang-gang/"/>
+    <id>https://cyfreeman.github.io/2020/03/31/xiang-gang/</id>
+    <published>2020-03-31T05:09:00.000Z</published>
+    <updated>2020-03-31T05:20:04.180Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-380.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/pasted-381.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/pasted-382.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
+    
+      <category term="Domestic" scheme="https://cyfreeman.github.io/categories/Traval/Domestic/"/>
+    
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
+    
+      <category term="Domestic" scheme="https://cyfreeman.github.io/tags/Domestic/"/>
+    
+  </entry>
   
   <entry>
     <title>IPSEC隧道原理</title>
@@ -520,65 +582,6 @@
     
     
       <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SIP信令流程梳理</title>
-    <link href="https://cyfreeman.github.io/2020/03/16/sip-xin-ling-liu-cheng-shu-li/"/>
-    <id>https://cyfreeman.github.io/2020/03/16/sip-xin-ling-liu-cheng-shu-li/</id>
-    <published>2020-03-16T03:33:00.000Z</published>
-    <updated>2020-03-16T03:47:16.220Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、注册&quot;&gt;&lt;a href=&quot;#一、注册&quot; class=&quot;headerlink&quot; title=&quot;一、注册&quot;&gt;&lt;/a&gt;一、注册&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-113.png&quot; alt=&quot;sip注册流程&quot;&gt;&lt;/p&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sip-Dialog示例</title>
-    <link href="https://cyfreeman.github.io/2020/03/15/sip-dialog-shi-li/"/>
-    <id>https://cyfreeman.github.io/2020/03/15/sip-dialog-shi-li/</id>
-    <published>2020-03-15T14:50:00.000Z</published>
-    <updated>2020-03-15T14:59:52.586Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、dialog&quot;&gt;&lt;a href=&quot;#一、dialog&quot; class=&quot;headerlink&quot; title=&quot;一、dialog&quot;&gt;&lt;/a&gt;一、dialog&lt;/h2&gt;&lt;p&gt;1、端到端的dialog连接&lt;br&gt;2、有状态机，如下：&lt;br&gt;Invite Dialog
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
     
   </entry>
   
