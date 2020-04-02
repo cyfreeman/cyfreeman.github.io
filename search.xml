@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Mobicents ss7</title>
+      <link href="/2020/04/02/mobicents-ss7/"/>
+      <url>/2020/04/02/mobicents-ss7/</url>
+      
+        <content type="html"><![CDATA[<p>1、提供通过CLI配置SS7协议栈</p><p>2、打包map层以下为服务暴露给JNDI接口，进而可以在任意应用中使用</p><p>3、依赖关系：ss7应用–&gt;ss7服务–&gt;JBoss应用服务+JBOSS_HOME系统属性设置</p><p>   JBOSS_HOME 配置OK–&gt;部署ss7服务、shell脚本和shell库</p><p>4、JBOSS环境必须先安装，用于支撑Mobicents从源安装服务</p><p>5、</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> signaling </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>澳门</title>
       <link href="/2020/03/31/ao-men/"/>
       <url>/2020/03/31/ao-men/</url>
@@ -1332,6 +1357,37 @@
     
     
     <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1388,37 +1444,6 @@
             <tag> Europe </tag>
             
             <tag> Paris </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -1497,7 +1522,7 @@
       <link href="/2020/03/06/pu-ji-dao/"/>
       <url>/2020/03/06/pu-ji-dao/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/pasted-434.png" alt="upload successful"><br><img src="/images/pasted-435.png" alt="upload successful"><br><img src="/images/pasted-436.png" alt="upload successful"><br><img src="/images/pasted-437.png" alt="upload successful"><br><img src="/images/pasted-438.png" alt="upload successful"><br><img src="/images/pasted-439.png" alt="upload successful"><br><img src="/images/pasted-440.png" alt="upload successful"><br><img src="/images/pasted-441.png" alt="upload successful"><br><img src="/images/pasted-442.png" alt="upload successful"><br><img src="/images/pasted-443.png" alt="upload successful"></p>]]></content>
       
       
       <categories>
@@ -1528,7 +1553,7 @@
       <link href="/2020/03/06/man-gu/"/>
       <url>/2020/03/06/man-gu/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/pasted-444.png" alt="upload successful"><br><img src="/images/pasted-445.png" alt="upload successful"><br><img src="/images/pasted-446.png" alt="upload successful"><br><img src="/images/pasted-447.png" alt="upload successful"><br><img src="/images/pasted-448.png" alt="upload successful"><br><img src="/images/pasted-449.png" alt="upload successful"><br><img src="/images/pasted-450.png" alt="upload successful"><br><img src="/images/pasted-451.png" alt="upload successful"><br><img src="/images/pasted-452.png" alt="upload successful"><br><img src="/images/pasted-453.png" alt="upload successful"></p>]]></content>
       
       
       <categories>
@@ -1559,7 +1584,7 @@
       <link href="/2020/03/06/yue-nan-ya-zhuang/"/>
       <url>/2020/03/06/yue-nan-ya-zhuang/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/pasted-398.png" alt="upload successful"><br><img src="/images/pasted-399.png" alt="upload successful"><br><img src="/images/pasted-400.png" alt="upload successful"><br><img src="/images/pasted-401.png" alt="upload successful"><br><img src="/images/pasted-402.png" alt="upload successful"><br><img src="/images/pasted-403.png" alt="upload successful"><br><img src="/images/pasted-404.png" alt="upload successful"><br><img src="/images/pasted-405.png" alt="upload successful"><br><img src="/images/pasted-406.png" alt="upload successful"><br><img src="/images/pasted-407.png" alt="upload successful"><br><img src="/images/pasted-408.png" alt="upload successful"><br><img src="/images/pasted-409.png" alt="upload successful"><br><img src="/images/pasted-410.png" alt="upload successful"><br><img src="/images/pasted-411.png" alt="upload successful"><br><img src="/images/pasted-412.png" alt="upload successful"><br><img src="/images/pasted-413.png" alt="upload successful"><br><img src="/images/pasted-414.png" alt="upload successful"><br><img src="/images/pasted-415.png" alt="upload successful"><br><img src="/images/pasted-416.png" alt="upload successful"><br><img src="/images/pasted-417.png" alt="upload successful"><br><img src="/images/pasted-418.png" alt="upload successful"><br><img src="/images/pasted-419.png" alt="upload successful"><br><img src="/images/pasted-420.png" alt="upload successful"><br><img src="/images/pasted-421.png" alt="upload successful"></p>]]></content>
       
       
       <categories>
@@ -1739,7 +1764,7 @@
       <link href="/2020/03/06/wu-han-zhi-xing/"/>
       <url>/2020/03/06/wu-han-zhi-xing/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/pasted-422.png" alt="upload successful"><br><img src="/images/pasted-423.png" alt="upload successful"><br><img src="/images/pasted-424.png" alt="upload successful"><br><img src="/images/pasted-425.png" alt="upload successful"><br><img src="/images/pasted-426.png" alt="upload successful"><br><img src="/images/pasted-427.png" alt="upload successful"><br><img src="/images/pasted-428.png" alt="upload successful"><br><img src="/images/pasted-429.png" alt="upload successful"><br><img src="/images/pasted-430.png" alt="upload successful"><br><img src="/images/pasted-431.png" alt="upload successful"><br><img src="/images/pasted-432.png" alt="upload successful"><br><img src="/images/pasted-433.png" alt="upload successful"></p>]]></content>
       
       
       <categories>
