@@ -808,14 +808,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-04-03
+                    2020-04-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    25
+                    67
                 </div>
                 
 
@@ -838,9 +838,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、没有任何本地Lib的编译"><a href="#一、没有任何本地Lib的编译" class="headerlink" title="一、没有任何本地Lib的编译"></a>一、没有任何本地Lib的编译</h2><p>cd jss7<br>mvn install</p>
-<h2 id="二、基于ant编译二进制文件"><a href="#二、基于ant编译二进制文件" class="headerlink" title="二、基于ant编译二进制文件"></a>二、基于ant编译二进制文件</h2><p>cd release<br>ant</p>
-
+                <h2 id="零、源文件拷贝，安装依赖"><a href="#零、源文件拷贝，安装依赖" class="headerlink" title="零、源文件拷贝，安装依赖"></a>零、源文件拷贝，安装依赖</h2><p>git clone xxx</p>
+<h3 id="1、安装jdk"><a href="#1、安装jdk" class="headerlink" title="1、安装jdk"></a>1、安装jdk</h3><pre><code>yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel</code></pre><p>安装mvn</p>
+<pre><code>yum whatprovides maven
+yum install xxx</code></pre><h3 id="2、安装jboss"><a href="#2、安装jboss" class="headerlink" title="2、安装jboss"></a>2、安装jboss</h3><h2 id="一、没有任何本地Lib的编译"><a href="#一、没有任何本地Lib的编译" class="headerlink" title="一、没有任何本地Lib的编译"></a>一、没有任何本地Lib的编译</h2><pre><code>cd jss7
+mvn install</code></pre><h2 id="二、基于ant编译二进制文件"><a href="#二、基于ant编译二进制文件" class="headerlink" title="二、基于ant编译二进制文件"></a>二、基于ant编译二进制文件</h2><pre><code>cd release
+ant</code></pre>
             </div>
             <hr/>
 
@@ -1070,45 +1073,43 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/">
+                <a href="/2020/04/07/m3ua-can-shu-yu-pei-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="linux编译sigtran协议栈">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="M3UA参数与配置">
                         
-                        <span class="card-title">linux编译sigtran协议栈</span>
+                        <span class="card-title">M3UA参数与配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、没有任何本地Lib的编译cd jss7mvn install
-二、基于ant编译二进制文件cd releaseant
-
+                            一、pre为了满足实体依赖性，必须按以下顺序将配置节加载到M3UA任务：
+一.0 使用m3uaM3UA通过配置通用参数和以下entity结构体来实现服务：
+将M3UA配置为应用服务器进程（ASP）或IP服务器进程（IPSP）。下表显示了为A
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/backend/" class="post-category">
-                                    backend
+                            <a href="/categories/signaling/" class="post-category">
+                                    signaling
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1320,7 +1321,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">34.1k</span>&nbsp;字
+                class="white-color">34.8k</span>&nbsp;字
             
             
             

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-04-03T05:02:33.467Z</updated>
+  <updated>2020-04-07T10:55:31.177Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>linux编译sigtran协议栈</title>
-    <link href="https://cyfreeman.github.io/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/"/>
-    <id>https://cyfreeman.github.io/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/</id>
-    <published>2020-04-03T04:59:00.000Z</published>
-    <updated>2020-04-03T05:02:33.467Z</updated>
+    <title>服务器加速代理docker</title>
+    <link href="https://cyfreeman.github.io/2020/04/07/fu-wu-qi-jia-su-dai-li-docker/"/>
+    <id>https://cyfreeman.github.io/2020/04/07/fu-wu-qi-jia-su-dai-li-docker/</id>
+    <published>2020-04-07T08:46:00.000Z</published>
+    <updated>2020-04-07T10:55:31.177Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,66 @@
       
         
         
-          &lt;h2 id=&quot;一、没有任何本地Lib的编译&quot;&gt;&lt;a href=&quot;#一、没有任何本地Lib的编译&quot; class=&quot;headerlink&quot; title=&quot;一、没有任何本地Lib的编译&quot;&gt;&lt;/a&gt;一、没有任何本地Lib的编译&lt;/h2&gt;&lt;p&gt;cd jss7&lt;br&gt;mvn
+          &lt;p&gt;1、传config文件到服务器&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pasted-472.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2、yum install docker&lt;/p&gt;
+&lt;p&gt;3、启动sudo service docker
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>M3UA参数与配置</title>
+    <link href="https://cyfreeman.github.io/2020/04/07/m3ua-can-shu-yu-pei-zhi/"/>
+    <id>https://cyfreeman.github.io/2020/04/07/m3ua-can-shu-yu-pei-zhi/</id>
+    <published>2020-04-07T07:17:00.000Z</published>
+    <updated>2020-04-07T08:13:17.901Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、pre&quot;&gt;&lt;a href=&quot;#一、pre&quot; class=&quot;headerlink&quot; title=&quot;一、pre&quot;&gt;&lt;/a&gt;一、pre&lt;/h2&gt;&lt;p&gt;为了满足实体依赖性，必须按以下顺序将配置节加载到M3UA任务：&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux编译sigtran协议栈</title>
+    <link href="https://cyfreeman.github.io/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/"/>
+    <id>https://cyfreeman.github.io/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/</id>
+    <published>2020-04-03T04:59:00.000Z</published>
+    <updated>2020-04-07T06:55:26.365Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;零、源文件拷贝，安装依赖&quot;&gt;&lt;a href=&quot;#零、源文件拷贝，安装依赖&quot; class=&quot;headerlink&quot; title=&quot;零、源文件拷贝，安装依赖&quot;&gt;&lt;/a&gt;零、源文件拷贝，安装依赖&lt;/h2&gt;&lt;p&gt;git clone xxx&lt;/p&gt;
+&lt;h3
         
       
     
@@ -516,60 +575,6 @@
         
         
           &lt;p&gt;&lt;img src=&quot;/images/pasted-164.png&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sip、RTP、sdp相关rfc规范下载</title>
-    <link href="https://cyfreeman.github.io/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/"/>
-    <id>https://cyfreeman.github.io/2020/03/18/rfc3261-sip-xin-ling-jiao-hu-gui-fan-xia-zai/</id>
-    <published>2020-03-18T01:56:00.000Z</published>
-    <updated>2020-03-25T06:41:39.057Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;/download/rfc3261.pdf&quot;&quot;&gt;rfc3261点击下载&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;/download/RFC4773.pdf&quot;&quot;&gt;rfc4773点击下载&lt;/a&gt;&lt;br&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sip信令notify消息捕捉问题</title>
-    <link href="https://cyfreeman.github.io/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/"/>
-    <id>https://cyfreeman.github.io/2020/03/17/sip-xin-ling-notify-xiao-xi-bu-zhuo-wen-ti/</id>
-    <published>2020-03-17T09:22:00.000Z</published>
-    <updated>2020-03-18T07:52:29.231Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、报错描述&quot;&gt;&lt;a href=&quot;#一、报错描述&quot; class=&quot;headerlink&quot; title=&quot;一、报错描述&quot;&gt;&lt;/a&gt;一、报错描述&lt;/h2&gt;&lt;p&gt;在成功向sip
         
       
     

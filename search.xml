@@ -4,11 +4,61 @@
   
     
     <entry>
+      <title>服务器加速代理docker</title>
+      <link href="/2020/04/07/fu-wu-qi-jia-su-dai-li-docker/"/>
+      <url>/2020/04/07/fu-wu-qi-jia-su-dai-li-docker/</url>
+      
+        <content type="html"><![CDATA[<p>1、传config文件到服务器</p><p><img src="/images/pasted-472.png" alt=""></p><p>2、yum install docker</p><p>3、启动sudo service docker restart</p><p>4、加载docker服务</p><pre><code>docker run -d --name=sslocal  --restart=always --net=host --entrypoint=&quot;/usr/local/bin/sslocal&quot; -v $(pwd)/gui-config.json:/tmp/ssmlt.json:rw oddrationale/docker-shadowsocks -c /tmp/ssmlt.json</code></pre><p>5、git 的 http 协议代理</p><p>如果是http代理，假设端口为1080，按照如下设置：</p><pre><code>git config --global http.proxy &#39;http://127.0.0.1:1080&#39; git config --global https.proxy &#39;https://127.0.0.1:1080&#39;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>M3UA参数与配置</title>
+      <link href="/2020/04/07/m3ua-can-shu-yu-pei-zhi/"/>
+      <url>/2020/04/07/m3ua-can-shu-yu-pei-zhi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、pre"><a href="#一、pre" class="headerlink" title="一、pre"></a>一、pre</h2><p>为了满足实体依赖性，必须按以下顺序将配置节加载到M3UA任务：</p><h2 id="一-0-使用m3ua"><a href="#一-0-使用m3ua" class="headerlink" title="一.0 使用m3ua"></a>一.0 使用m3ua</h2><p>M3UA通过配置通用参数和以下entity结构体来实现服务：<br><img src="/images/pasted-462.png" alt=""></p><p>将M3UA配置为应用服务器进程（ASP）或IP服务器进程（IPSP）。下表显示了为ASP或IPSP配置M3UA时的差异：<br><img src="/images/pasted-463.png" alt=""></p><p>如果M3UA配置为IPSP，则IPSP_MODE参数必须配置为单端（SE）或双端（DE）：<br><img src="/images/pasted-464.png" alt=""><br>只有当IPSP配置为远程对等信令进程类型时，IPSP U模式才有效。</p><p>IPSP配置中需要客户端参数。此参数告诉M3UA是否启动与对等方的关联。将客户端参数设置为TRUE表示M3UA始终启动关联。将此参数设置为FALSE表示希望另一方启动关联。如果配置为ASP，M3UA总是启动关联。</p><p>M3UA配置文件的PS configuration部分中的RTE_CTX参数必须与对等端的配置匹配。例如，远程PS的路由上下文必须与本地PS的路由上下文匹配，反之亦然。路由上下文在大多数M3UA消息中传递，用于将传入消息与其关联的nsap和上层匹配。有关更多信息，请参阅NMS SS7配置手册。</p><h2 id="二、M3UA配置概览"><a href="#二、M3UA配置概览" class="headerlink" title="二、M3UA配置概览"></a>二、M3UA配置概览</h2><p>M3UA级别的所有计时器的默认值都以毫秒为单位显示。计时器的配置值为零将禁用该计时器。</p><p><img src="/images/pasted-465.png" alt=""></p><h2 id="三、网络配置"><a href="#三、网络配置" class="headerlink" title="三、网络配置"></a>三、网络配置</h2><p><img src="/images/pasted-466.png" alt=""><br>ITU配置实例</p><pre><code>&lt;NetworkConfig Index=&quot;1&quot;&gt;     &lt;NetworkId&gt;1&lt;/NetworkId&gt;     &lt;NetworkAppear&gt;1234&lt;/NetworkAppear&gt;     &lt;Ssf&gt;INTL&lt;/Ssf&gt;     &lt;DpcLength&gt;14&lt;/DpcLength&gt;     &lt;SlsLength&gt;4&lt;/SlsLength&gt; &lt;!-- 4 / 5/ 8 --&gt;     &lt;ServiceUserVar&gt;ITU&lt;/ServiceUserVar&gt;     &lt;ServiceUserVar2&gt;ITU&lt;/ServiceUserVar2&gt; &lt;!-- TCAP user var --&gt;&lt;/NetworkConfig&gt;</code></pre><p>ANSI配置实例</p><pre><code>&lt;NetworkConfig Index=&quot;1&quot;&gt;     &lt;NetworkId&gt;1&lt;/NetworkId&gt;     &lt;NetworkAppear&gt;1234&lt;/NetworkAppear&gt;     &lt;Ssf&gt;NAT&lt;/Ssf&gt;     &lt;DpcLength&gt;24&lt;/DpcLength&gt;     &lt;SlsLength&gt;5&lt;/SlsLength&gt; &lt;!-- 4 / 5/ 8 --&gt;     &lt;ServiceUserVar&gt;ANSI&lt;/ServiceUserVar&gt;     &lt;ServiceUserVar2&gt;ANSI&lt;/ServiceUserVar2&gt; &lt;!-- TCAP user var --&gt;&lt;/NetworkConfig&gt;</code></pre><h2 id="四、NSAP配置"><a href="#四、NSAP配置" class="headerlink" title="四、NSAP配置"></a>四、NSAP配置</h2><p><img src="/images/pasted-467.png" alt=""></p><h2 id="五、SAP配置"><a href="#五、SAP配置" class="headerlink" title="五、SAP配置"></a>五、SAP配置</h2><p><img src="/images/pasted-468.png" alt=""></p><h2 id="六、Peer-signaling-process-configuration"><a href="#六、Peer-signaling-process-configuration" class="headerlink" title="六、Peer signaling process configuration"></a>六、Peer signaling process configuration</h2><p><img src="/images/pasted-469.png" alt=""></p><h2 id="七、Peer-server-configuration"><a href="#七、Peer-server-configuration" class="headerlink" title="七、Peer server configuration"></a>七、Peer server configuration</h2><p><img src="/images/pasted-470.png" alt=""></p><h2 id="八、Routing-entry-configuration"><a href="#八、Routing-entry-configuration" class="headerlink" title="八、Routing entry configuration"></a>八、Routing entry configuration</h2><p><img src="/images/pasted-471.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> signaling </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux编译sigtran协议栈</title>
       <link href="/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/"/>
       <url>/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、没有任何本地Lib的编译"><a href="#一、没有任何本地Lib的编译" class="headerlink" title="一、没有任何本地Lib的编译"></a>一、没有任何本地Lib的编译</h2><p>cd jss7<br>mvn install</p><h2 id="二、基于ant编译二进制文件"><a href="#二、基于ant编译二进制文件" class="headerlink" title="二、基于ant编译二进制文件"></a>二、基于ant编译二进制文件</h2><p>cd release<br>ant</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="零、源文件拷贝，安装依赖"><a href="#零、源文件拷贝，安装依赖" class="headerlink" title="零、源文件拷贝，安装依赖"></a>零、源文件拷贝，安装依赖</h2><p>git clone xxx</p><h3 id="1、安装jdk"><a href="#1、安装jdk" class="headerlink" title="1、安装jdk"></a>1、安装jdk</h3><pre><code>yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel</code></pre><p>安装mvn</p><pre><code>yum whatprovides mavenyum install xxx</code></pre><h3 id="2、安装jboss"><a href="#2、安装jboss" class="headerlink" title="2、安装jboss"></a>2、安装jboss</h3><h2 id="一、没有任何本地Lib的编译"><a href="#一、没有任何本地Lib的编译" class="headerlink" title="一、没有任何本地Lib的编译"></a>一、没有任何本地Lib的编译</h2><pre><code>cd jss7mvn install</code></pre><h2 id="二、基于ant编译二进制文件"><a href="#二、基于ant编译二进制文件" class="headerlink" title="二、基于ant编译二进制文件"></a>二、基于ant编译二进制文件</h2><pre><code>cd releaseant</code></pre>]]></content>
       
       
       <categories>
@@ -1314,11 +1364,11 @@
       
         <tags>
             
-            <tag> Cinque Terre </tag>
-            
             <tag> Traval </tag>
             
             <tag> Europe </tag>
+            
+            <tag> Cinque Terre </tag>
             
         </tags>
       
@@ -1484,6 +1534,37 @@
     
     
     <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1509,37 +1590,6 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -1645,37 +1695,6 @@
     
     
     <entry>
-      <title>普吉岛</title>
-      <link href="/2020/03/06/pu-ji-dao/"/>
-      <url>/2020/03/06/pu-ji-dao/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/pasted-434.png" alt="upload successful"><br><img src="/images/pasted-435.png" alt="upload successful"><br><img src="/images/pasted-436.png" alt="upload successful"><br><img src="/images/pasted-437.png" alt="upload successful"><br><img src="/images/pasted-438.png" alt="upload successful"><br><img src="/images/pasted-439.png" alt="upload successful"><br><img src="/images/pasted-440.png" alt="upload successful"><br><img src="/images/pasted-441.png" alt="upload successful"><br><img src="/images/pasted-442.png" alt="upload successful"><br><img src="/images/pasted-443.png" alt="upload successful"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> SoutheastAsia </tag>
-            
-            <tag> pucket island </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>曼谷</title>
       <link href="/2020/03/06/man-gu/"/>
       <url>/2020/03/06/man-gu/</url>
@@ -1699,6 +1718,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> Bankok </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>普吉岛</title>
+      <link href="/2020/03/06/pu-ji-dao/"/>
+      <url>/2020/03/06/pu-ji-dao/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-434.png" alt="upload successful"><br><img src="/images/pasted-435.png" alt="upload successful"><br><img src="/images/pasted-436.png" alt="upload successful"><br><img src="/images/pasted-437.png" alt="upload successful"><br><img src="/images/pasted-438.png" alt="upload successful"><br><img src="/images/pasted-439.png" alt="upload successful"><br><img src="/images/pasted-440.png" alt="upload successful"><br><img src="/images/pasted-441.png" alt="upload successful"><br><img src="/images/pasted-442.png" alt="upload successful"><br><img src="/images/pasted-443.png" alt="upload successful"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> pucket island </tag>
             
         </tags>
       
