@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-04-07T10:55:31.177Z</updated>
+  <updated>2020-04-08T06:26:06.519Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,90 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>springboot获取配置的两种方式</title>
+    <link href="https://cyfreeman.github.io/2020/04/08/springboot-huo-qu-pei-zhi-de-liang-chong-fang-shi/"/>
+    <id>https://cyfreeman.github.io/2020/04/08/springboot-huo-qu-pei-zhi-de-liang-chong-fang-shi/</id>
+    <published>2020-04-08T06:24:00.000Z</published>
+    <updated>2020-04-08T06:26:06.519Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.读取默认配置文件中的数据&lt;br&gt;application.properties &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pasted-474.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;直接使用@Value注解获取数据 &lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jss7从m3ua-sccp-map的设置</title>
+    <link href="https://cyfreeman.github.io/2020/04/07/jss7-cong-m3ua-sccp-map-de-she-zhi/"/>
+    <id>https://cyfreeman.github.io/2020/04/07/jss7-cong-m3ua-sccp-map-de-she-zhi/</id>
+    <published>2020-04-07T12:23:00.000Z</published>
+    <updated>2020-04-07T12:56:35.426Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、总体分层&quot;&gt;&lt;a href=&quot;#一、总体分层&quot; class=&quot;headerlink&quot; title=&quot;一、总体分层&quot;&gt;&lt;/a&gt;一、总体分层&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-465.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
+    
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>xmanager+xshell控制远程linux桌面</title>
+    <link href="https://cyfreeman.github.io/2020/04/07/xmanager-xshell-kong-zhi-yuan-cheng-linux-zhuo-mian/"/>
+    <id>https://cyfreeman.github.io/2020/04/07/xmanager-xshell-kong-zhi-yuan-cheng-linux-zhuo-mian/</id>
+    <published>2020-04-07T12:08:00.000Z</published>
+    <updated>2020-04-07T12:13:23.759Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;export
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
   
   <entry>
     <title>服务器加速代理docker</title>
@@ -501,90 +585,6 @@
     
     
       <category term="FindBeers" scheme="https://cyfreeman.github.io/tags/FindBeers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sip客户端收不到200 OK信令</title>
-    <link href="https://cyfreeman.github.io/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/"/>
-    <id>https://cyfreeman.github.io/2020/03/19/sip-ke-hu-duan-shuo-bu-dao-200-ok-xin-ling/</id>
-    <published>2020-03-19T07:22:00.000Z</published>
-    <updated>2020-03-20T12:02:22.554Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、问题&quot;&gt;&lt;a href=&quot;#一、问题&quot; class=&quot;headerlink&quot; title=&quot;一、问题&quot;&gt;&lt;/a&gt;一、问题&lt;/h2&gt;&lt;p&gt;在向服务器发送INVITE信令时，媒体协商后收不到server的200
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sip信令请求与应答包头的处理</title>
-    <link href="https://cyfreeman.github.io/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/"/>
-    <id>https://cyfreeman.github.io/2020/03/18/sip-xin-ling-qing-qiu-yu-ying-da-bao-tou-de-chu-li/</id>
-    <published>2020-03-18T06:51:00.000Z</published>
-    <updated>2020-03-18T07:20:35.531Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1、应答中的 From 头域必须和请求中的 From 头域相等。&lt;/p&gt;
-&lt;p&gt;2、应答中的 Call-ID 头域必须和请求中的 Call-ID 头域相等。&lt;/p&gt;
-&lt;p&gt;3、应答中的 Cseq 头域必须和请求中的 Cseq 头域相等。&lt;/p&gt;
-&lt;p&gt;4、应答中的 Via
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SIP信令应答码</title>
-    <link href="https://cyfreeman.github.io/2020/03/18/sip-xin-ling-ying-da-ma/"/>
-    <id>https://cyfreeman.github.io/2020/03/18/sip-xin-ling-ying-da-ma/</id>
-    <published>2020-03-18T04:00:00.000Z</published>
-    <updated>2020-03-18T04:00:56.965Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;/images/pasted-164.png&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
     
   </entry>
   
