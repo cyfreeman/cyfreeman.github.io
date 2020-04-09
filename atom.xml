@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>轻狼‘s blog</title>
+  <title>陈杨‘s blog</title>
   
   <subtitle>跬步</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-04-08T06:26:06.519Z</updated>
+  <updated>2020-04-09T08:58:07.238Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,90 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>与华总关于宏观掌控、布局与方法论的洽谈纪要</title>
+    <link href="https://cyfreeman.github.io/2020/04/09/yu-hua-zong-guan-yu-hong-guan-zhang-kong-bu-ju-yu-fang-fa-lun-de-qia-tan-ji-yao/"/>
+    <id>https://cyfreeman.github.io/2020/04/09/yu-hua-zong-guan-yu-hong-guan-zhang-kong-bu-ju-yu-fang-fa-lun-de-qia-tan-ji-yao/</id>
+    <published>2020-04-09T08:55:00.000Z</published>
+    <updated>2020-04-09T08:58:07.238Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1、宏观掌控全局&quot;&gt;&lt;a href=&quot;#1、宏观掌控全局&quot; class=&quot;headerlink&quot; title=&quot;1、宏观掌控全局&quot;&gt;&lt;/a&gt;1、宏观掌控全局&lt;/h2&gt;&lt;h2 id=&quot;2、不要错过重要学习资源，保持警惕性&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>荀子·修身</title>
+    <link href="https://cyfreeman.github.io/2020/04/09/xun-zi-xiu-shen/"/>
+    <id>https://cyfreeman.github.io/2020/04/09/xun-zi-xiu-shen/</id>
+    <published>2020-04-09T07:12:00.000Z</published>
+    <updated>2020-04-09T07:12:26.147Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;“
+        
+      
+    
+    </summary>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>家训</title>
+    <link href="https://cyfreeman.github.io/2020/04/08/jia-xun/"/>
+    <id>https://cyfreeman.github.io/2020/04/08/jia-xun/</id>
+    <published>2020-04-08T11:26:00.000Z</published>
+    <updated>2020-04-09T02:12:25.521Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;祥和堂男人处事精神符号&quot;&gt;&lt;a href=&quot;#祥和堂男人处事精神符号&quot; class=&quot;headerlink&quot; title=&quot;祥和堂男人处事精神符号&quot;&gt;&lt;/a&gt;祥和堂男人处事精神符号&lt;/h2&gt;&lt;p&gt;详见《祥和堂•家规礼仪》为人篇、处事篇）：&lt;/p&gt;
+&lt;pre
+        
+      
+    
+    </summary>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
+    
+    
+      <category term="essay" scheme="https://cyfreeman.github.io/tags/essay/"/>
+    
+  </entry>
   
   <entry>
     <title>springboot获取配置的两种方式</title>
@@ -498,93 +582,6 @@
     
     
       <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BICC信令国标</title>
-    <link href="https://cyfreeman.github.io/2020/03/26/bicc-xin-ling-guo-biao/"/>
-    <id>https://cyfreeman.github.io/2020/03/26/bicc-xin-ling-guo-biao/</id>
-    <published>2020-03-26T00:40:00.000Z</published>
-    <updated>2020-03-26T00:54:23.970Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;/download/第1部分：BICC的功能.pdf&quot;&quot;&gt;第1部分：BICC的功能.pdf 点击下载&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>进行宏观行业把控的几个要点</title>
-    <link href="https://cyfreeman.github.io/2020/03/25/jin-xing-hong-guan-xing-ye-ba-kong-de-ji-ge-yao-dian/"/>
-    <id>https://cyfreeman.github.io/2020/03/25/jin-xing-hong-guan-xing-ye-ba-kong-de-ji-ge-yao-dian/</id>
-    <published>2020-03-25T08:05:00.000Z</published>
-    <updated>2020-03-25T08:08:56.504Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、梳理&quot;&gt;&lt;a href=&quot;#一、梳理&quot; class=&quot;headerlink&quot; title=&quot;一、梳理&quot;&gt;&lt;/a&gt;一、梳理&lt;/h2&gt;&lt;p&gt;梳理清晰自身优势以及产品有哪些&lt;/p&gt;
-&lt;h2 id=&quot;二、看行业发展、提高实力&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
-    
-      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
-    
-    
-      <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Beers</title>
-    <link href="https://cyfreeman.github.io/2020/03/25/beers/"/>
-    <id>https://cyfreeman.github.io/2020/03/25/beers/</id>
-    <published>2020-03-25T06:13:00.000Z</published>
-    <updated>2020-03-26T05:05:43.182Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;1、慕尼黑扎啤&quot;&gt;&lt;a href=&quot;#1、慕尼黑扎啤&quot; class=&quot;headerlink&quot; title=&quot;1、慕尼黑扎啤&quot;&gt;&lt;/a&gt;1、慕尼黑扎啤&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-224.png&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Traval" scheme="https://cyfreeman.github.io/categories/Traval/"/>
-    
-      <category term="FindBeers" scheme="https://cyfreeman.github.io/categories/Traval/FindBeers/"/>
-    
-    
-      <category term="FindBeers" scheme="https://cyfreeman.github.io/tags/FindBeers/"/>
     
   </entry>
   
