@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-04-09T08:58:07.238Z</updated>
+  <updated>2020-04-10T02:37:44.552Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jboss结构</title>
+    <link href="https://cyfreeman.github.io/2020/04/10/jboss-jie-gou/"/>
+    <id>https://cyfreeman.github.io/2020/04/10/jboss-jie-gou/</id>
+    <published>2020-04-10T02:37:00.000Z</published>
+    <updated>2020-04-10T02:37:44.552Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-481.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
   
   <entry>
     <title>与华总关于宏观掌控、布局与方法论的洽谈纪要</title>
@@ -545,33 +572,6 @@
         
         
           &lt;p&gt;RFC2960规范    &lt;a href=&quot;/download/rfc2960(SCTP).pdf&quot;&quot;&gt;rfc2960(SCTP).pdf 点击下载&lt;/a&gt;&lt;br&gt;RFC3309补充规范    &lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sigtran协议簇</title>
-    <link href="https://cyfreeman.github.io/2020/03/26/sigtran-xie-yi-cu/"/>
-    <id>https://cyfreeman.github.io/2020/03/26/sigtran-xie-yi-cu/</id>
-    <published>2020-03-26T12:46:00.000Z</published>
-    <updated>2020-03-26T13:08:28.675Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、sigtran定义&quot;&gt;&lt;a href=&quot;#一、sigtran定义&quot; class=&quot;headerlink&quot; title=&quot;一、sigtran定义&quot;&gt;&lt;/a&gt;一、sigtran定义&lt;/h2&gt;&lt;p&gt;什么是SIGTRAN？SIGTRAN是Signaling
         
       
     

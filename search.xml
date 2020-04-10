@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>jboss结构</title>
+      <link href="/2020/04/10/jboss-jie-gou/"/>
+      <url>/2020/04/10/jboss-jie-gou/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-481.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>与华总关于宏观掌控、布局与方法论的洽谈纪要</title>
       <link href="/2020/04/09/yu-hua-zong-guan-yu-hong-guan-zhang-kong-bu-ju-yu-fang-fa-lun-de-qia-tan-ji-yao/"/>
       <url>/2020/04/09/yu-hua-zong-guan-yu-hong-guan-zhang-kong-bu-ju-yu-fang-fa-lun-de-qia-tan-ji-yao/</url>
@@ -746,9 +771,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -775,9 +800,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -854,9 +879,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -906,9 +931,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -935,9 +960,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -964,9 +989,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1043,9 +1068,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1095,9 +1120,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1773,39 +1798,6 @@
     
     
     <entry>
-      <title>潜水胜地——美娜多，海豚发现之旅</title>
-      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
-      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Southeast Asia </tag>
-            
-            <tag> Indonesia </tag>
-            
-            <tag> Manado </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>巴厘岛</title>
       <link href="/2020/03/06/ba-li-dao/"/>
       <url>/2020/03/06/ba-li-dao/</url>
@@ -1831,6 +1823,39 @@
             <tag> Southeast_Asia </tag>
             
             <tag> Bali </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>潜水胜地——美娜多，海豚发现之旅</title>
+      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
+      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Indonesia </tag>
+            
+            <tag> Southeast Asia </tag>
+            
+            <tag> Manado </tag>
             
         </tags>
       
