@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-04-10T02:37:44.552Z</updated>
+  <updated>2020-04-15T12:01:21.302Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux常用命令</title>
+    <link href="https://cyfreeman.github.io/2020/04/15/linux-chang-yong-ming-ling/"/>
+    <id>https://cyfreeman.github.io/2020/04/15/linux-chang-yong-ming-ling/</id>
+    <published>2020-04-15T12:00:00.000Z</published>
+    <updated>2020-04-15T12:01:21.302Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1、查看系统安装的java&quot;&gt;&lt;a href=&quot;#1、查看系统安装的java&quot; class=&quot;headerlink&quot; title=&quot;1、查看系统安装的java&quot;&gt;&lt;/a&gt;1、查看系统安装的java&lt;/h4&gt;&lt;p&gt;rpm -qa | grep
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JSLEE/SS7/USSD/JBOSS梳理</title>
+    <link href="https://cyfreeman.github.io/2020/04/15/jslee-ss7-ussd-jboss-shu-li/"/>
+    <id>https://cyfreeman.github.io/2020/04/15/jslee-ss7-ussd-jboss-shu-li/</id>
+    <published>2020-04-15T08:17:00.000Z</published>
+    <updated>2020-04-15T08:17:22.898Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-482.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Deploy USSDGW From Trunk</title>
+    <link href="https://cyfreeman.github.io/2020/04/15/deploy-ussdgw-from-trunk/"/>
+    <id>https://cyfreeman.github.io/2020/04/15/deploy-ussdgw-from-trunk/</id>
+    <published>2020-04-15T06:35:00.000Z</published>
+    <updated>2020-04-15T06:38:53.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、Deploy-Mobicents-USSD-Gateway-from-master&quot;&gt;&lt;a href=&quot;#一、Deploy-Mobicents-USSD-Gateway-from-master&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
   
   <entry>
     <title>jboss结构</title>
@@ -351,9 +432,9 @@
       <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
     
     
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
       <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
     
   </entry>
   
@@ -466,9 +547,9 @@
       <category term="Domestic" scheme="https://cyfreeman.github.io/categories/Traval/Domestic/"/>
     
     
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
       <category term="Domestic" scheme="https://cyfreeman.github.io/tags/Domestic/"/>
+    
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
   </entry>
   
@@ -497,91 +578,9 @@
       <category term="Domestic" scheme="https://cyfreeman.github.io/categories/Traval/Domestic/"/>
     
     
-      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
-    
       <category term="Domestic" scheme="https://cyfreeman.github.io/tags/Domestic/"/>
     
-  </entry>
-  
-  <entry>
-    <title>IPSEC隧道原理</title>
-    <link href="https://cyfreeman.github.io/2020/03/27/ipsec-sui-dao-yuan-li/"/>
-    <id>https://cyfreeman.github.io/2020/03/27/ipsec-sui-dao-yuan-li/</id>
-    <published>2020-03-27T02:14:00.000Z</published>
-    <updated>2020-03-27T02:28:31.817Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;IPSEC 英文全称 Internet Protocol
-        
-      
-    
-    </summary>
-    
-    
-      <category term="networkArchitecture" scheme="https://cyfreeman.github.io/categories/networkArchitecture/"/>
-    
-    
-      <category term="networkArchitecture" scheme="https://cyfreeman.github.io/tags/networkArchitecture/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>M3UA协议</title>
-    <link href="https://cyfreeman.github.io/2020/03/26/m3ua-xie-yi/"/>
-    <id>https://cyfreeman.github.io/2020/03/26/m3ua-xie-yi/</id>
-    <published>2020-03-26T13:48:00.000Z</published>
-    <updated>2020-03-27T09:34:17.125Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot; title=&quot;一、概述&quot;&gt;&lt;/a&gt;一、概述&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-319.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SCTP协议</title>
-    <link href="https://cyfreeman.github.io/2020/03/26/sctp-xie-yi/"/>
-    <id>https://cyfreeman.github.io/2020/03/26/sctp-xie-yi/</id>
-    <published>2020-03-26T13:09:00.000Z</published>
-    <updated>2020-03-26T13:42:49.799Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;RFC2960规范    &lt;a href=&quot;/download/rfc2960(SCTP).pdf&quot;&quot;&gt;rfc2960(SCTP).pdf 点击下载&lt;/a&gt;&lt;br&gt;RFC3309补充规范    &lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
+      <category term="Traval" scheme="https://cyfreeman.github.io/tags/Traval/"/>
     
   </entry>
   

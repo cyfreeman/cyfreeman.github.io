@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>Linux常用命令</title>
+      <link href="/2020/04/15/linux-chang-yong-ming-ling/"/>
+      <url>/2020/04/15/linux-chang-yong-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h4 id="1、查看系统安装的java"><a href="#1、查看系统安装的java" class="headerlink" title="1、查看系统安装的java"></a>1、查看系统安装的java</h4><p>rpm -qa | grep java</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JSLEE/SS7/USSD/JBOSS梳理</title>
+      <link href="/2020/04/15/jslee-ss7-ussd-jboss-shu-li/"/>
+      <url>/2020/04/15/jslee-ss7-ussd-jboss-shu-li/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-482.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Deploy USSDGW From Trunk</title>
+      <link href="/2020/04/15/deploy-ussdgw-from-trunk/"/>
+      <url>/2020/04/15/deploy-ussdgw-from-trunk/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Deploy-Mobicents-USSD-Gateway-from-master"><a href="#一、Deploy-Mobicents-USSD-Gateway-from-master" class="headerlink" title="一、Deploy Mobicents USSD Gateway from master"></a>一、Deploy Mobicents USSD Gateway from master</h2><p>Below are steps to compile the USSD Gateway from GIT master branch and deploy on latest Mobicents JSLEE Server</p><pre class=" language-xml"><code class="language-xml">  # Download latest SNAPSHOT JSLEE server from https://hudson.jboss.org/hudson/view/Mobicents/job/Mobicents-Slee-2.x-Release/  # GIT clone MAP RA from master branch http://code.google.com/p/jain-slee/source/browse/?repo=ss7#git%2Fresources%2Fmap  # GIT clone USSD GW from http://code.google.com/p/ussdgateway/source/checkout  # Unzip mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA.zip  # set JBOSS_HOME environment variable to point to mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/jboss-5.1.0.GA  # cd to checkedout map ra and call "mvn clean install"  # cd to cloned ussdgateway and call "mvn clean install"   # copy mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/resources/http-client/http-client-ra-DU-2.5.0.FINAL.jar to mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/jboss-5.1.0.GA/server/default/deploy  # copy mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/resources/jdbc/mobicents-slee-ra-jdbc-DU-1.0.0.FINAL.jar to mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/jboss-5.1.0.GA/server/default/deploy  # cd to mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/jboss-5.1.0.GA/bin and start the server "./run.sh -b 127.0.0.1"</code></pre><h2 id="二、Prepare-CLI"><a href="#二、Prepare-CLI" class="headerlink" title="二、Prepare CLI"></a>二、Prepare CLI</h2><p>Above steps will prepare the USSD Gw, however to get the latest Command Line Interface (CLI) working below steps needs to be executed</p><pre class=" language-xml"><code class="language-xml">  #  GIT clone jSS7 from master branch http://code.google.com/p/jss7/source/checkout  # set JBOSS_HOME environment variable to point to mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/jboss-5.1.0.GA  # cd to checkedout jss7 and call "mvn clean install -Pjboss"  # cd to mobicents-jainslee-2.7.0-SNAPSHOT-jboss-5.1.0.GA/jboss-5.1.0.GA/bin and execute ./ss7-cli.sh</code></pre><p>Above steps will copy the necessary scripts and jars in jboss-5.1.0.GA for CLI to work</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>jboss结构</title>
       <link href="/2020/04/10/jboss-jie-gou/"/>
       <url>/2020/04/10/jboss-jie-gou/</url>
@@ -289,9 +364,9 @@
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -393,9 +468,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -422,9 +497,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -780,9 +855,9 @@
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -809,9 +884,9 @@
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -940,9 +1015,9 @@
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -969,9 +1044,9 @@
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -998,9 +1073,9 @@
       
         <tags>
             
-            <tag> signaling </tag>
-            
             <tag> backend </tag>
+            
+            <tag> signaling </tag>
             
         </tags>
       
@@ -1533,9 +1608,9 @@
       
         <tags>
             
-            <tag> Cinque Terre </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Cinque Terre </tag>
             
             <tag> Europe </tag>
             
@@ -2066,9 +2141,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -2095,9 +2170,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -2124,9 +2199,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -2153,9 +2228,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -2182,9 +2257,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -2211,9 +2286,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
@@ -2343,9 +2418,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Domestic </tag>
+            
+            <tag> Traval </tag>
             
         </tags>
       
