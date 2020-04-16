@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>JAIN SLEE架构梳理</title>
+      <link href="/2020/04/16/jain-slee-jia-gou-shu-li/"/>
+      <url>/2020/04/16/jain-slee-jia-gou-shu-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、介绍"><a href="#一、介绍" class="headerlink" title="一、介绍"></a>一、介绍</h2><p>1、JAIN SLEE is the specification for a Java Service Logic and Execution Environment (SLEE) architecture</p><p>2、A SLEE is an application server, or service container, which defines a component model for structuring the logic of communications services as a collection of reusable components, and for combining these components into even more sophisticated services. </p><p>3、Restcomm JAIN SLEE is the first and only open source platform certified for JAIN SLEE 1.1 compliance, providing a highly scalable, event-driven application server with a robust component model and a fault tolerant execution environment.</p><p><img src="/images/pasted-484.png" alt=""></p><h2 id="二、从源码安装编译"><a href="#二、从源码安装编译" class="headerlink" title="二、从源码安装编译"></a>二、从源码安装编译</h2><p>1、准备环境：足够的空间&gt;500M和java运行环境</p><p>2、下载源码</p><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ <span class="token function">git</span> clone https://github.com/RestComm/jain-slee restcomm-jain-slee-release<span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ <span class="token function">cd</span> restcomm-jain-slee-release<span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ <span class="token function">git</span> checkout tags/7.0.0-SNAPSHOT<span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ <span class="token function">cd</span> release</code></pre><p>3、编译<br>Apache Ant 1.6 (or higher) and Maven 2.0.9 (or higher) is used to build the release.</p><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ ant</code></pre><p>Once the process finishes you should have a restcomm-slee-7.0.0-SNAPSHOT.zip file</p><p>4、安装二进制文件</p><h2 id="三、配置和运行jslee"><a href="#三、配置和运行jslee" class="headerlink" title="三、配置和运行jslee"></a>三、配置和运行jslee</h2><p>1、WildFly can be booted in two different modes.Standalone Server and Managed Domain</p><p>2、Standalone Server<br>For many use cases, the centralized management capability available via a managed domain is not necessary. For these use cases, a WildFly instance can be run as a standalone server. </p><p>3、Managed Domain<br>One of the primary new features of WildFly is the ability to manage multiple WildFly instances from a single control point. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>USSD网关架构梳理</title>
       <link href="/2020/04/16/ussd-wang-guan-jia-gou-shu-li/"/>
       <url>/2020/04/16/ussd-wang-guan-jia-gou-shu-li/</url>
@@ -896,9 +921,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -925,9 +950,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1004,9 +1029,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1056,9 +1081,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1085,9 +1110,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1114,9 +1139,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1193,9 +1218,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1245,9 +1270,9 @@
       
       <categories>
           
-          <category> signaling </category>
-          
           <category> backend </category>
+          
+          <category> signaling </category>
           
       </categories>
       
@@ -1828,37 +1853,6 @@
     
     
     <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1884,6 +1878,37 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -1923,39 +1948,6 @@
     
     
     <entry>
-      <title>潜水胜地——美娜多，海豚发现之旅</title>
-      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
-      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Southeast Asia </tag>
-            
-            <tag> Indonesia </tag>
-            
-            <tag> Manado </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>巴厘岛</title>
       <link href="/2020/03/06/ba-li-dao/"/>
       <url>/2020/03/06/ba-li-dao/</url>
@@ -1981,6 +1973,39 @@
             <tag> Southeast_Asia </tag>
             
             <tag> Bali </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>潜水胜地——美娜多，海豚发现之旅</title>
+      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
+      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Indonesia </tag>
+            
+            <tag> Southeast Asia </tag>
+            
+            <tag> Manado </tag>
             
         </tags>
       
@@ -2289,11 +2314,11 @@
     
     
     <entry>
-      <title>西岭雪山</title>
-      <link href="/2020/03/06/xi-ling-xue-shan/"/>
-      <url>/2020/03/06/xi-ling-xue-shan/</url>
+      <title>九寨沟</title>
+      <link href="/2020/03/06/jiu-zhai-gou/"/>
+      <url>/2020/03/06/jiu-zhai-gou/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说走就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
       
       
       <categories>
@@ -2318,11 +2343,11 @@
     
     
     <entry>
-      <title>九寨沟</title>
-      <link href="/2020/03/06/jiu-zhai-gou/"/>
-      <url>/2020/03/06/jiu-zhai-gou/</url>
+      <title>西岭雪山</title>
+      <link href="/2020/03/06/xi-ling-xue-shan/"/>
+      <url>/2020/03/06/xi-ling-xue-shan/</url>
       
-        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说走就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
