@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>USSD网关架构梳理</title>
+      <link href="/2020/04/16/ussd-wang-guan-jia-gou-shu-li/"/>
+      <url>/2020/04/16/ussd-wang-guan-jia-gou-shu-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、总体介绍"><a href="#一、总体介绍" class="headerlink" title="一、总体介绍"></a>一、总体介绍</h2><p>1、The platform is easy-to-install and easy-to-deploy allowing you to have the Gateway set up and configured very quickly.</p><p>2、Restcomm USSD GateWay supports TDM hardware offered by major vendors in the market, namely Intel family boards (Dialogic) and Zaptel/Dahdi (Digium, Sangoma).</p><p>3、Restcomm USSD GateWay is based on the robust and proven Restcomm JAIN SLEE 1.1 Server and Restcomm jSS7 Stack. </p><p>4、具有优秀的健壮性架构，不需要怀疑其不稳定性以及不专业性！！！！！</p><p>5、It provides a set of connectors to a variety of networks elements: SS7 MAP, TCAP, INAP, ISUP, SMPP, XMPP, SIP, MGCP, HTTP, XDM, XCAP, Diameter and many others.</p><p>6、fully compliant with JSR 240 (JSLEE 1.1). </p><p>7、The Restcomm USSD Gateway makes use of HTTP protocol between the gateway and the third-party applications (or Value Added Service Modules). </p><p>8、Restcomm USSD Gateway receives the USSD request from the subscriber’s handset/device via the GSM Signaling network and then translates these requests to HTTP depending on the rules configured in the Gateway to route to a corresponding Value Added Service (VAS) or third-party application.</p><p>9、The HTTP callback mechanism allows the third-party Application to be agnostic to Operating System, Programming Language and Framework.————解耦</p><h2 id="二、安装先决条件"><a href="#二、安装先决条件" class="headerlink" title="二、安装先决条件"></a>二、安装先决条件</h2><p>1、The platform can be installed on any OS that supports Java and SCTP. But native libraries for SS7 cards are compiled only for Linux at the moment and therefore supported only on Linux Operating System.</p><p>2、Java 7 is used for a server under JBOSS 5, JAVA 8 or above is needed for a server under Wildfly</p><p>3、You must ensure that you have appropriate firewall permissions to allow access to IP:8080. This is required to access the management consoles.</p><p>4、！！！If you intend to use SIGTRAN (M3UA), you must have the lksctp library installed. The Linux Kernel Stream Control Transmission Protocol (lksctp) library provides SCTP implementation.<br>For more details on downloading and installing lksctp, please refer to <a href="http://lksctp.sourceforge.net/" target="_blank" rel="noopener">http://lksctp.sourceforge.net/</a></p><p>5、must ensure that the JAVA_HOME and JBOSS_HOME Environment variables are set properly for the user account(s) that will run the server. </p><h2 id="三、JBOSS环境变量设置"><a href="#三、JBOSS环境变量设置" class="headerlink" title="三、JBOSS环境变量设置"></a>三、JBOSS环境变量设置</h2><p>1、When the [app]<code>Platform</code> or &amp;THIS.PLATFORM; servers are built from source, then JBOSS_HOME must be set</p><p>2、The JBOSS_HOME environment variable must point to the directory which contains all of the files for the [app]<code>Platform</code> or individual &amp;THIS.PLATFORM; server that you installed. As another hint, this topmost directory contains a bin subdirectory.</p><p>3、The JBOSS_HOME environment variable must point to the directory which contains all of the files for the [app]<code>Platform</code> or individual &amp;THIS.PLATFORM; server that you installed. As another hint, this topmost directory contains a bin subdirectory.</p><p>4、The command line usage below is based upon a binary installation of the [app]<code>Platform</code>. In this sample output, JBOSS_HOME has been set correctly to the topmost_directory of the installation. Note that if you are installing one of the standalone [app] servers (with JBoss AS bundled!), then JBOSS_HOME would point to the topmost_directory of your server installation.</p><pre class=" language-xml"><code class="language-xml">~]$ echo $JBOSS_HOME/home/silas/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><span class="token punctuation">></span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>to</span><span class="token punctuation">></span></span>/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>install_directory</span><span class="token punctuation">></span></span></code></pre><h2 id="四、从源码安装"><a href="#四、从源码安装" class="headerlink" title="四、从源码安装"></a>四、从源码安装</h2><p>1、Restcomm USSD GateWay works with JDK1.7 or above. In addition you must have the following tools installed.</p><p>Git Client : Instructions for using GIT, including install, can be found at <a href="http://git-scm.com/book" target="_blank" rel="noopener">http://git-scm.com/book</a></p><p>Maven 3.2.X : Instructions for using Maven, including install, can be found at <a href="http://maven.apache.org/" target="_blank" rel="noopener">http://maven.apache.org/</a></p><p>Ant 1.7.0 : Instructions for using Ant, including install, can be found at <a href="http://ant.apache.org" target="_blank" rel="noopener">http://ant.apache.org</a></p><p>2、release source code building</p><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ <span class="token function">git</span> clone https://github.com/Restcomm/ussdgateway.git<span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ <span class="token function">cd</span> ussdgateway<span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ <span class="token function">git</span> checkout <span class="token punctuation">(</span>select<span class="token punctuation">)</span><span class="token punctuation">[</span>usr<span class="token punctuation">]</span>$ mvn clean <span class="token function">install</span></code></pre><h2 id="五、安装后配置"><a href="#五、安装后配置" class="headerlink" title="五、安装后配置"></a>五、安装后配置</h2><p>1、configure the SS7 Stack and the Gateway to meet your requirements.The Restcomm jSS7 Stack User Guide in the restcomm-ussdgateway-<version>/docs/jss7/ folder will assist you in configuring and managing the SS7 Stack.</p><p>2、when you have completely configured the SS7 Stack to meet your requirements, you must go ahead with configuring the USSD Gateway. The Restcomm USSD GateWay Admin Guide in the restcomm-ussdgateway-<version>/docs/ussd/ folder will assist you in configuring and managing the USSD Gateway. </p><p>3、To configure and manage both the Stack and the Gateway you can make use of the Command Line Interface (CLI) tool or the GUI that comes with the platform.</p><p>4、！！！Failure to configure memory, database, logging and other settings as per the instructions in the Admin Guide may result in poor performance of the Gateway.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> systemarchitecture </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> systemarchitecture </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>RestComm架构体系梳理</title>
+      <link href="/2020/04/16/restcomm-jia-gou-ti-xi-shu-li/"/>
+      <url>/2020/04/16/restcomm-jia-gou-ti-xi-shu-li/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、整体架构"><a href="#一、整体架构" class="headerlink" title="一、整体架构"></a>一、整体架构</h2><p><img src="/images/pasted-483.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> systemarchitecture </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> systemarchitecture </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux常用命令</title>
       <link href="/2020/04/15/linux-chang-yong-ming-ling/"/>
       <url>/2020/04/15/linux-chang-yong-ming-ling/</url>
@@ -364,9 +414,9 @@
       
         <tags>
             
-            <tag> backend </tag>
-            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -468,9 +518,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -497,9 +547,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -846,18 +896,18 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> backend </tag>
-            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -875,18 +925,18 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> backend </tag>
-            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -954,9 +1004,9 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
@@ -1006,18 +1056,18 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> backend </tag>
-            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -1035,18 +1085,18 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> backend </tag>
-            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -1064,18 +1114,18 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> backend </tag>
-            
             <tag> signaling </tag>
+            
+            <tag> backend </tag>
             
         </tags>
       
@@ -1143,9 +1193,9 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
@@ -1195,9 +1245,9 @@
       
       <categories>
           
-          <category> backend </category>
-          
           <category> signaling </category>
+          
+          <category> backend </category>
           
       </categories>
       
@@ -1608,9 +1658,9 @@
       
         <tags>
             
-            <tag> Traval </tag>
-            
             <tag> Cinque Terre </tag>
+            
+            <tag> Traval </tag>
             
             <tag> Europe </tag>
             
@@ -1778,6 +1828,37 @@
     
     
     <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1803,37 +1884,6 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       
@@ -1873,6 +1923,39 @@
     
     
     <entry>
+      <title>潜水胜地——美娜多，海豚发现之旅</title>
+      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
+      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Southeast Asia </tag>
+            
+            <tag> Indonesia </tag>
+            
+            <tag> Manado </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>巴厘岛</title>
       <link href="/2020/03/06/ba-li-dao/"/>
       <url>/2020/03/06/ba-li-dao/</url>
@@ -1898,39 +1981,6 @@
             <tag> Southeast_Asia </tag>
             
             <tag> Bali </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>潜水胜地——美娜多，海豚发现之旅</title>
-      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
-      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Indonesia </tag>
-            
-            <tag> Southeast Asia </tag>
-            
-            <tag> Manado </tag>
             
         </tags>
       
@@ -2141,9 +2191,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -2170,9 +2220,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -2199,9 +2249,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -2228,38 +2278,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>九寨沟</title>
-      <link href="/2020/03/06/jiu-zhai-gou/"/>
-      <url>/2020/03/06/jiu-zhai-gou/</url>
-      
-        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说走就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Domestic </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> Domestic </tag>
-            
-            <tag> Traval </tag>
             
         </tags>
       
@@ -2286,9 +2307,38 @@
       
         <tags>
             
+            <tag> Traval </tag>
+            
             <tag> Domestic </tag>
             
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>九寨沟</title>
+      <link href="/2020/03/06/jiu-zhai-gou/"/>
+      <url>/2020/03/06/jiu-zhai-gou/</url>
+      
+        <content type="html"><![CDATA[<p>在成都工作的第一年，肯定是要去四川最出名的九寨沟玩一下，由于九寨沟路线路线比较明确，报了一个团，坐了一天车到达终点，途径景点黄龙溪、汶川地震遗址。</p><h2 id="一、黄龙溪"><a href="#一、黄龙溪" class="headerlink" title="一、黄龙溪"></a>一、黄龙溪</h2><p><img src="/images/pasted-96.png" alt="黄龙溪"></p><h2 id="二、九寨沟"><a href="#二、九寨沟" class="headerlink" title="二、九寨沟"></a>二、九寨沟</h2><p>到达的当天晚上住宿在号称当地的5星级酒店，晚上在藏家体验了一下牦牛肉火锅，还有吹拉弹唱，第二天一早进九寨沟<br>九寨沟景色众多，而且相隔很远，景点之间需要上下电瓶车，及时这样一天也是勉强游完。<br><img src="/images/pasted-97.png" alt="九寨沟景色1"></p><p><img src="/images/pasted-98.png" alt=""><br>清澈见底，水底是各种老化掉落的灌木，非常惬意、宁静。<br><img src="/images/pasted-99.png" alt="清澈见底"></p><p><img src="/images/pasted-100.png" alt="西游记师徒三兄弟牵马走过的瀑布"></p><p><img src="/images/pasted-101.png" alt="七彩池还是五彩池"></p><p><img src="/images/pasted-102.png" alt="XX海"></p><p><img src="/images/pasted-103.png" alt=""></p><p><img src="/images/pasted-104.png" alt="壮观的藏区景色"></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>后面地震毁了很多景色，所以说走就走的旅行很有必要，没必要什么都等明天，工作生活也是一个道理。<br>九寨归来不看水，真真是美极了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Domestic </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
@@ -2418,9 +2468,9 @@
       
         <tags>
             
-            <tag> Domestic </tag>
-            
             <tag> Traval </tag>
+            
+            <tag> Domestic </tag>
             
         </tags>
       
