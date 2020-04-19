@@ -26,8 +26,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="陈杨‘s blog" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="陈杨‘s blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -808,21 +808,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-04-17
+                    2020-04-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    435
+                    799
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    4 Min
                 </div>
                 
 
@@ -862,6 +862,28 @@
 <p>3、Statistics are turned on by default and may be retrieved through the JMX MBean org.mobicents.slee:name=EventRouterStatistics.</p>
 <p>4、The whole Event Router is a critical component with respect to the container’s performance. Its configuration can be tuned, through an XML file and a JMX MBean.</p>
 <p>5、！！！Event Router Persistent Configuration</p>
+<p>JAIN SLEE is deployed as WildFly extension and is configured through an standalone.xml. This file is located at $JBOSS_HOME/standalone/configuration.</p>
+<p>The configuration is exposed a JBoss Microcontainer Bean:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>mbean name<span class="token operator">=</span><span class="token string">"EventRouterConfiguration"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"eventRouterThreads"</span> value<span class="token operator">=</span><span class="token string">"8"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"collectStats"</span> value<span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"confirmSbbEntityAttachement"</span> value<span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"executorMapperClassName"</span> value<span class="token operator">=</span><span class="token string">"org.mobicents.slee.runtime.eventrouter.mapping.ActivityHashingEventRouterExecutorMapper"</span> /<span class="token operator">></span>
+<span class="token operator">&lt;</span>/mbean<span class="token operator">></span></code></pre>
+<p><img src="/images/pasted-485.png" alt=""></p>
+<p>6、Through JMX, the Event Router module configuration can be changed while the container is running. These configuration changes are not persisted.<br>【JMX（Java Management Extensions，即Java管理扩展）是一个为应用程序、设备、系统等植入管理功能的框架。JMX可以跨越一系列异构操作系统平台、系统体系结构和网络传输协议，灵活的开发无缝集成的系统、网络和服务管理应用。】</p>
+<p>The JMX MBean that can be used to change the Event Router configuration is named org.mobicents.slee:name=EventRouterConfiguration, and provides getters and setters to change each property defined in the persistent configuration.</p>
+<p>7、Timer Facility Configuration<br>The JAIN SLEE Timer Facility is the module responsible for managing SLEE timers, and the number of threads it uses is configurable.</p>
+<p>The Timer Facility configuration can be changed through an XML file and a JMX MBean.</p>
+<p>7.1 Timer Facility Persistent Configuration<br>JAIN SLEE is deployed as WildFly extension and is configured through an standalone.xml. This file is located at $JBOSS_HOME/standalone/configuration.</p>
+<p>The configuration is exposed a JBoss Microcontainer Bean:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>mbean name<span class="token operator">=</span><span class="token string">"TimerFacilityConfiguration"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"timerThreads"</span> value<span class="token operator">=</span><span class="token string">"4"</span> /<span class="token operator">></span>
+<span class="token operator">&lt;</span>/mbean<span class="token operator">></span></code></pre>
+<p><img src="/images/pasted-486.png" alt=""><br>7.2 Timer Facility JMX Configuration<br>Through JMX the Timer Facility module configuration can be changed with the container running. Note that such configuration changes are not persisted.</p>
+<p>The JMX MBean which can be used to change the Timer Facility configuration is named org.mobicents.slee:name=TimerFacilityConfiguration, and provides getters and setters to change each property defined in the persistent configuration.</p>
+<p>The JConsole can be used to use this MBean, see JConsole.</p>
+<p>8、</p>
 
             </div>
             <hr/>
@@ -1092,31 +1114,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/04/16/jain-slee-jia-gou-shu-li/">
+                <a href="/2020/04/19/java-zhi-maven-yu-ant-xiang-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="JAIN SLEE架构梳理">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="java之maven与ant详解">
                         
-                        <span class="card-title">JAIN SLEE架构梳理</span>
+                        <span class="card-title">java之maven与ant详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一、介绍1、JAIN SLEE is the specification for a Java Service Logic and Execution Environment (SLEE) architecture
-2、A SLEE is 
+                            一、maven技术_ant和分布式介绍1.1 ant1、ant和maven都是项目构建工具2、在项目运行中，项目和项目之间产生关系，导入包，用ant来搞的
+1.2 分布式1、传统项目部署：    1）新建一个项目，通过不同的包来区分不同的模
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-19
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1125,16 +1146,23 @@
                                     backend
                                 </a>
                             
+                            <a href="/categories/systemarchitecture/" class="post-category">
+                                    systemarchitecture
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/backend/">
                         <span class="chip bg-color">backend</span>
+                    </a>
+                    
+                    <a href="/tags/systemarchitecture/">
+                        <span class="chip bg-color">systemarchitecture</span>
                     </a>
                     
                 </div>
@@ -1337,7 +1365,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">36.8k</span>&nbsp;字
+                class="white-color">37.5k</span>&nbsp;字
             
             
             
