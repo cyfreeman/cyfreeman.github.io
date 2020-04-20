@@ -808,21 +808,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-04-18
+                    2020-04-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    799
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    4 Min
+                    13 Min
                 </div>
                 
 
@@ -883,7 +883,132 @@
 <p><img src="/images/pasted-486.png" alt=""><br>7.2 Timer Facility JMX Configuration<br>Through JMX the Timer Facility module configuration can be changed with the container running. Note that such configuration changes are not persisted.</p>
 <p>The JMX MBean which can be used to change the Timer Facility configuration is named org.mobicents.slee:name=TimerFacilityConfiguration, and provides getters and setters to change each property defined in the persistent configuration.</p>
 <p>The JConsole can be used to use this MBean, see JConsole.</p>
-<p>8、</p>
+<p>7.3 Configuring JAIN SLEE Profiles<br>JAIN SLEE Profiles is a component used to store data, usually related with a user and/or service profile. JAIN SLEE maps JAIN SLEE Profiles to a Java Persistence API (JPA) Datasource, through Hibernate.</p>
+<p>There is configuration for JAIN SLEE Profiles provided as JBoss Microcontainer Beans:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>mbean name<span class="token operator">=</span><span class="token string">"H2DBConfig"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"persistProfiles"</span> value<span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"clusteredProfiles"</span> value<span class="token operator">=</span><span class="token string">"false"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"hibernateDatasource"</span> value<span class="token operator">=</span><span class="token string">"java:jboss/datasources/ExampleDS"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"hibernateDialect"</span> value<span class="token operator">=</span><span class="token string">"org.hibernate.dialect.H2Dialect"</span> /<span class="token operator">></span>
+<span class="token operator">&lt;</span>/mbean<span class="token operator">></span>
+<span class="token operator">&lt;</span>mbean name<span class="token operator">=</span><span class="token string">"PostgreDBConfig"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"persistProfiles"</span> value<span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"clusteredProfiles"</span> value<span class="token operator">=</span><span class="token string">"false"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"hibernateDatasource"</span> value<span class="token operator">=</span><span class="token string">"java:jboss/datasources/PostgreDS"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"hibernateDialect"</span> value<span class="token operator">=</span><span class="token string">"org.hibernate.dialect.PostgreSQL94Dialect"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"datasourceServiceName"</span> value<span class="token operator">=</span><span class="token string">"PostgreDS"</span> /<span class="token operator">></span>
+<span class="token operator">&lt;</span>/mbean<span class="token operator">></span>
+<span class="token operator">&lt;</span>mbean name<span class="token operator">=</span><span class="token string">"ProfileManagement"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"dbConfigMBean"</span> value<span class="token operator">=</span><span class="token string">"PostgreDBConfig"</span> /<span class="token operator">></span>
+<span class="token operator">&lt;</span>/mbean<span class="token operator">></span></code></pre>
+<p><img src="/images/pasted-488.png" alt=""></p>
+<p>7.4 Other Configurations<br>Other JAIN SLEE runtime configuration is done through the following JBoss Microcontainer Bean:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>mbean name<span class="token operator">=</span><span class="token string">"MobicentsManagement"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"entitiesRemovalDelay"</span> value<span class="token operator">=</span><span class="token string">"1"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"initializeReferenceDataTypesWithNull"</span> value<span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">></span>
+<span class="token operator">&lt;</span>/mbean<span class="token operator">></span></code></pre>
+<p><img src="/images/pasted-489.png" alt=""></p>
+<h2 id="四、管理SLEE"><a href="#四、管理SLEE" class="headerlink" title="四、管理SLEE"></a>四、管理SLEE</h2><h3 id="4-1-Managing-JAIN-SLEE-Components"><a href="#4-1-Managing-JAIN-SLEE-Components" class="headerlink" title="4.1 Managing JAIN SLEE Components"></a>4.1 Managing JAIN SLEE Components</h3><h4 id="4-1-1-Persistent-Deployable-Unit-Management"><a href="#4-1-1-Persistent-Deployable-Unit-Management" class="headerlink" title="4.1.1. Persistent Deployable Unit Management"></a>4.1.1. Persistent Deployable Unit Management</h4><p>JAIN SLEE provides a file deployer that greatly simplifies the management of JAIN SLEE deployable unit jars. The deployer:<br>1）Handles the installation of enclosed JAIN SLEE components.</p>
+<p>2）Automatically activates and deactivates services contained.</p>
+<p>3）Handles the creation, removal, activation, deactivation, link binding and link unbinding of all Resource Adapter Entities.</p>
+<p>All operations are persistent, which means that unlike management done through JMX, these survive server shutdowns.</p>
+<h4 id="4-1-2-Persistent-Deployable-Unit-Install"><a href="#4-1-2-Persistent-Deployable-Unit-Install" class="headerlink" title="4.1.2 Persistent Deployable Unit Install"></a>4.1.2 Persistent Deployable Unit Install</h4><p>To install a deployable unit jar simply copy the file to $JBOSS_HOME/standalone/deployments/. Child directories can be used.</p>
+<h4 id="4-1-3-Persistent-Deployable-Unit-Uninstall"><a href="#4-1-3-Persistent-Deployable-Unit-Uninstall" class="headerlink" title="4.1.3 Persistent Deployable Unit Uninstall"></a>4.1.3 Persistent Deployable Unit Uninstall</h4><p>To uninstall a deployable unit jar simply delete the file.</p>
+<h4 id="4-1-4-Beyond-Deployable-Unit-Un-Install"><a href="#4-1-4-Beyond-Deployable-Unit-Un-Install" class="headerlink" title="4.1.4 Beyond Deployable Unit (Un)Install"></a>4.1.4 Beyond Deployable Unit (Un)Install</h4><p>The file deployer provides additional behavior then simply (un)install deployable unit jars, as done through the JAIN SLEE 1.1 DeploymentMBean:</p>
+<p>Service (De)Activation<br>All services contained in the deployable unit jar are activated after the install, and deactivated prior to uninstall. On service activation, if there is an active service in the SLEE, with same service name and vendor, then it is considered an older version, and the SLEE deactivates it. The deactivation of the old, and activation of the new, is done smoothly in a single operation, allowing service upgrades with no down time.</p>
+<p>Dependencies Management<br>The deployer puts the installation process on hold until all of the component’s dependencies are installed and activated. When uninstalling, it waits for all of the components which depend on components inside the deployable unit to be uninstalled. After an install or uninstall, the deployer evaluates all operations on hold.</p>
+<h4 id="4-1-5-Deploy-Config-Extension"><a href="#4-1-5-Deploy-Config-Extension" class="headerlink" title="4.1.5. Deploy-Config Extension"></a>4.1.5. Deploy-Config Extension</h4><p>A deployable unit jar may include a deploy-config.xml file in its META-INF/ directory. This file provides additional management actions for persistent install/uninstall operations:</p>
+<p>Resource Adaptor Entity Management<br>It is possible to specify RA entities, and the container will create and activate the RA entities after the deployable unit is installed. During the uninstall process, the container will deactivate and remove those RA entities.</p>
+<p>Resource Adaptor Links Management<br>It is possible to specify RA links, and the container will bind those after the deployable unit is installed. When uninstalled, the container will unbind those RA links as well. The links are set for resource adapter entities created in the deploy-config.xml file.</p>
+<p>This file should comply with the following schema:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"UTF-8"</span> ?<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>xs:schema xmlns:xs<span class="token operator">=</span><span class="token string">"http://www.w3.org/2001/XMLSchema"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>xs:element name<span class="token operator">=</span><span class="token string">"deploy-config"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>xs:complexType<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:sequence<span class="token operator">></span>
+        <span class="token operator">&lt;</span>xs:element ref<span class="token operator">=</span><span class="token string">"ra-entity"</span> maxOccurs<span class="token operator">=</span><span class="token string">"unbounded"</span> minOccurs<span class="token operator">=</span><span class="token string">"0"</span>/<span class="token operator">></span>
+      <span class="token operator">&lt;</span>/xs:sequence<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/xs:complexType<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/xs:element<span class="token operator">></span>
+
+  <span class="token operator">&lt;</span>xs:element name<span class="token operator">=</span><span class="token string">"property"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>xs:complexType<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:attribute name<span class="token operator">=</span><span class="token string">"name"</span> type<span class="token operator">=</span><span class="token string">"xs:string"</span> use<span class="token operator">=</span><span class="token string">"required"</span> /<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:attribute name<span class="token operator">=</span><span class="token string">"type"</span> type<span class="token operator">=</span><span class="token string">"xs:string"</span> use<span class="token operator">=</span><span class="token string">"required"</span> /<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:attribute name<span class="token operator">=</span><span class="token string">"value"</span> type<span class="token operator">=</span><span class="token string">"xs:string"</span> use<span class="token operator">=</span><span class="token string">"required"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/xs:complexType<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/xs:element<span class="token operator">></span>
+
+  <span class="token operator">&lt;</span>xs:element name<span class="token operator">=</span><span class="token string">"properties"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>xs:complexType<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:sequence<span class="token operator">></span>
+        <span class="token operator">&lt;</span>xs:element ref<span class="token operator">=</span><span class="token string">"property"</span> maxOccurs<span class="token operator">=</span><span class="token string">"unbounded"</span> minOccurs<span class="token operator">=</span><span class="token string">"0"</span>/<span class="token operator">></span>
+      <span class="token operator">&lt;</span>/xs:sequence<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:attribute name<span class="token operator">=</span><span class="token string">"file"</span> type<span class="token operator">=</span><span class="token string">"xs:string"</span> use<span class="token operator">=</span><span class="token string">"optional"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/xs:complexType<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/xs:element<span class="token operator">></span>
+
+  <span class="token operator">&lt;</span>xs:element name<span class="token operator">=</span><span class="token string">"ra-entity"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>xs:complexType<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:sequence<span class="token operator">></span>
+        <span class="token operator">&lt;</span>xs:element ref<span class="token operator">=</span><span class="token string">"properties"</span> maxOccurs<span class="token operator">=</span><span class="token string">"1"</span> minOccurs<span class="token operator">=</span><span class="token string">"0"</span>/<span class="token operator">></span>
+        <span class="token operator">&lt;</span>xs:element ref<span class="token operator">=</span><span class="token string">"ra-link"</span> maxOccurs<span class="token operator">=</span><span class="token string">"unbounded"</span> minOccurs<span class="token operator">=</span><span class="token string">"0"</span>/<span class="token operator">></span>
+      <span class="token operator">&lt;</span>/xs:sequence<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:attribute name<span class="token operator">=</span><span class="token string">"resource-adaptor-id"</span> type<span class="token operator">=</span><span class="token string">"xs:string"</span> use<span class="token operator">=</span><span class="token string">"required"</span> /<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:attribute name<span class="token operator">=</span><span class="token string">"entity-name"</span> type<span class="token operator">=</span><span class="token string">"xs:string"</span> use<span class="token operator">=</span><span class="token string">"required"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/xs:complexType<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/xs:element<span class="token operator">></span>
+
+  <span class="token operator">&lt;</span>xs:element name<span class="token operator">=</span><span class="token string">"ra-link"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>xs:complexType<span class="token operator">></span>
+      <span class="token operator">&lt;</span>xs:attribute name<span class="token operator">=</span><span class="token string">"name"</span> type<span class="token operator">=</span><span class="token string">"xs:string"</span> use<span class="token operator">=</span><span class="token string">"required"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/xs:complexType<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/xs:element<span class="token operator">></span>
+<span class="token operator">&lt;</span>/xs:schema<span class="token operator">></span></code></pre>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>ra-entity
+    resource-adaptor-id<span class="token operator">=</span><span class="token string">"ResourceAdaptorID[name=JainSipResourceAdaptor,vendor=net.java.slee.sip,version=1.2]"</span>
+    entity-name<span class="token operator">=</span><span class="token string">"SipRA"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>properties<span class="token operator">></span>
+        <span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"javax.sip.PORT"</span> type<span class="token operator">=</span><span class="token string">"java.lang.Integer"</span> value<span class="token operator">=</span><span class="token string">"5060"</span> /<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/properties<span class="token operator">></span>
+    <span class="token operator">&lt;</span>ra-link name<span class="token operator">=</span><span class="token string">"SipRA"</span> /<span class="token operator">></span>
+<span class="token operator">&lt;</span>/ra-entity<span class="token operator">></span></code></pre>
+<p>The deploy-config.xml example above defines a resource adaptor entity named SipRa, to be created for the resource adaptor with id ResourceAdaptorID[name=JainSipResourceAdaptor, vendor=net.java.slee.sip, version=1.2], and with a single config property named javax.sip.PORT of type java.lang.Integer and with value 5060. Additionally, a resource adaptor link named SipRa should be bound to the resource adaptor entity.</p>
+<p>After the deployable unit is installed, the resource adaptor entity is created, activated and the resource adaptor link is bound. Before the deployable unit is uninstalled, or the server is shutdown, the link is unbound, then the resource adaptor entity is deactivated, and finally the same resource adaptor entity is removed.</p>
+<p>The SLEE includes a deploy-config.xml file at $JBOSS_HOME/server/profile_name/deploy/restcomm-slee, where profile_name is the server profile name, and that file can be used to specify RA entities and links too. If an RA is installed using the persistent deployer, then SLEE reads its own deploy-config.xml file, and if there are RA entities and/or links specified with same RA ID, then the operations to create/activate/deactivate/remove these are executed too, as if these were specified in the Deployable Unit’s own deploy-config.xml.</p>
+<h3 id="4-2-Management-Consoles"><a href="#4-2-Management-Consoles" class="headerlink" title="4.2 Management Consoles"></a>4.2 Management Consoles</h3><h4 id="4-2-1-JConsole"><a href="#4-2-1-JConsole" class="headerlink" title="4.2.1. JConsole"></a>4.2.1. JConsole</h4><p>WildFly provides a script jconsole.sh that starts JConsole tool that gives quick access to all MBeans registered in the server, which includes the ones defined by the JAIN SLEE 1.1 specification. This script adds WildFly CLI tab for access to WildFly server information. Also you can acces to all MBeans in MBeans tab.</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token variable">$JBOSS_HOME</span>/bin/jconsole.sh</code></pre>
+<h4 id="4-2-2-SLEE-Management-Console"><a href="#4-2-2-SLEE-Management-Console" class="headerlink" title="4.2.2. SLEE Management Console"></a>4.2.2. SLEE Management Console</h4><p>The JMX Console is simple but the MBeans operations were made considering its invocation by management clients, not people using browsers. The SLEE Management Console is a web application that provides high level management functionality for the SLEE, and comes pre-deployed in SLEE binary releases. To access this console point a web browser to <a href="http://ip:8080/slee-management-console" target="_blank" rel="noopener">http://ip:8080/slee-management-console</a>, where ip is the IP/Host the container is bound. Unless set during start up, the IP/Host will be 127.0.0.1/localhost by default.</p>
+<p>Full documentation for this management tool can be found in docs/tools/slee-management-console directory.</p>
+<h4 id="TWIDDLE-CLI"><a href="#TWIDDLE-CLI" class="headerlink" title="TWIDDLE CLI"></a>TWIDDLE CLI</h4><p>Console is graphic(web) based tools. Some deployments may require command line access to Restcomm. To aid such cases, Restcomm offers TWIDDLE based CLI. It allows to manage single instance (remote or local) of Restcomm server.</p>
+<p>Restcomm JAIN SLEE binary release includes a TWIDDLE CLI in tools/twiddle, with standalone documentation on same path, but inside docs directory.</p>
+<p>Connecting the Twiddle CLI using JMX to the JSLEE running in the same VM can be achieved as follows:</p>
+<pre class=" language-bash"><code class="language-bash">./twiddle.sh --server<span class="token operator">=</span>service:jmx:remote+http://localhost:9990 activity -l --contexts<span class="token operator">=</span>true</code></pre>
+<h2 id="五-Logging-Traces-and-Alarms"><a href="#五-Logging-Traces-and-Alarms" class="headerlink" title="五 Logging, Traces and Alarms"></a>五 Logging, Traces and Alarms</h2><p>略</p>
+<h2 id="六-Restcomm-JAIN-SLEE-Clustering"><a href="#六-Restcomm-JAIN-SLEE-Clustering" class="headerlink" title="六 Restcomm JAIN SLEE Clustering"></a>六 Restcomm JAIN SLEE Clustering</h2><p>略</p>
+<h2 id="七-Fault-Tolerant-Resource-Adaptor-API"><a href="#七-Fault-Tolerant-Resource-Adaptor-API" class="headerlink" title="七 Fault Tolerant Resource Adaptor API"></a>七 Fault Tolerant Resource Adaptor API</h2><p>略</p>
+<h2 id="八-Resource-Adaptor-Activity-Replication"><a href="#八-Resource-Adaptor-Activity-Replication" class="headerlink" title="八 Resource Adaptor Activity Replication"></a>八 Resource Adaptor Activity Replication</h2><p>略</p>
+<h2 id="九-Firing-Events-from-Java-EE-Applications"><a href="#九-Firing-Events-from-Java-EE-Applications" class="headerlink" title="九 Firing Events from Java EE Applications"></a>九 Firing Events from Java EE Applications</h2><h3 id="9-1-Remote-SLEE-Connection-Service"><a href="#9-1-Remote-SLEE-Connection-Service" class="headerlink" title="9.1 Remote SLEE Connection Service"></a>9.1 Remote SLEE Connection Service</h3><p>JAIN SLEE provides Remote SLEE Connection Service via RMI Registry lookup method for firing event.</p>
+<p>The code is the same whether the SLEE container is in the same JVM or not.</p>
+<pre class=" language-bash"><code class="language-bash">    // get local or remote RMI registry on rmiAddress:rmiPort
+    Registry registry <span class="token operator">=</span> LocateRegistry.getRegistry<span class="token punctuation">(</span>this.rmiAddress, this.rmiPort<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    // get RMI stup throw lookup
+    RemoteSleeConnectionService rmiStub <span class="token operator">=</span>
+        <span class="token punctuation">(</span>RemoteSleeConnectionService<span class="token punctuation">)</span> registry.lookup<span class="token punctuation">(</span><span class="token string">"RemoteSleeConnectionService"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    // create activity handle
+    ExternalActivityHandle handle <span class="token operator">=</span> rmiStub.createActivityHandle<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    // get event <span class="token function">type</span>
+    EventTypeID requestType <span class="token operator">=</span> rmiStub.getEventTypeID<span class="token punctuation">(</span>eventName, eventVendor, eventVersion<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    CustomEvent customEvent <span class="token operator">=</span> new CustomEvent<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    customEvent.setMessage<span class="token punctuation">(</span>messagePassed<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    logger.info<span class="token punctuation">(</span><span class="token string">"The event type is: "</span> + requestType<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    rmiStub.fireEvent<span class="token punctuation">(</span>customEvent, requestType, handle, null<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
             </div>
             <hr/>
@@ -1365,7 +1490,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">37.5k</span>&nbsp;字
+                class="white-color">39.2k</span>&nbsp;字
             
             
             
