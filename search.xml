@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>要么孤独，要么庸俗</title>
+      <link href="/2020/04/21/yao-me-gu-du-yao-me-yong-su/"/>
+      <url>/2020/04/21/yao-me-gu-du-yao-me-yong-su/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-491.png" alt=""></p><p><img src="/images/pasted-493.png" alt=""></p><p>财富犹如海水，喝的越多越觉口渴，名声权力也是如此！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> read </category>
+          
+          <category> summary </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>java之maven与ant详解</title>
       <link href="/2020/04/19/java-zhi-maven-yu-ant-xiang-jie/"/>
       <url>/2020/04/19/java-zhi-maven-yu-ant-xiang-jie/</url>
@@ -112,7 +133,7 @@
       <link href="/2020/04/15/linux-chang-yong-ming-ling/"/>
       <url>/2020/04/15/linux-chang-yong-ming-ling/</url>
       
-        <content type="html"><![CDATA[<h4 id="1、查看系统安装的java"><a href="#1、查看系统安装的java" class="headerlink" title="1、查看系统安装的java"></a>1、查看系统安装的java</h4><p>rpm -qa | grep java</p>]]></content>
+        <content type="html"><![CDATA[<h4 id="1、查看系统安装的java"><a href="#1、查看系统安装的java" class="headerlink" title="1、查看系统安装的java"></a>1、查看系统安装的java</h4><p>rpm -qa | grep java</p><h4 id="2、linux统计代码行数"><a href="#2、linux统计代码行数" class="headerlink" title="2、linux统计代码行数"></a>2、linux统计代码行数</h4><p>find . -name “*.c” |xargs cat|grep -v ^$|wc -l</p>]]></content>
       
       
       <categories>
@@ -1882,6 +1903,37 @@
     
     
     <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1915,37 +1967,6 @@
     
     
     <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Paris</title>
       <link href="/2020/03/06/fa-guo/"/>
       <url>/2020/03/06/fa-guo/</url>
@@ -1969,39 +1990,6 @@
             <tag> Europe </tag>
             
             <tag> Paris </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>潜水胜地——美娜多，海豚发现之旅</title>
-      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
-      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> SoutheastAsia </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Southeast Asia </tag>
-            
-            <tag> Indonesia </tag>
-            
-            <tag> Manado </tag>
             
         </tags>
       
@@ -2043,11 +2031,11 @@
     
     
     <entry>
-      <title>曼谷</title>
-      <link href="/2020/03/06/man-gu/"/>
-      <url>/2020/03/06/man-gu/</url>
+      <title>潜水胜地——美娜多，海豚发现之旅</title>
+      <link href="/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/"/>
+      <url>/2020/03/06/qian-shui-sheng-di-mei-nuo-duo/</url>
       
-        <content type="html"><![CDATA[<p><img src="/images/pasted-444.png" alt="upload successful"><br><img src="/images/pasted-445.png" alt="upload successful"><br><img src="/images/pasted-446.png" alt="upload successful"><br><img src="/images/pasted-447.png" alt="upload successful"><br><img src="/images/pasted-448.png" alt="upload successful"><br><img src="/images/pasted-449.png" alt="upload successful"><br><img src="/images/pasted-450.png" alt="upload successful"><br><img src="/images/pasted-451.png" alt="upload successful"><br><img src="/images/pasted-452.png" alt="upload successful"><br><img src="/images/pasted-453.png" alt="upload successful"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/images/pasted-341.png" alt=""><br><img src="/images/pasted-342.png" alt=""><br><img src="/images/pasted-343.png" alt=""><br><img src="/images/pasted-344.png" alt=""><br><img src="/images/pasted-345.png" alt=""><br><img src="/images/pasted-346.png" alt=""><br><img src="/images/pasted-347.png" alt=""><br><img src="/images/pasted-348.png" alt=""><br><img src="/images/pasted-349.png" alt=""></p>]]></content>
       
       
       <categories>
@@ -2063,9 +2051,11 @@
             
             <tag> Traval </tag>
             
-            <tag> SoutheastAsia </tag>
+            <tag> Indonesia </tag>
             
-            <tag> Bankok </tag>
+            <tag> Southeast Asia </tag>
+            
+            <tag> Manado </tag>
             
         </tags>
       
@@ -2097,6 +2087,37 @@
             <tag> SoutheastAsia </tag>
             
             <tag> pucket island </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>曼谷</title>
+      <link href="/2020/03/06/man-gu/"/>
+      <url>/2020/03/06/man-gu/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/images/pasted-444.png" alt="upload successful"><br><img src="/images/pasted-445.png" alt="upload successful"><br><img src="/images/pasted-446.png" alt="upload successful"><br><img src="/images/pasted-447.png" alt="upload successful"><br><img src="/images/pasted-448.png" alt="upload successful"><br><img src="/images/pasted-449.png" alt="upload successful"><br><img src="/images/pasted-450.png" alt="upload successful"><br><img src="/images/pasted-451.png" alt="upload successful"><br><img src="/images/pasted-452.png" alt="upload successful"><br><img src="/images/pasted-453.png" alt="upload successful"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> SoutheastAsia </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> SoutheastAsia </tag>
+            
+            <tag> Bankok </tag>
             
         </tags>
       
