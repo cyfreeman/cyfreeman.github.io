@@ -4,18 +4,41 @@
   
     
     <entry>
+      <title>重定向输出编译内容到文件</title>
+      <link href="/2020/04/26/chong-ding-xiang-shu-chu-bian-yi-nei-rong-dao-wen-jian/"/>
+      <url>/2020/04/26/chong-ding-xiang-shu-chu-bian-yi-nei-rong-dao-wen-jian/</url>
+      
+        <content type="html"><![CDATA[<p>在做批量实验室，例如跑批量 MR 的作业，我们会写好 shell 脚本，然后启动脚本，等所有作业执行完再去看结果，但是这些执行时的信息如何保存下来到文件中呢？下面这个命令可以完成这个任务。</p><pre class=" language-bash"><code class="language-bash">sh batchjob.sh 2<span class="token operator">></span><span class="token operator">&amp;</span>1 <span class="token operator">|</span> <span class="token function">tee</span> mylog.log</code></pre><h3 id="输入输出重定向之：’-lt-’-and-‘-gt-’"><a href="#输入输出重定向之：’-lt-’-and-‘-gt-’" class="headerlink" title="输入输出重定向之：’&lt;’ and ‘&gt;’"></a>输入输出重定向之：’&lt;’ and ‘&gt;’</h3><p>&lt; and &gt; 分别用来支持 linux 中的输入输出重定向，其中 &lt; 支持输入重定向，&gt; 支持输出重定向。</p><p>1、&lt;：重定向输入。<br>sh test.sh &lt; hadoop-hadoop-jobtracker-brix-00.out，将 hadoop-hadoop-jobtracker-brix-00.out 的内容作为 test.sh 的输入。</p><p>2、&gt;：将内容全局覆盖式的加入文件，相当于删除该文件并重新建立该文件，再写入的效果。</p><p>3、ls * &gt; test.txt ，将 ls * 的所有信息输出到文件 test.txt 中。</p><p>4、&gt;!：如果存在则覆盖。</p><p>5、&gt;&amp;：执行时屏幕上所产生的任何信息写入指定的文件中。</p><p>6、&gt;&gt;：追加到文件中。</p><p>7、&gt;&gt;&amp;：屏幕上的信息追加到文件中。</p><h3 id="标准输入输出"><a href="#标准输入输出" class="headerlink" title="标准输入输出"></a>标准输入输出</h3><p>在 Linux 系统中：标准输入 stdin 默认为键盘输入；标准输出 stdout 默认为屏幕输出；标准错误输出 stderr 默认也是输出到屏幕（上面的 std 表示 standard）。在 BASH 中使用这些概念时一般将标准输出表示为 1，将标准错误输出表示为 2。下面我们举例来说明如何使用他们，特别是标准输出和标准错误输出。</p><h3 id="tee命令"><a href="#tee命令" class="headerlink" title="tee命令"></a>tee命令</h3><p>tee 指令会从标准输入设备读取数据，将其内容输出到标准输出设备，同时保存成文件。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> backend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>要么孤独，要么庸俗</title>
       <link href="/2020/04/21/yao-me-gu-du-yao-me-yong-su/"/>
       <url>/2020/04/21/yao-me-gu-du-yao-me-yong-su/</url>
       
-        <content type="html"><![CDATA[<p><img src="/images/pasted-491.png" alt=""></p><p><img src="/images/pasted-493.png" alt=""></p><p>财富犹如海水，喝的越多越觉口渴，名声权力也是如此！</p>]]></content>
+        <content type="html"><![CDATA[<p>财富犹如海水，喝的越多越觉口渴，名声权力也是如此！</p>]]></content>
       
       
       <categories>
           
           <category> read </category>
-          
-          <category> summary </category>
           
       </categories>
       
@@ -1903,37 +1926,6 @@
     
     
     <entry>
-      <title>新天鹅堡</title>
-      <link href="/2020/03/06/de-guo/"/>
-      <url>/2020/03/06/de-guo/</url>
-      
-        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Traval </category>
-          
-          <category> Europe </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Traval </tag>
-            
-            <tag> Europe </tag>
-            
-            <tag> Neuschwanstein Castle </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>罗马假日</title>
       <link href="/2020/03/06/yi-da-li/"/>
       <url>/2020/03/06/yi-da-li/</url>
@@ -1959,6 +1951,37 @@
             <tag> Italy </tag>
             
             <tag> Rome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>新天鹅堡</title>
+      <link href="/2020/03/06/de-guo/"/>
+      <url>/2020/03/06/de-guo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、新天鹅堡"><a href="#一、新天鹅堡" class="headerlink" title="一、新天鹅堡"></a>一、新天鹅堡</h2><p>新天鹅堡（英语：New Swan Stone Castle、德语：Schloss Neuschwanstein）全名新天鹅石城堡，是19世纪晚期的建筑，位于德国巴伐利亚西南方，邻近年代较早的高天鹅堡（Schloss Hohenschwangau，又称旧天鹅堡），距离菲森（Fussen）镇约4公里，离德国与奥地利边界不远。</p><h2 id="二、旅拍"><a href="#二、旅拍" class="headerlink" title="二、旅拍"></a>二、旅拍</h2><p><img src="/images/pasted-241.png" alt=""></p><p><img src="/images/pasted-242.png" alt=""></p><p><img src="/images/pasted-243.png" alt=""></p><p><img src="/images/pasted-244.png" alt=""></p><p><img src="/images/pasted-245.png" alt=""></p><p><img src="/images/pasted-247.png" alt=""></p><p><img src="/images/pasted-248.png" alt=""></p><p><img src="/images/pasted-249.png" alt=""></p><p>德国是一个努力追赶的国家，德国人民现在很爱和平。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Traval </category>
+          
+          <category> Europe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Traval </tag>
+            
+            <tag> Europe </tag>
+            
+            <tag> Neuschwanstein Castle </tag>
             
         </tags>
       

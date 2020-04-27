@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-04-22T01:13:02.559Z</updated>
+  <updated>2020-04-26T06:18:50.603Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>要么孤独，要么庸俗</title>
-    <link href="https://cyfreeman.github.io/2020/04/21/yao-me-gu-du-yao-me-yong-su/"/>
-    <id>https://cyfreeman.github.io/2020/04/21/yao-me-gu-du-yao-me-yong-su/</id>
-    <published>2020-04-21T00:55:00.000Z</published>
-    <updated>2020-04-22T01:13:02.559Z</updated>
+    <title>重定向输出编译内容到文件</title>
+    <link href="https://cyfreeman.github.io/2020/04/26/chong-ding-xiang-shu-chu-bian-yi-nei-rong-dao-wen-jian/"/>
+    <id>https://cyfreeman.github.io/2020/04/26/chong-ding-xiang-shu-chu-bian-yi-nei-rong-dao-wen-jian/</id>
+    <published>2020-04-26T06:14:00.000Z</published>
+    <updated>2020-04-26T06:18:50.603Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,36 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;/images/pasted-491.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/pasted-493.png&quot;
+          &lt;p&gt;在做批量实验室，例如跑批量 MR 的作业，我们会写好 shell 脚本，然后启动脚本，等所有作业执行完再去看结果，但是这些执行时的信息如何保存下来到文件中呢？下面这个命令可以完成这个任务。&lt;/p&gt;
+&lt;pre class=&quot; language-bash&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
+    
+    
+      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>要么孤独，要么庸俗</title>
+    <link href="https://cyfreeman.github.io/2020/04/21/yao-me-gu-du-yao-me-yong-su/"/>
+    <id>https://cyfreeman.github.io/2020/04/21/yao-me-gu-du-yao-me-yong-su/</id>
+    <published>2020-04-21T00:55:00.000Z</published>
+    <updated>2020-04-22T01:24:29.643Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;财富犹如海水，喝的越多越觉口渴，名声权力也是如此！&lt;/p&gt;
+
         
       
     
@@ -38,8 +66,6 @@
     
     
       <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
-    
-      <category term="summary" scheme="https://cyfreeman.github.io/categories/read/summary/"/>
     
     
   </entry>
@@ -543,36 +569,6 @@
     
       <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
     
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Build jSS7 from Source</title>
-    <link href="https://cyfreeman.github.io/2020/04/02/build-jss7-from-source/"/>
-    <id>https://cyfreeman.github.io/2020/04/02/build-jss7-from-source/</id>
-    <published>2020-04-02T09:41:00.000Z</published>
-    <updated>2020-04-02T09:44:04.483Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Here is the list of commands you need to run for building Mobicents jSS7 from the source&lt;/p&gt;
-&lt;p&gt;1、Clone jSS7 Repo : git clone &lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
-    
-    
-      <category term="signaling" scheme="https://cyfreeman.github.io/tags/signaling/"/>
     
       <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
     
