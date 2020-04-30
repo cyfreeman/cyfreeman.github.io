@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyfreeman.github.io/"/>
-  <updated>2020-04-26T06:18:50.603Z</updated>
+  <updated>2020-04-30T02:37:52.151Z</updated>
   <id>https://cyfreeman.github.io/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术知识体系迭代</title>
+    <link href="https://cyfreeman.github.io/2020/04/30/ji-zhu-zhi-shi-ti-xi-die-dai/"/>
+    <id>https://cyfreeman.github.io/2020/04/30/ji-zhu-zhi-shi-ti-xi-die-dai/</id>
+    <published>2020-04-30T02:36:00.000Z</published>
+    <updated>2020-04-30T02:37:52.151Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-494.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+      <category term="essay" scheme="https://cyfreeman.github.io/categories/read/essay/"/>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>作为意志和表象的世界</title>
+    <link href="https://cyfreeman.github.io/2020/04/30/zuo-wei-yi-zhi-he-biao-xiang-de-shi-jie/"/>
+    <id>https://cyfreeman.github.io/2020/04/30/zuo-wei-yi-zhi-he-biao-xiang-de-shi-jie/</id>
+    <published>2020-04-30T00:44:00.000Z</published>
+    <updated>2020-04-30T05:13:53.671Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、只有几个人在思维，可所有人都要发表意见&lt;/p&gt;
+&lt;p&gt;2、悟性是可以培养的，而一种谬误存在太久，那就是人们过早的给一个孩子下定义，聪明或不聪明，而忽略了如何去开发孩子的悟性&lt;/p&gt;
+&lt;p&gt;3、系统性是科学的本质特性&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/categories/read/"/>
+    
+      <category term="summary" scheme="https://cyfreeman.github.io/categories/read/summary/"/>
+    
+    
+      <category term="read" scheme="https://cyfreeman.github.io/tags/read/"/>
+    
+  </entry>
   
   <entry>
     <title>重定向输出编译内容到文件</title>
@@ -510,64 +571,6 @@
     
     
       <category term="signaling" scheme="https://cyfreeman.github.io/categories/signaling/"/>
-    
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux编译sigtran协议栈</title>
-    <link href="https://cyfreeman.github.io/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/"/>
-    <id>https://cyfreeman.github.io/2020/04/03/linux-bian-yi-sigtran-xie-yi-zhan/</id>
-    <published>2020-04-03T04:59:00.000Z</published>
-    <updated>2020-04-07T06:55:26.365Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;零、源文件拷贝，安装依赖&quot;&gt;&lt;a href=&quot;#零、源文件拷贝，安装依赖&quot; class=&quot;headerlink&quot; title=&quot;零、源文件拷贝，安装依赖&quot;&gt;&lt;/a&gt;零、源文件拷贝，安装依赖&lt;/h2&gt;&lt;p&gt;git clone xxx&lt;/p&gt;
-&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
-    
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Idea卡在Resolving Maven dependencies的解决方案</title>
-    <link href="https://cyfreeman.github.io/2020/04/03/idea-qia-zai-resolving-maven-dependencies-de-jie-jue-fang-an/"/>
-    <id>https://cyfreeman.github.io/2020/04/03/idea-qia-zai-resolving-maven-dependencies-de-jie-jue-fang-an/</id>
-    <published>2020-04-03T02:22:00.000Z</published>
-    <updated>2020-04-03T02:25:14.847Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;导入项目依赖太多，一直等待&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/pasted-458.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在尝试过更换maven版本, 更换阿里镜像无果的情况下, 可以尝试以下解决方案:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;修改maven
-        
-      
-    
-    </summary>
-    
-    
-      <category term="backend" scheme="https://cyfreeman.github.io/categories/backend/"/>
     
     
       <category term="backend" scheme="https://cyfreeman.github.io/tags/backend/"/>
